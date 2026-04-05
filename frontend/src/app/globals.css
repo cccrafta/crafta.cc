@@ -1,0 +1,155 @@
+@import "tailwindcss";
+@plugin "@tailwindcss/typography";
+
+/* ============================================
+   Design Tokens
+   ============================================ */
+
+:root {
+  /* Colors — Cream & Red editorial palette */
+  --color-bg: #f5f0eb;
+  --color-bg-secondary: #ece5de;
+  --color-fg: #2c2420;
+  --color-fg-secondary: #6b5d52;
+  --color-accent: #c0392b;
+  --color-accent-hover: #a5301f;
+  --color-border: #d6cdc4;
+  --color-border-light: #e8e0d8;
+
+  /* Typography */
+  --font-body: "Courier New", "Courier", ui-monospace, monospace;
+  --font-heading: "Courier New", "Courier", ui-monospace, monospace;
+
+  --text-xs: 0.75rem;
+  --text-sm: 0.8125rem;
+  --text-base: 0.9375rem;
+  --text-lg: 1.125rem;
+  --text-xl: 1.375rem;
+  --text-2xl: 1.75rem;
+  --text-3xl: 2.25rem;
+  --text-4xl: 3rem;
+
+  --leading-tight: 1.15;
+  --leading-normal: 1.5;
+  --leading-relaxed: 1.7;
+
+  /* Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 3rem;
+  --space-3xl: 4rem;
+
+  /* Layout */
+  --content-max-width: 1200px;
+  --content-narrow: 800px;
+  --sidebar-width: 180px;
+
+  /* Grid — configurable */
+  --grid-cols-mobile: 1;
+  --grid-cols-tablet: 2;
+  --grid-cols-desktop: 3;
+  --grid-gap: var(--space-lg);
+
+  /* Borders */
+  --radius-sm: 2px;
+  --radius-md: 4px;
+  --border-width: 1px;
+}
+
+/* ============================================
+   Tailwind Theme Bindings
+   ============================================ */
+
+@theme inline {
+  --color-background: var(--color-bg);
+  --color-foreground: var(--color-fg);
+  --color-secondary: var(--color-fg-secondary);
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-border: var(--color-border);
+  --color-border-light: var(--color-border-light);
+  --color-surface: var(--color-bg-secondary);
+  --font-mono: var(--font-body);
+}
+
+/* ============================================
+   Base Styles
+   ============================================ */
+
+body {
+  background: var(--color-bg);
+  color: var(--color-fg);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  line-height: var(--leading-normal);
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  line-height: var(--leading-tight);
+  font-weight: 400;
+}
+
+/* Links */
+a {
+  color: var(--color-accent);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+
+a:hover {
+  color: var(--color-accent-hover);
+}
+
+/* ============================================
+   Prose Overrides (for WP content)
+   ============================================ */
+
+.prose {
+  --tw-prose-body: var(--color-fg);
+  --tw-prose-headings: var(--color-fg);
+  --tw-prose-links: var(--color-accent);
+  --tw-prose-bold: var(--color-fg);
+  --tw-prose-quotes: var(--color-fg-secondary);
+  --tw-prose-quote-borders: var(--color-accent);
+  --tw-prose-counters: var(--color-fg-secondary);
+  --tw-prose-bullets: var(--color-fg-secondary);
+  font-family: var(--font-body);
+}
+
+/* ============================================
+   Utility Classes
+   ============================================ */
+
+.text-accent {
+  color: var(--color-accent);
+}
+
+.border-token {
+  border-color: var(--color-border);
+}
+
+.bg-surface {
+  background-color: var(--color-bg-secondary);
+}
+
+/* ============================================
+   Responsive Grid
+   ============================================ */
+
+@media (min-width: 640px) {
+  :root {
+    --grid-cols-mobile: var(--grid-cols-tablet);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --grid-cols-mobile: var(--grid-cols-desktop);
+  }
+}

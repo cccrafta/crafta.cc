@@ -1,0 +1,16 @@
+# env
+.env
+
+# node
+node_modules/
+frontend/.next/
+frontend/out/
+
+# wordpress
+backend/*
+!backend/wp-config.php
+
+# misc
+.DS_Store
+*.log
+.wrangler/
