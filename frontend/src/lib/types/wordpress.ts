@@ -72,6 +72,7 @@ export type WPPost = {
   _embedded?: {
     author?: WPUser[];
     "wp:featuredmedia"?: WPMedia[];
+    "wp:term"?: WPCategory[][];
   };
 };
 
@@ -108,6 +109,7 @@ export type PostCard = {
   featuredImageUrl: string | null;
   featuredImageAlt: string;
   authorName: string;
+  categories: string[];
 };
 
 export type PostDetail = {

@@ -9,16 +9,17 @@
   /* Colors — Cream & Red editorial palette */
   --color-bg: #f5f0eb;
   --color-bg-secondary: #ece5de;
-  --color-fg: #2c2420;
-  --color-fg-secondary: #6b5d52;
-  --color-accent: #c0392b;
-  --color-accent-hover: #a5301f;
+  --color-fg: #CA0F0F;
+  --color-fg-secondary: #9a0b0b;
+  --color-accent: #CA0F0F;
+  --color-accent-hover: #9a0b0b;
   --color-border: #d6cdc4;
   --color-border-light: #e8e0d8;
 
   /* Typography */
-  --font-body: "Courier New", "Courier", ui-monospace, monospace;
-  --font-heading: "Courier New", "Courier", ui-monospace, monospace;
+  --font-body: "Helvetica", "Courier", ui-monospace, monospace;
+  --font-heading: "Letter Gothic Std", "Courier", ui-monospace, monospace;
+  --font-nav: "Letter Gothic Std", "Courier", ui-monospace, monospace;
 
   --text-xs: 0.75rem;
   --text-sm: 0.8125rem;
@@ -43,7 +44,7 @@
   --space-3xl: 4rem;
 
   /* Layout */
-  --content-max-width: 1200px;
+  --content-max-width: 1000px;
   --content-narrow: 800px;
   --sidebar-width: 180px;
 

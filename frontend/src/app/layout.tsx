@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en" className="h-full">
       <body className="min-h-full flex flex-col">
         <Header />
-        <main className="mx-auto w-full flex-1 px-6 py-8" style={{ maxWidth: "var(--content-max-width)" }}>
+        <main className="mx-auto w-full flex-1 px-6 py-8" style={{ maxWidth: "var(--content-max-width)", marginTop: "60px" }}>
           {children}
         </main>
       </body>

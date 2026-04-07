@@ -17,6 +17,8 @@ function mapPostToCard(post: WPPost): PostCard {
     featuredImageAlt:
       post._embedded?.["wp:featuredmedia"]?.[0]?.alt_text ?? "",
     authorName: post._embedded?.author?.[0]?.name ?? "Unknown",
+    categories:
+      post._embedded?.["wp:term"]?.[0]?.map((t) => t.name) ?? [],
   };
 }
 

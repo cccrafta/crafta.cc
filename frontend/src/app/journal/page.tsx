@@ -11,27 +11,18 @@ export default async function JournalPage() {
 
   if (posts.length === 0) {
     return (
-      <div className="py-16 text-center" style={{ color: "var(--color-fg-secondary)" }}>
+      <div
+        className="py-16 text-center"
+        style={{ color: "var(--color-fg-secondary)" }}
+      >
         <p>No journal entries yet.</p>
       </div>
     );
   }
 
   return (
-    <div>
-      <h1
-        className="mb-8 font-normal tracking-widest uppercase"
-        style={{ fontSize: "var(--text-sm)", color: "var(--color-fg-secondary)", letterSpacing: "0.2em" }}
-      >
-        Feed <span style={{ color: "var(--color-accent)" }}>[{String(posts.length).padStart(2, "0")}]</span>
-      </h1>
-      <div
-        className="grid"
-        style={{
-          gap: "var(--grid-gap)",
-          gridTemplateColumns: `repeat(var(--grid-cols-mobile), 1fr)`,
-        }}
-      >
+    <div className="mx-auto w-full" style={{ maxWidth: "500px" }}>
+      <div className="flex flex-col" style={{ gap: "var(--space-3xl)" }}>
         {posts.map((post) => (
           <PostCard key={post.id} post={post} />
         ))}
