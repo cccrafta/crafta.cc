@@ -57,6 +57,30 @@ export async function getJournalFeed(
   };
 }
 
+export async function searchJournal(
+  query?: string,
+  categoryId?: number,
+  page?: number,
+  perPage?: number
+): Promise<{
+  posts: PostCard[];
+  totalPages: number;
+  currentPage: number;
+}> {
+  const response = await getPosts({
+    search: query || undefined,
+    categories: categoryId || undefined,
+    page,
+    per_page: perPage,
+  });
+
+  return {
+    posts: response.data.map(mapPostToCard),
+    totalPages: response.totalPages,
+    currentPage: page ?? 1,
+  };
+}
+
 export async function getJournalPost(
   slug: string
 ): Promise<PostDetail | null> {

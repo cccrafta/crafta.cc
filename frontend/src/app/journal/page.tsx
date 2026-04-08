@@ -1,5 +1,7 @@
 import { getJournalFeed } from "@/lib/services";
+import { getCategories } from "@/lib/api";
 import PostCard from "@/components/post-card";
+import SearchBar from "@/components/search-bar";
 
 export const metadata = {
   title: "Journal — crafta.cc",
@@ -7,7 +9,10 @@ export const metadata = {
 };
 
 export default async function JournalPage() {
-  const { posts } = await getJournalFeed();
+  const [{ posts }, categories] = await Promise.all([
+    getJournalFeed(),
+    getCategories(),
+  ]);
 
   if (posts.length === 0) {
     return (
@@ -22,7 +27,11 @@ export default async function JournalPage() {
 
   return (
     <div className="mx-auto w-full" style={{ maxWidth: "500px" }}>
-      <div className="flex flex-col" style={{ gap: "var(--space-3xl)" }}>
+      <SearchBar categories={categories} />
+      <div
+        className="flex flex-col"
+        style={{ gap: "var(--space-3xl)", marginTop: "var(--space-xl)" }}
+      >
         {posts.map((post) => (
           <PostCard key={post.id} post={post} />
         ))}

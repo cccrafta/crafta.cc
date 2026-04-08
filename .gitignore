@@ -6,9 +6,21 @@ node_modules/
 frontend/.next/
 frontend/out/
 
-# wordpress
-backend/*
+# wordpress core (downloaded by setup.sh)
+backend/wp-admin/
+backend/wp-includes/
+backend/index.php
+backend/wp-*.php
 !backend/wp-config.php
+backend/xmlrpc.php
+backend/license.txt
+backend/readme.html
+
+# wordpress uploads (user-generated, not code)
+backend/wp-content/uploads/
+backend/wp-content/cache/
+backend/wp-content/upgrade/
+backend/wp-content/languages/
 
 # misc
 .DS_Store

@@ -1,7 +1,8 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  turbopackFileSystemCache: false,
+  // turbopackFileSystemCache: false,
+  devIndicators: false,
   images: {
     remotePatterns: [
       {

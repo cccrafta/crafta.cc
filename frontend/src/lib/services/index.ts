@@ -1,2 +1,2 @@
-export { getJournalFeed, getJournalPost } from "./posts";
+export { getJournalFeed, getJournalPost, searchJournal } from "./posts";
 export { getPostComments } from "./comments";
