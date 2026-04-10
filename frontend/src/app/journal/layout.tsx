@@ -17,6 +17,21 @@ export default function JournalLayout({
       >
         {children}
       </main>
+      <footer
+        className="flex items-center justify-between px-6"
+        style={{
+          padding: "var(--space-xl) var(--space-xl)",
+          color: "var(--color-fg-secondary)",
+        }}
+      >
+        <div className="flex type-label" style={{ gap: "var(--space-lg)" }}>
+          <span>CRAFTA &copy; 2026</span>
+          <a href="/privacy" className="transition-opacity hover:opacity-60">Privacy Policy</a>
+        </div>
+        <div className="flex type-label" style={{ gap: "var(--space-lg)" }}>
+          <a href="https://instagram.com/crafta.cc" className="transition-opacity hover:opacity-60">Instagram</a>
+        </div>
+      </footer>
     </>
   );
 }

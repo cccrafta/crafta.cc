@@ -1,0 +1,249 @@
+{
+  "main": {
+    "id": "29976ebc3034c702",
+    "type": "split",
+    "children": [
+      {
+        "id": "178b419188f0c4a7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a0288f1344329086",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Posts/The Invisible Layer - How What You Wear Under Your Jacket Changes Everything.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "The Invisible Layer - How What You Wear Under Your Jacket Changes Everything"
+            }
+          },
+          {
+            "id": "a4884002a1513e20",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Ideas/The Reproduction Game - When Accuracy Becomes Obsession.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "The Reproduction Game - When Accuracy Becomes Obsession"
+            }
+          },
+          {
+            "id": "04f190b6a0a12d28",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "72e32fef33a89dca",
+    "type": "split",
+    "children": [
+      {
+        "id": "c459db4eea6670fd",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f0b2f707ba71ce0b",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "byModifiedTime",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "d95cb361d420c01c",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "36a238d547e4f58c",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "4672d4bd187f2855",
+    "type": "split",
+    "children": [
+      {
+        "id": "8d818200cbd9766f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "addf932530fb7e23",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Welcome.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Welcome"
+            }
+          },
+          {
+            "id": "73a4e47441b6c375",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Welcome.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Welcome"
+            }
+          },
+          {
+            "id": "c2b5506a724a176c",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "1433ff60cdb23a8d",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "All properties"
+            }
+          },
+          {
+            "id": "f9f473079b176d79",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Welcome.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Welcome"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "bases:Create new base": false
+    }
+  },
+  "active": "a0288f1344329086",
+  "lastOpenFiles": [
+    "Ideas/The Reproduction Game - When Accuracy Becomes Obsession.md",
+    "notes/Improvements.md",
+    "Ideas/Why Wool Might Be Your Best Summer Fabric.md",
+    "Sources/Publications/EYESCREAM.md",
+    "Posts/The Invisible Layer - How What You Wear Under Your Jacket Changes Everything.md",
+    "Posts/Corduroy - The Fabric With a Thousand Lives.md",
+    "Posts/The N-1 Deck Jacket - Built for the Coldest Watch.md",
+    "Ideas/Rayon and Tencel - Wood Pulp That Drapes Like Silk.md",
+    "Ideas/Moleskin - The Fabric That Feels Like It Shouldn't Exist.md",
+    "Ideas/The Samue - Japanese Work Clothes for Monks and Makers.md",
+    "Ideas/Negative Space in Garment Design - The Japanese Concept of Ma.md",
+    "Research/Innerwear - What to Wear Under Jackets.md",
+    "Crafta Editorial Framework.md",
+    "Sources/Publications/Put This On.md",
+    "Sources/Publications/Rampboy.md",
+    "Sources/Publications/Denimhunters.md",
+    "Sources/Publications/Directors.md",
+    "Sources/References/Layering with T-Shirts - Put This On.md",
+    "Posts/Canvas - The Fabric That Built the West.md",
+    "Posts/The Perfecto - How a Motorcycle Jacket Became a Cultural Symbol.md",
+    "Posts/The Noragi - Japanese Farm Coat Meets Modern Layering.md",
+    "Posts/Shell Cordovan - The Leather That Takes Six Months to Make.md",
+    "Posts/Sashiko - The Japanese Art of Functional Stitching.md",
+    "Posts/The Guernsey Sweater - Knitted by Fishermen, Built for the Sea.md",
+    "Posts/The Safari Jacket - Designed for the Bush, Adopted by the City.md",
+    "Posts/Natural Indigo vs. Synthetic - A Difference You Can See.md",
+    "_templates",
+    "Sources/References",
+    "Sources/Publications",
+    "Sources/People",
+    "Sources",
+    "Feeds",
+    "Posts",
+    "Research",
+    "Ideas",
+    "notes"
+  ]
+}

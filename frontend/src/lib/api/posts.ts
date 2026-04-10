@@ -28,3 +28,29 @@ export async function getPostBySlug(slug: string): Promise<WPPost | null> {
 
   return data[0] ?? null;
 }
+
+export async function getPostsByIds(
+  ids: number[]
+): Promise<WPPost[]> {
+  if (ids.length === 0) return [];
+  const { data } = await get<WPPost[]>("/wp/v2/posts/", {
+    include: ids.join(","),
+    _embed: true,
+  });
+  return data;
+}
+
+export async function getPostsByTags(
+  tagIds: number[],
+  excludeId: number,
+  perPage: number = 6
+): Promise<WPPost[]> {
+  if (tagIds.length === 0) return [];
+  const { data } = await get<WPPost[]>("/wp/v2/posts/", {
+    tags: tagIds.join(","),
+    exclude: excludeId,
+    per_page: perPage,
+    _embed: true,
+  });
+  return data;
+}

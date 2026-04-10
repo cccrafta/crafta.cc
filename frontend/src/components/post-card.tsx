@@ -72,21 +72,24 @@ export default function PostCard({ post }: { post: PostCardType }) {
         </div>
       </Link>
 
-      {/* Title */}
-      <Link href={`/journal/${post.slug}`}>
-        <h2 className="type-title">{post.title}</h2>
-      </Link>
+      <div style={{ padding: "0 var(--space-md)" }}>
+        {/* Title */}
+        <Link href={`/journal/${post.slug}`}>
+          <h2 className="type-title">{post.title}</h2>
+        </Link>
 
-      {/* Description */}
-      <p className="type-body-sm line-clamp-3">{post.excerpt}</p>
+        {/* Description */}
+        <p className="type-body-sm line-clamp-3" style={{ marginTop: "var(--space-sm)" }}>{post.excerpt}</p>
 
-      {/* Read more */}
-      <Link
-        href={`/journal/${post.slug}`}
-        className="type-label self-start transition-opacity hover:opacity-60"
-      >
-        Read more &rarr;
-      </Link>
+        {/* Read more */}
+        <Link
+          href={`/journal/${post.slug}`}
+          className="type-label self-start transition-opacity hover:opacity-60"
+          style={{ display: "inline-block", marginTop: "var(--space-sm)" }}
+        >
+          Read more &rarr;
+        </Link>
+      </div>
     </article>
   );
 }

@@ -69,6 +69,10 @@ export type WPPost = {
   categories: number[];
   tags: number[];
   comment_status: string;
+  meta?: {
+    related_posts?: number[];
+    references?: { title: string; url: string }[];
+  };
   _embedded?: {
     author?: WPUser[];
     "wp:featuredmedia"?: WPMedia[];
@@ -81,9 +85,11 @@ export type WPPostsParams = {
   per_page?: number;
   search?: string;
   categories?: number;
-  tags?: number;
+  tags?: number | string;
   slug?: string;
   _embed?: boolean;
+  include?: string;
+  exclude?: number;
 };
 
 export type WPCommentsParams = {
@@ -112,6 +118,11 @@ export type PostCard = {
   categories: string[];
 };
 
+export type Reference = {
+  title: string;
+  url: string;
+};
+
 export type PostDetail = {
   id: number;
   slug: string;
@@ -123,6 +134,10 @@ export type PostDetail = {
   featuredImageAlt: string;
   authorName: string;
   authorAvatar: string | null;
+  tags: string[];
+  references: Reference[];
+  manualRelatedIds: number[];
+  tagIds: number[];
 };
 
 export type CommentView = {

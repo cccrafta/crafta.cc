@@ -1,4 +1,4 @@
-import { getPosts, getPostBySlug } from "@/lib/api";
+import { getPosts, getPostBySlug, getPostsByIds, getPostsByTags } from "@/lib/api";
 import type { WPPost, PostCard, PostDetail } from "@/lib/types/wordpress";
 
 function decodeHtmlEntities(text: string): string {
@@ -51,6 +51,11 @@ function mapPostToDetail(post: WPPost): PostDetail {
     authorName: post._embedded?.author?.[0]?.name ?? "Unknown",
     authorAvatar:
       post._embedded?.author?.[0]?.avatar_urls?.["96"] ?? null,
+    tags:
+      post._embedded?.["wp:term"]?.[1]?.map((t) => t.name) ?? [],
+    references: post.meta?.references ?? [],
+    manualRelatedIds: post.meta?.related_posts ?? [],
+    tagIds: post.tags ?? [],
   };
 }
 
@@ -105,4 +110,64 @@ export async function getJournalPost(
   }
 
   return mapPostToDetail(post);
+}
+
+export async function getRelatedPosts(
+  postId: number,
+  manualRelatedIds: number[],
+  tagIds: number[],
+  limit: number = 3
+): Promise<PostCard[]> {
+  const results: PostCard[] = [];
+
+  // Manual relations first
+  if (manualRelatedIds.length > 0) {
+    const manualPosts = await getPostsByIds(manualRelatedIds);
+    results.push(...manualPosts.map(mapPostToCard));
+    if (results.length >= limit) {
+      return results.slice(0, limit);
+    }
+  }
+
+  // Tag-based fallback
+  if (tagIds.length > 0) {
+    const remaining = limit - results.length;
+    const excludeIds = [postId, ...manualRelatedIds];
+    const candidates = await getPostsByTags(tagIds, postId, remaining * 2);
+
+    // Rank by tag overlap
+    const currentTagSet = new Set(tagIds);
+    const ranked = candidates
+      .filter((p) => !excludeIds.includes(p.id))
+      .map((p) => ({
+        post: p,
+        overlap: p.tags.filter((t) => currentTagSet.has(t)).length,
+      }))
+      .sort((a, b) => b.overlap - a.overlap)
+      .slice(0, remaining)
+      .map((r) => mapPostToCard(r.post));
+
+    results.push(...ranked);
+  }
+
+  return results.slice(0, limit);
+}
+
+export async function getJournalPostWithRelated(
+  slug: string
+): Promise<{ post: PostDetail; relatedPosts: PostCard[] } | null> {
+  const post = await getPostBySlug(slug);
+
+  if (!post) {
+    return null;
+  }
+
+  const detail = mapPostToDetail(post);
+  const relatedPosts = await getRelatedPosts(
+    post.id,
+    detail.manualRelatedIds,
+    detail.tagIds
+  );
+
+  return { post: detail, relatedPosts };
 }

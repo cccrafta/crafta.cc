@@ -6,117 +6,88 @@ user_invocable: true
 
 # Audit Posts — Crafta Journal
 
-You are a content editor for **Crafta Journal**. You review published posts for quality, consistency, and completeness, then recommend specific improvements.
+You review posts for quality, consistency, completeness, and source integrity. **Read from both `bank/Posts/` (vault drafts) and WordPress (published posts).**
 
 ## Workflow
 
-### Step 1: Fetch All Posts
+### Step 1: Fetch Posts
 
-Get full post data:
+**From vault** (drafts and published records):
+```bash
+ls bank/Posts/
+```
 
+**From WordPress** (live published):
 ```bash
 curl -s "http://localhost:8080/index.php?rest_route=/wp/v2/posts/&per_page=100&_embed=true" 2>/dev/null
 ```
 
 ### Step 2: Audit Each Post
 
-Evaluate every post against these criteria:
-
 **Content Quality**
-- [ ] **Length** — is the post substantial? Flag posts under 200 words as "too short" and over 800 words as "could be tighter"
-- [ ] **Opening** — does it lead with something interesting, or does it start with a dictionary definition / generic statement?
-- [ ] **Closing** — does it end with insight, or does it just trail off?
-- [ ] **Specificity** — does it include concrete details (dates, measurements, places, names), or is it vague?
-- [ ] **Tone consistency** — does it match Crafta's editorial voice (authoritative, specific, no hype)?
+- [ ] **Length** — flag under 200 words as "too short", over 800 as "could be tighter"
+- [ ] **Opening** — leads with something interesting, not a definition?
+- [ ] **Closing** — ends with insight, not trailing off?
+- [ ] **Specificity** — contains dates, measurements, places, names?
+- [ ] **Tone** — matches Crafta voice (authoritative, specific, no hype)?
+
+**Source Integrity**
+- [ ] **Sources referenced** — does `bank/Posts/<Title>.md` have a `## Sources Referenced` section?
+- [ ] **Source notes exist** — do the linked `[[Sources/References/...]]` notes exist in the vault?
+- [ ] **Claims verified** — are factual claims supported by at least one source?
+- [ ] **Single-source claims** — flag any claim supported by only one source
 
 **Metadata Quality**
-- [ ] **Excerpt** — is it present? Is it compelling? Is it different from just the first line?
-- [ ] **Category** — is the post in the right category? Could it fit better elsewhere?
-- [ ] **Title** — is it specific and interesting? Does it promise a clear angle?
+- [ ] **Excerpt** — present, compelling, different from first line?
+- [ ] **Category** — appropriate?
+- [ ] **Tags** — 3-7 relevant tags present?
+- [ ] **Title** — specific and interesting?
 
-**Technical Issues**
-- [ ] **HTML formatting** — are paragraphs properly wrapped in `<p>` tags?
-- [ ] **Empty content** — any posts with missing or placeholder content?
-- [ ] **Duplicate topics** — any posts that cover substantially the same ground?
+**Vault Integrity**
+- [ ] **Vault note exists** — does `bank/Posts/<Title>.md` exist for this published post?
+- [ ] **Status correct** — does frontmatter status match reality (draft/published)?
+- [ ] **wp_id present** — is the WordPress post ID recorded?
 
-### Step 3: Present the Audit Report
+### Step 3: Present Report
 
 **Overall Score**
 - Posts audited: X
-- Passing: X (no issues)
-- Needs attention: X (minor issues)
-- Needs rewrite: X (significant issues)
+- Passing: X | Needs attention: X | Needs rewrite: X
 
-**Issues by Priority**
+**By Priority:**
 
-🔴 **Critical** (should fix now)
-- Posts with missing/empty excerpts
-- Posts under 150 words
-- Posts with broken HTML
-- Duplicate topics
+Critical — missing sources, very short, broken metadata
+Improvement — weak opening/closing, vague content, missing tags
+Polish — excerpt could be better, title could be sharper
 
-🟡 **Improvement** (would make the journal better)
-- Weak openings (starts with "The X is..." or a definition)
-- Weak closings (ends abruptly or with a generic statement)
-- Vague content (lacks specific details)
-- Mismatched categories
+**Per-post:** title, ID, issues found, specific suggestion
 
-🟢 **Polish** (nice to have)
-- Excerpts that could be more compelling
-- Titles that could be sharper
-- Posts that could benefit from one more paragraph
-
-**Per-Post Details**
-For each post with issues, show:
-- Post title and ID
-- Issues found
-- Specific suggestion for improvement (not just "make it better" — give a concrete rewrite hint)
-
-### Step 4: Offer to Fix
+### Step 4: Offer Fixes
 
 After presenting the report, offer to:
-1. Rewrite specific weak posts
+1. Rewrite weak posts (save to `bank/Posts/` for review)
 2. Generate missing excerpts
-3. Fix HTML formatting issues
-4. Suggest category reassignments
+3. Add source tracking to posts that lack it
+4. Create missing vault notes for published posts
+5. Fix tags
 
-Only make changes after user approval. Use the WordPress REST API or PHP to update posts:
+Only make changes after user approval.
 
-```bash
-php -r "
-require_once '/Users/muhamad.ariqyandri/Desktop/crafta-cc/backend/wp-load.php';
-wp_set_current_user(1);
-wp_update_post([
-    'ID' => POST_ID,
-    'post_excerpt' => 'New excerpt here',
-]);
-echo 'Updated post POST_ID';
-" 2>/dev/null
-```
-
-## Audit Scope
-
-The user can request different scopes:
+## Scopes
 
 - `/audit-posts` — audit all posts
-- `/audit-posts recent` — audit last 10 posts only
-- `/audit-posts category Garments` — audit posts in a specific category
-- `/audit-posts excerpts` — only check excerpts
-- `/audit-posts duplicates` — only check for topic overlap
-
-## Tone
-
-- Constructive, not harsh — you're an editor helping improve the journal, not a critic tearing it down
-- Be specific — "the opening of 'The Chore Coat' starts too generically; consider leading with the French term 'veste de travail' instead" is better than "weak opening"
-- Prioritize actionable feedback over general observations
+- `/audit-posts recent` — last 10 only
+- `/audit-posts category Materials` — specific category
+- `/audit-posts sources` — only check source integrity
+- `/audit-posts vault` — only check vault sync (do all published posts have vault notes?)
 
 ## Usage Examples
 
 ```
 /audit-posts
 /audit-posts recent
-/audit-posts category Materials
+/audit-posts sources
+/audit-posts vault
 Review my posts for quality
 Which posts need improvement?
-Check if any posts are missing excerpts
 ```

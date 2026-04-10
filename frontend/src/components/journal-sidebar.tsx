@@ -28,7 +28,7 @@ export default function JournalSidebar({
   return (
     <aside
       className="hidden lg:block"
-      style={{ width: "260px", flexShrink: 0 }}
+      style={{ flex: 1 }}
     >
       <div className="sticky" style={{ top: "var(--sticky-top)" }}>
         {/* Featured Post */}
