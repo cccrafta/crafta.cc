@@ -16,58 +16,54 @@ This skill has three modes. Determine which mode to use based on the user's requ
 
 Generate multiple posts at once. Good for populating the site.
 
-1. Fetch 2-3 RSS feeds relevant to the request
-2. Extract headlines and topics for inspiration
-3. Propose a numbered list of topics with title, category, one-line pitch, and which headline inspired it
-4. Wait for user approval
-5. Generate all approved posts
-6. Publish to WordPress
+1. Check `.claude/idea-bank.json` for pending ideas related to the request
+2. Fetch 2-3 RSS feeds relevant to the request
+3. Run WebSearch with `site:` queries against publication domains for deeper research (read domains from `.claude/feeds.md`)
+4. Propose a numbered list of topics with title, category, one-line pitch, and which source inspired it
+5. Wait for user approval
+6. **Save rejected topics** to `.claude/idea-bank.json` with status `pending`
+7. Generate all approved posts
+8. Publish to WordPress
 
 ### Mode 2: Deep Dive (`/generate-posts deep <topic>`)
 
 Research and write one exceptional post about a specific topic. Good for flagship content.
 
-1. Fetch ALL relevant feeds to find every angle on the topic
-2. Present a research summary:
-   - What the feeds are currently saying about this topic or related topics
+1. Check `.claude/idea-bank.json` for existing ideas on this topic
+2. Fetch ALL relevant RSS feeds to find recent coverage
+3. Run WebSearch `site:<domain> "<topic>"` across all publication domains for historical coverage
+4. Present a research summary:
+   - What publications are saying (recent + archive)
    - 3-5 possible angles to write from (e.g. historical, technical, cultural, comparative)
    - Recommended angle with reasoning
-3. Wait for user to pick an angle
-4. Generate one long-form post (500-700 words, 5-7 paragraphs) with more depth than a standard post
-5. Present for review before publishing
+5. Wait for user to pick an angle
+6. **Save rejected angles** to `.claude/idea-bank.json`
+7. Generate one long-form post (500-700 words, 5-7 paragraphs) with more depth than a standard post
+8. Present for review before publishing
 
 ### Mode 3: Trending (`/generate-posts trending`)
 
 Find the most relevant/talked-about topic across all feeds right now and write about it.
 
-1. Fetch ALL 10 feeds simultaneously
-2. Analyze headlines for:
+1. Check `.claude/idea-bank.json` for pending ideas first — pre-researched ideas are faster to act on
+2. Fetch ALL feeds simultaneously
+3. Run WebSearch for recent trending topics across publication domains
+4. Analyze for:
    - Recurring themes (multiple feeds covering similar topics)
    - Seasonal relevance (what makes sense to publish right now)
    - Gaps (topics the feeds cover that Crafta hasn't written about yet)
-3. Present the top 3 trending topics with reasoning for each
-4. Wait for user to pick one
-5. Generate and publish
+   - Idea bank matches (pending ideas that align with current trends)
+5. Present the top 3 trending topics with reasoning for each
+6. Wait for user to pick one
+7. **Save rejected topics** to `.claude/idea-bank.json`
+8. Generate and publish
 
-## RSS Feeds
+## Research Tools
 
-**Core — Workwear, Denim, Craft:**
-- `https://www.heddels.com/feed/`
-- `https://long-john.nl/feed/`
-- `https://archivalblog.com/feed/`
+Read `.claude/feeds.md` for current feed URLs and searchable domains. Use both:
 
-**Editorial — Opinion, Culture:**
-- `https://rampboy.com/feed/`
-- `https://putthison.com/feed/`
-
-**Design & Art:**
-- `https://www.designboom.com/feed/`
-
-**Japanese Sources:**
-- `https://www.houyhnhnm.jp/feed`
-- `https://directors1.blogspot.com/feeds/posts/default?alt=rss`
-- `https://www.eyescream.jp/feed/`
-- `https://popeyemagazine.jp/feed/`
+1. **RSS feeds** (via WebFetch) — latest articles from curated sources
+2. **Web search** (via WebSearch with `site:<domain>` queries) — full publication archive search
 
 When fetching Japanese feeds, translate headlines to English and extract the concept/topic.
 
@@ -129,12 +125,15 @@ php /Users/muhamad.ariqyandri/Desktop/crafta-cc/backend/publish-post.php \
   --title "Post Title Here" \
   --content "<p>First paragraph...</p><p>Second paragraph...</p>" \
   --excerpt "The excerpt here." \
-  --category "Category Name"
+  --category "Category Name" \
+  --tags "tag1, tag2, tag3"
 ```
+
+**Tags are required.** Choose 3-7 relevant tags from existing ones or create new ones. Tags should be lowercase, specific, and descriptive (e.g. "cotton", "japanese", "indigo", "workwear", "outerwear", "heritage", "craft", "dyeing", "repair", "military", "french", "british", "vintage", "denim", "selvedge", "wool", "leather", "knitting", "footwear", "handmade").
 
 Optional: add `--date "YYYY-MM-DD"` to backdate a post.
 
-After publishing, report: post ID, title, category for each post.
+After publishing, report: post ID, title, category, tags for each post.
 
 ## Checking Existing Content
 

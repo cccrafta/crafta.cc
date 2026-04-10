@@ -23,12 +23,13 @@ Do these in parallel where possible:
 curl -s "http://localhost:8080/index.php?rest_route=/wp/v2/posts/&per_page=100&search=TOPIC&_embed=true&_fields=id,title,slug,categories,excerpt" 2>/dev/null
 ```
 
-**Scan RSS feeds** for recent coverage of the topic or related subjects. Fetch from the most relevant feeds:
+**Scan RSS feeds** for recent coverage of the topic. Read `.claude/feeds.md` for current feed URLs.
 
-Core: `heddels.com/feed/`, `long-john.nl/feed/`, `archivalblog.com/feed/`
-Editorial: `rampboy.com/feed/`, `putthison.com/feed/`
-Design: `designboom.com/feed/`
-Japanese: `houyhnhnm.jp/feed`, `directors1.blogspot.com/feeds/posts/default?alt=rss`, `eyescream.jp/feed/`, `popeyemagazine.jp/feed/`
+**Search publication archives** via WebSearch for deeper historical coverage:
+- Run `site:<domain> "<topic>"` queries against all publication domains listed in `.claude/feeds.md`
+- This finds articles beyond the latest RSS window — full archive depth
+
+**Check the idea bank** at `.claude/idea-bank.json` for any previously saved ideas related to this topic.
 
 **Draw on your knowledge** to fill in historical context, technical details, and cultural significance.
 
@@ -66,10 +67,11 @@ Technical details relevant to the topic:
 - How perception has changed over time
 - Geographic significance (e.g. Kojima for denim, Northampton for shoes)
 
-### What the Feeds Are Saying
-Recent coverage from the RSS feeds related to this topic:
-- **[Source]**: "[Headline]" — brief note on relevance
-- (Include only if feeds have relevant recent content; skip if nothing found)
+### What Publications Are Saying
+Recent coverage from RSS feeds AND historical articles found via web search:
+- **[Source]**: "[Headline]" — brief note on relevance and the angle they took
+- Group by: Recent (from RSS) and Archive (from web search)
+- Note gaps: what angle hasn't been covered that Crafta could own
 
 ### Related Crafta Posts
 Existing posts that connect to this topic:

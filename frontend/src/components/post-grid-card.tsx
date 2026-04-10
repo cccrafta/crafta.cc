@@ -41,33 +41,12 @@ export default function PostGridCard({ post }: { post: PostCardType }) {
       {/* Info */}
       <div className="flex flex-col" style={{ gap: "var(--space-xs)", marginTop: "var(--space-sm)" }}>
         {post.categories.length > 0 && (
-          <span
-            className="uppercase"
-            style={{
-              fontFamily: "var(--font-nav)",
-              fontSize: "var(--text-xs)",
-              color: "var(--color-fg-secondary)",
-              letterSpacing: "0.05em",
-            }}
-          >
+          <span className="type-label" style={{ color: "var(--color-fg-secondary)" }}>
             {post.categories[0]}
           </span>
         )}
-        <h3
-          className="font-normal leading-tight line-clamp-2"
-          style={{
-            fontFamily: "var(--font-heading)",
-            fontSize: "var(--text-base)",
-          }}
-        >
-          {post.title}
-        </h3>
-        <time
-          dateTime={post.date}
-          style={{ fontSize: "var(--text-xs)", color: "var(--color-fg-secondary)" }}
-        >
-          {formattedDate}
-        </time>
+        <h3 className="type-title-sm line-clamp-2">{post.title}</h3>
+        <time dateTime={post.date} className="type-meta">{formattedDate}</time>
       </div>
     </Link>
   );

@@ -1,7 +1,7 @@
 import { getJournalFeed } from "@/lib/services";
-import { getCategories } from "@/lib/api";
+import { getCategories, getTags } from "@/lib/api";
 import PostCard from "@/components/post-card";
-import SearchBar from "@/components/search-bar";
+import JournalSidebar from "@/components/journal-sidebar";
 
 export const metadata = {
   title: "Journal — crafta.cc",
@@ -9,9 +9,10 @@ export const metadata = {
 };
 
 export default async function JournalPage() {
-  const [{ posts }, categories] = await Promise.all([
+  const [{ posts }, categories, tags] = await Promise.all([
     getJournalFeed(),
     getCategories(),
+    getTags(),
   ]);
 
   if (posts.length === 0) {
@@ -25,17 +26,35 @@ export default async function JournalPage() {
     );
   }
 
+  const featuredPost = posts[0];
+
   return (
-    <div className="mx-auto w-full" style={{ maxWidth: "500px" }}>
-      <SearchBar categories={categories} />
-      <div
-        className="flex flex-col"
-        style={{ gap: "var(--space-3xl)", marginTop: "var(--space-xl)" }}
-      >
-        {posts.map((post) => (
-          <PostCard key={post.id} post={post} />
-        ))}
+    <div className="flex justify-center" style={{ gap: "var(--space-3xl)" }}>
+      {/* Feed Label */}
+      <div className="hidden lg:block self-start sticky" style={{ top: "var(--sticky-top)" }}>
+        <h3
+          className="type-section"
+          style={{ color: "var(--color-fg-secondary)" }}
+        >
+          Feed
+        </h3>
       </div>
+
+      {/* Feed */}
+      <div className="w-full" style={{ maxWidth: "500px" }}>
+        <div className="flex flex-col" style={{ gap: "var(--space-3xl)" }}>
+          {posts.map((post) => (
+            <PostCard key={post.id} post={post} />
+          ))}
+        </div>
+      </div>
+
+      {/* Sidebar */}
+      <JournalSidebar
+        featuredPost={featuredPost}
+        categories={categories}
+        tags={tags}
+      />
     </div>
   );
 }

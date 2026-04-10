@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Header from "@/components/header";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -15,10 +14,7 @@ export default function RootLayout({
   return (
     <html lang="en" className="h-full">
       <body className="min-h-full flex flex-col">
-        <Header />
-        <main className="mx-auto w-full flex-1 px-6 py-8" style={{ maxWidth: "var(--content-max-width)", marginTop: "60px" }}>
-          {children}
-        </main>
+        {children}
       </body>
     </html>
   );

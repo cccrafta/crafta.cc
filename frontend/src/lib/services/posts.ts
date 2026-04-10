@@ -1,6 +1,20 @@
 import { getPosts, getPostBySlug } from "@/lib/api";
 import type { WPPost, PostCard, PostDetail } from "@/lib/types/wordpress";
 
+function decodeHtmlEntities(text: string): string {
+  const entities: Record<string, string> = {
+    "&amp;": "&",
+    "&lt;": "<",
+    "&gt;": ">",
+    "&quot;": '"',
+    "&#039;": "'",
+    "&apos;": "'",
+  };
+  return text
+    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
+    .replace(/&(?:amp|lt|gt|quot|#039|apos);/g, (match) => entities[match]);
+}
+
 function stripHtmlTags(html: string): string {
   return html.replace(/<[^>]*>/g, "").trim();
 }
@@ -9,8 +23,8 @@ function mapPostToCard(post: WPPost): PostCard {
   return {
     id: post.id,
     slug: post.slug,
-    title: post.title.rendered,
-    excerpt: stripHtmlTags(post.excerpt.rendered),
+    title: decodeHtmlEntities(post.title.rendered),
+    excerpt: decodeHtmlEntities(stripHtmlTags(post.excerpt.rendered)),
     date: post.date,
     featuredImageUrl:
       post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ?? null,
@@ -26,9 +40,9 @@ function mapPostToDetail(post: WPPost): PostDetail {
   return {
     id: post.id,
     slug: post.slug,
-    title: post.title.rendered,
+    title: decodeHtmlEntities(post.title.rendered),
     content: post.content.rendered,
-    excerpt: stripHtmlTags(post.excerpt.rendered),
+    excerpt: decodeHtmlEntities(stripHtmlTags(post.excerpt.rendered)),
     date: post.date,
     featuredImageUrl:
       post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ?? null,

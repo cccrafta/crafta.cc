@@ -1,6 +1,5 @@
 import { searchJournal } from "@/lib/services";
 import { getCategories } from "@/lib/api";
-import SearchBar from "@/components/search-bar";
 import PostGridCard from "@/components/post-grid-card";
 
 export const metadata = {
@@ -14,10 +13,8 @@ export default async function SearchPage({
 }) {
   const { q, cat } = await searchParams;
 
-  // Get categories for the filter pills
   const categories = await getCategories();
 
-  // Find category ID from slug
   const categoryId = cat
     ? categories.find((c) => c.slug === cat)?.id
     : undefined;
@@ -32,16 +29,10 @@ export default async function SearchPage({
 
   return (
     <div>
-      <SearchBar categories={categories} />
-
       <p
-        className="uppercase"
+        className="type-label"
         style={{
-          fontSize: "var(--text-xs)",
           color: "var(--color-fg-secondary)",
-          letterSpacing: "0.2em",
-          fontFamily: "var(--font-nav)",
-          marginTop: "var(--space-xl)",
           marginBottom: "var(--space-lg)",
         }}
       >
@@ -52,7 +43,7 @@ export default async function SearchPage({
       </p>
 
       {posts.length === 0 ? (
-        <p style={{ color: "var(--color-fg-secondary)", fontSize: "var(--text-sm)" }}>
+        <p className="type-body-sm" style={{ color: "var(--color-fg-secondary)" }}>
           No posts found.
         </p>
       ) : (

@@ -10,14 +10,31 @@ You are a research assistant for **Crafta Journal**. Your job is to help the use
 
 This skill is about **learning and exploration**, not publishing. If the user wants to turn a discovery into a post, suggest they use `/generate-posts deep <topic>`.
 
+## Research Tools
+
+You have two research tools — use both for thorough coverage:
+
+1. **RSS feeds** (via WebFetch) — latest articles from curated sources. Good for "what's new right now."
+2. **Web search** (via WebSearch with `site:domain` queries) — full publication archives. Good for "what's been written about X."
+
+Feed URLs and searchable domains are listed in `.claude/feeds.md`. Always read that file to get current feed list.
+
+## Idea Bank Integration
+
+After presenting topic suggestions in any mode:
+- If the user wants to save ideas for later, add them to `.claude/idea-bank.json`
+- Read the JSON, append new ideas with auto-incrementing `id`, today's date, and `status: "pending"`, then write back
+- Inform the user: "Saved X ideas to the idea bank"
+
 ## Modes
 
 ### Mode 1: What's New (`/discover` or `/discover feed`)
 
-Scan the RSS feeds and present a curated briefing of what's happening right now.
+Scan RSS feeds AND web search for what's happening right now.
 
-1. Fetch 4-5 feeds in parallel (mix of core + Japanese sources for variety)
-2. Compile a briefing with sections:
+1. Fetch 4-5 RSS feeds in parallel (mix of core + Japanese sources for variety)
+2. Run WebSearch queries for recent coverage: `"denim" OR "workwear" OR "heritage" 2026` across key domains
+3. Compile a briefing with sections:
 
 **This Week in Craft & Fashion**
 - Group headlines by theme (e.g. "Denim", "Japanese brands", "Heritage outerwear")
@@ -36,10 +53,15 @@ Keep it concise — this is a briefing, not an essay. The user should be able to
 
 ### Mode 2: Teach Me (`/discover learn <topic>`)
 
-Deep research on a specific subject. The user wants to understand something, not write about it yet.
+Deep research on a specific subject using both feeds and web search.
 
-1. Search feeds for any recent coverage of the topic
-2. Draw on your knowledge to explain:
+1. Search RSS feeds for recent coverage of the topic
+2. Run WebSearch with `site:` queries against all publication domains for historical coverage:
+   - `site:heddels.com "<topic>"`
+   - `site:long-john.nl "<topic>"`
+   - `site:putthison.com "<topic>"`
+   - etc.
+3. Draw on your knowledge to explain:
 
 **What It Is**
 - Clear, jargon-free explanation
@@ -53,9 +75,10 @@ Deep research on a specific subject. The user wants to understand something, not
 - Technical specifics that a curious person would want to know
 - Common misconceptions
 
-**Current State**
-- Who's doing interesting work with this today
-- How the feeds are covering it (if at all)
+**What Publications Are Saying**
+- Recent RSS coverage (if any)
+- Historical articles found via web search — summarize the angles different publications have taken
+- Note gaps: what hasn't been covered that Crafta could write about
 
 **Rabbit Holes**
 - 3-5 related topics the user might want to explore next
@@ -65,8 +88,8 @@ Deep research on a specific subject. The user wants to understand something, not
 
 Deep dive into a specific publication to understand their editorial perspective.
 
-1. Fetch the feed
-2. Analyze their recent 10-15 headlines
+1. Fetch the RSS feed
+2. Run WebSearch `site:<domain>` to understand their broader coverage
 3. Report:
    - What topics they're covering right now
    - What categories/themes dominate
@@ -74,13 +97,13 @@ Deep dive into a specific publication to understand their editorial perspective.
    - Topics they cover that Crafta hasn't explored yet
    - Overall assessment of relevance to Crafta
 
-Available source names: `heddels`, `longjohn`, `archival`, `rampboy`, `putthison`, `designboom`, `houyhnhnm`, `directors`, `eyescream`, `popeye`
+Available source names: `heddels`, `longjohn`, `archival`, `denimhunters`, `rampboy`, `putthison`, `designboom`, `houyhnhnm`, `directors`, `eyescream`, `popeye`
 
 ### Mode 4: Compare (`/discover compare <thing> vs <thing>`)
 
 Compare two related subjects — materials, techniques, garments, or approaches.
 
-1. Research both subjects
+1. Research both subjects via web search across publication domains
 2. Present a clear comparison:
    - Origins and history of each
    - Key differences (construction, material, purpose, aesthetic)
@@ -89,15 +112,6 @@ Compare two related subjects — materials, techniques, garments, or approaches.
    - What each reveals about different approaches to craft
 
 Keep it conversational and opinionated — the user wants insight, not a Wikipedia entry.
-
-## RSS Feeds
-
-Same feeds as generate-posts:
-
-**Core:** heddels.com/feed/, long-john.nl/feed/, archivalblog.com/feed/
-**Editorial:** rampboy.com/feed/, putthison.com/feed/
-**Design:** designboom.com/feed/
-**Japanese:** houyhnhnm.jp/feed, directors1.blogspot.com/feeds/posts/default?alt=rss, eyescream.jp/feed/, popeyemagazine.jp/feed/
 
 ## Tone
 

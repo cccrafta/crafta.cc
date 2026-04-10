@@ -8,7 +8,7 @@ require_once __DIR__ . '/wp-load.php';
 wp_set_current_user(1);
 
 // Parse CLI arguments
-$opts = getopt('', ['title:', 'content:', 'excerpt:', 'category:', 'date:']);
+$opts = getopt('', ['title:', 'content:', 'excerpt:', 'category:', 'tags:', 'date:']);
 
 if (empty($opts['title']) || empty($opts['content'])) {
     echo json_encode(['error' => 'Missing required --title or --content']);
@@ -46,10 +46,17 @@ if (is_wp_error($id)) {
     exit(1);
 }
 
+// Set tags if provided (comma-separated)
+if (!empty($opts['tags'])) {
+    $tag_names = array_map('trim', explode(',', $opts['tags']));
+    wp_set_post_tags($id, $tag_names);
+}
+
 echo json_encode([
     'id' => $id,
     'title' => $opts['title'],
     'slug' => get_post($id)->post_slug ?? sanitize_title($opts['title']),
     'category' => $cat_name,
+    'tags' => $opts['tags'] ?? '',
     'url' => get_permalink($id),
 ]);

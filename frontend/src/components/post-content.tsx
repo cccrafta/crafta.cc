@@ -10,16 +10,8 @@ export default function PostContent({ post }: { post: PostDetail }) {
 
   return (
     <article>
-      <h1
-        className="text-3xl font-normal leading-tight"
-        style={{ fontFamily: "var(--font-heading)", fontSize: "var(--text-4xl)" }}
-      >
-        {post.title}
-      </h1>
-      <div
-        className="mt-3 flex items-center gap-3 text-sm"
-        style={{ color: "var(--color-accent)" }}
-      >
+      <h1 className="type-title-lg">{post.title}</h1>
+      <div className="mt-3 flex items-center gap-3 type-meta">
         <time dateTime={post.date}>{formattedDate}</time>
       </div>
 
@@ -40,8 +32,7 @@ export default function PostContent({ post }: { post: PostDetail }) {
       )}
 
       <div
-        className="prose mt-8 max-w-none"
-        style={{ fontFamily: "var(--font-body)" }}
+        className="prose type-body mt-8 max-w-none"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
     </article>
