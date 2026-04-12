@@ -3,10 +3,18 @@
     "id": 1,
     "date": "2026-04-10",
     "idea": "Chambray: Denim's Lighter, Cooler Sibling",
-    "pitch": "The weave difference that makes all the difference — same indigo cotton, completely different fabric",
-    "sources": ["heddels.com", "putthison.com"],
+    "pitch": "The weave difference that makes all the difference \u2014 same indigo cotton, completely different fabric",
+    "sources": [
+      "heddels.com",
+      "putthison.com"
+    ],
     "category": "Materials",
-    "tags": ["cotton", "indigo", "denim", "japanese"],
+    "tags": [
+      "cotton",
+      "indigo",
+      "denim",
+      "japanese"
+    ],
     "status": "published"
   },
   {
@@ -14,9 +22,15 @@
     "date": "2026-04-10",
     "idea": "Ramie: The Strongest Fiber Nobody Talks About",
     "pitch": "5000 years old, outperforms cotton in every metric, nearly forgotten by modern fashion",
-    "sources": ["heddels.com"],
+    "sources": [
+      "heddels.com"
+    ],
     "category": "Materials",
-    "tags": ["japanese", "heritage", "craft"],
+    "tags": [
+      "japanese",
+      "heritage",
+      "craft"
+    ],
     "status": "published"
   },
   {
@@ -24,29 +38,49 @@
     "date": "2026-04-10",
     "idea": "The Science of Seersucker: Why Wrinkles Keep You Cool",
     "pitch": "Persian origins, puckered engineering, and the physics of air circulation in fabric",
-    "sources": ["heddels.com"],
+    "sources": [
+      "heddels.com"
+    ],
     "category": "Materials",
-    "tags": ["cotton", "heritage"],
+    "tags": [
+      "cotton",
+      "heritage"
+    ],
     "status": "published"
   },
   {
     "id": 4,
     "date": "2026-04-10",
     "idea": "Why Wool Might Be Your Best Summer Fabric",
-    "pitch": "Tropical fresco wool — the counterintuitive summer choice that outperforms cotton",
-    "sources": ["putthison.com", "heddels.com"],
+    "pitch": "Tropical fresco wool \u2014 the counterintuitive summer choice that outperforms cotton",
+    "sources": [
+      "putthison.com",
+      "heddels.com"
+    ],
     "category": "Materials",
-    "tags": ["wool", "heritage", "craft"],
+    "tags": [
+      "wool",
+      "heritage",
+      "craft"
+    ],
     "status": "published"
   },
   {
     "id": 5,
     "date": "2026-04-10",
     "idea": "Summer Weight: When Heritage Brands Go Light",
-    "pitch": "The trend of lightweight versions of heavy classics — 7.5oz corduroy, 12oz denim, linen overshirts",
-    "sources": ["heddels.com", "popeyemagazine.jp"],
+    "pitch": "The trend of lightweight versions of heavy classics \u2014 7.5oz corduroy, 12oz denim, linen overshirts",
+    "sources": [
+      "heddels.com",
+      "popeyemagazine.jp"
+    ],
     "category": "Culture",
-    "tags": ["heritage", "denim", "outerwear", "japanese"],
+    "tags": [
+      "heritage",
+      "denim",
+      "outerwear",
+      "japanese"
+    ],
     "status": "published"
   },
   {
@@ -54,29 +88,47 @@
     "date": "2026-04-10",
     "idea": "Rayon and Tencel: Wood Pulp That Drapes Like Silk",
     "pitch": "How a lab-created cellulose fiber became summer's most underrated shirt fabric",
-    "sources": ["putthison.com", "heddels.com"],
+    "sources": [
+      "putthison.com",
+      "heddels.com"
+    ],
     "category": "Materials",
-    "tags": ["craft", "heritage"],
+    "tags": [
+      "craft",
+      "heritage"
+    ],
     "status": "pending"
   },
   {
     "id": 7,
     "date": "2026-04-10",
     "idea": "Cotton Voile: The Most Breathable Fabric You're Not Wearing",
-    "pitch": "Featherweight, sheer, and built for brutal heat — the forgotten summer shirting",
-    "sources": ["putthison.com"],
+    "pitch": "Featherweight, sheer, and built for brutal heat \u2014 the forgotten summer shirting",
+    "sources": [
+      "putthison.com"
+    ],
     "category": "Materials",
-    "tags": ["cotton", "heritage"],
+    "tags": [
+      "cotton",
+      "heritage"
+    ],
     "status": "pending"
   },
   {
     "id": 8,
     "date": "2026-04-10",
     "idea": "Madras: The Loud Plaid That Refuses to Fade",
-    "pitch": "From Indian handlooms to Ivy League campuses — a pattern with more history than its wearers realize",
-    "sources": ["heddels.com", "putthison.com"],
+    "pitch": "From Indian handlooms to Ivy League campuses \u2014 a pattern with more history than its wearers realize",
+    "sources": [
+      "heddels.com",
+      "putthison.com"
+    ],
     "category": "History",
-    "tags": ["cotton", "heritage", "craft"],
+    "tags": [
+      "cotton",
+      "heritage",
+      "craft"
+    ],
     "status": "pending"
   },
   {
@@ -84,9 +136,15 @@
     "date": "2026-04-10",
     "idea": "Hemp: The Sustainable Fiber That Predates Cotton",
     "pitch": "Stronger than linen, more eco-friendly, and finally shedding its counterculture image",
-    "sources": ["heddels.com"],
+    "sources": [
+      "heddels.com"
+    ],
     "category": "Materials",
-    "tags": ["cotton", "craft", "heritage"],
+    "tags": [
+      "cotton",
+      "craft",
+      "heritage"
+    ],
     "status": "pending"
   },
   {
@@ -94,9 +152,16 @@
     "date": "2026-04-10",
     "idea": "Kakishibu: The Japanese Art of Persimmon Dyeing",
     "pitch": "Unripe persimmon tannin creates a waterproof, antibacterial finish that darkens with sunlight over years",
-    "sources": ["heddels.com"],
+    "sources": [
+      "heddels.com"
+    ],
     "category": "Technique",
-    "tags": ["japanese", "dyeing", "craft", "heritage"],
+    "tags": [
+      "japanese",
+      "dyeing",
+      "craft",
+      "heritage"
+    ],
     "status": "pending"
   },
   {
@@ -104,9 +169,15 @@
     "date": "2026-04-10",
     "idea": "Broken Twill: The Weave That Prevents Leg Twist",
     "pitch": "Why some denim spirals around your leg and how a simple weave reversal solved a century-old problem",
-    "sources": ["heddels.com"],
+    "sources": [
+      "heddels.com"
+    ],
     "category": "Design",
-    "tags": ["denim", "craft", "heritage"],
+    "tags": [
+      "denim",
+      "craft",
+      "heritage"
+    ],
     "status": "pending"
   },
   {
@@ -114,9 +185,16 @@
     "date": "2026-04-10",
     "idea": "The Reproduction Game: When Accuracy Becomes Obsession",
     "pitch": "Brands like Warehouse and Buzz Rickson source deadstock fabric and original machinery to recreate garments stitch-for-stitch",
-    "sources": ["heddels.com"],
+    "sources": [
+      "heddels.com"
+    ],
     "category": "Culture",
-    "tags": ["japanese", "heritage", "denim", "vintage"],
+    "tags": [
+      "japanese",
+      "heritage",
+      "denim",
+      "vintage"
+    ],
     "status": "pending"
   },
   {
@@ -124,19 +202,31 @@
     "date": "2026-04-10",
     "idea": "American Denim Mills: Where Selvedge Is Made Stateside",
     "pitch": "Cone Mills closed in 2017, but Vidalia Mills and others are keeping American selvedge alive",
-    "sources": ["heddels.com"],
+    "sources": [
+      "heddels.com"
+    ],
     "category": "Design",
-    "tags": ["denim", "selvedge", "heritage"],
+    "tags": [
+      "denim",
+      "selvedge",
+      "heritage"
+    ],
     "status": "pending"
   },
   {
     "id": 14,
     "date": "2026-04-10",
     "idea": "The Western Shirt: From Ranch Hand to Rock Star",
-    "pitch": "Snap buttons, pointed yokes, and smile pockets — every detail of the Western shirt was designed for horseback",
-    "sources": ["heddels.com"],
+    "pitch": "Snap buttons, pointed yokes, and smile pockets \u2014 every detail of the Western shirt was designed for horseback",
+    "sources": [
+      "heddels.com"
+    ],
     "category": "Garments",
-    "tags": ["heritage", "cotton", "vintage"],
+    "tags": [
+      "heritage",
+      "cotton",
+      "vintage"
+    ],
     "status": "pending"
   },
   {
@@ -144,29 +234,49 @@
     "date": "2026-04-10",
     "idea": "Negative Space in Garment Design: The Japanese Concept of Ma",
     "pitch": "How intentional emptiness and loose silhouettes in Japanese fashion reflect a deeper design philosophy",
-    "sources": ["houyhnhnm.jp"],
+    "sources": [
+      "houyhnhnm.jp"
+    ],
     "category": "Culture",
-    "tags": ["japanese", "craft"],
+    "tags": [
+      "japanese",
+      "craft"
+    ],
     "status": "pending"
   },
   {
     "id": 16,
     "date": "2026-04-10",
     "idea": "Moleskin: The Fabric That Feels Like It Shouldn't Exist",
-    "pitch": "A cotton fabric brushed to feel like suede — heavier than flannel, softer than canvas, and nearly forgotten",
-    "sources": ["heddels.com"],
+    "pitch": "A cotton fabric brushed to feel like suede \u2014 heavier than flannel, softer than canvas, and nearly forgotten",
+    "sources": [
+      "heddels.com"
+    ],
     "category": "Materials",
-    "tags": ["cotton", "french", "workwear", "heritage"],
-    "status": "pending"
+    "tags": [
+      "cotton",
+      "french",
+      "workwear",
+      "heritage"
+    ],
+    "status": "published"
   },
   {
     "id": 17,
     "date": "2026-04-10",
     "idea": "The Samue: Japanese Work Clothes for Monks and Makers",
-    "pitch": "A two-piece garment originally worn by Zen Buddhist monks for manual labor — now adopted by craftspeople worldwide",
-    "sources": ["houyhnhnm.jp", "popeyemagazine.jp"],
+    "pitch": "A two-piece garment originally worn by Zen Buddhist monks for manual labor \u2014 now adopted by craftspeople worldwide",
+    "sources": [
+      "houyhnhnm.jp",
+      "popeyemagazine.jp"
+    ],
     "category": "Garments",
-    "tags": ["japanese", "workwear", "craft", "heritage"],
+    "tags": [
+      "japanese",
+      "workwear",
+      "craft",
+      "heritage"
+    ],
     "status": "pending"
   },
   {
@@ -174,19 +284,72 @@
     "date": "2026-04-10",
     "idea": "Rope Dyeing vs. Slasher Dyeing: Why Your Jeans Fade the Way They Do",
     "pitch": "The industrial process that determines whether your denim develops high-contrast fades or stays uniformly dark",
-    "sources": ["heddels.com", "long-john.nl"],
+    "sources": [
+      "heddels.com",
+      "long-john.nl"
+    ],
     "category": "Technique",
-    "tags": ["denim", "indigo", "dyeing", "craft"],
+    "tags": [
+      "denim",
+      "indigo",
+      "dyeing",
+      "craft"
+    ],
     "status": "pending"
   },
   {
     "id": 19,
     "date": "2026-04-10",
     "idea": "The Patchwork Tradition: From Poverty to High Fashion",
-    "pitch": "How scarcity-driven textile repair became an aspirational design language — from boro to Kapital to runway",
-    "sources": ["heddels.com", "houyhnhnm.jp"],
+    "pitch": "How scarcity-driven textile repair became an aspirational design language \u2014 from boro to Kapital to runway",
+    "sources": [
+      "heddels.com",
+      "houyhnhnm.jp"
+    ],
     "category": "Culture",
-    "tags": ["japanese", "repair", "craft", "heritage"],
+    "tags": [
+      "japanese",
+      "repair",
+      "craft",
+      "heritage"
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 20,
+    "date": "2026-04-10",
+    "idea": "France Had Moleskin, America Had Denim: Two Cotton Fabrics, Two Working Identities",
+    "pitch": "Why two countries facing similar industrial needs chose different fabrics and what that says about their workwear traditions",
+    "sources": [
+      "heddels.com",
+      "hastparis.com"
+    ],
+    "category": "Culture",
+    "tags": [
+      "cotton",
+      "french",
+      "denim",
+      "workwear",
+      "heritage"
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 21,
+    "date": "2026-04-10",
+    "idea": "The Loom Problem: Why the Best Moleskin Cannot Be Made on Modern Machines",
+    "pitch": "The manufacturing constraint as a lens into what we lose when we optimize for efficiency",
+    "sources": [
+      "heddels.com",
+      "cottonese.com"
+    ],
+    "category": "Technique",
+    "tags": [
+      "cotton",
+      "craft",
+      "heritage",
+      "workwear"
+    ],
     "status": "pending"
   }
 ]

@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Posts/The Invisible Layer - How What You Wear Under Your Jacket Changes Everything.md",
+                "file": "Crafta Editorial Framework.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "The Invisible Layer - How What You Wear Under Your Jacket Changes Everything"
+              "title": "Crafta Editorial Framework"
             }
           },
           {
@@ -39,13 +39,18 @@
             "id": "04f190b6a0a12d28",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "_templates/Post.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Post"
             }
           }
-        ]
+        ],
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -207,34 +212,34 @@
       "bases:Create new base": false
     }
   },
-  "active": "a0288f1344329086",
+  "active": "04f190b6a0a12d28",
   "lastOpenFiles": [
-    "Ideas/The Reproduction Game - When Accuracy Becomes Obsession.md",
     "notes/Improvements.md",
+    "_templates/Post.md",
+    "Crafta Editorial Framework.md",
+    "Posts/The Overshirt vs. The Chore Coat - Two Solutions to the Same Problem.md",
+    "Posts/The Tuxedo - How Evening Wear Broke Its Own Rules.md",
+    "Posts/The Breton Stripe - From Naval Uniform to Fashion Staple.md",
+    "Posts/The Noragi - Japanese Farm Coat Meets Modern Layering.md",
+    "Posts/The Chore Coat - From French Workwear to Wardrobe Essential.md",
+    "Posts/Shell Cordovan - The Leather That Takes Six Months to Make.md",
+    "Posts/Ramie - The Strongest Fiber Nobody Talks About.md",
+    "Posts/Loopwheeled Knitting - The Slowest Way to Make a T-Shirt.md",
+    "Posts/Boro Textiles - Beauty in Accumulated Repair.md",
+    "Posts/The Invisible Layer - How What You Wear Under Your Jacket Changes Everything.md",
+    "Posts/Moleskin - Nine Steps Between Cotton and Suede.md",
+    "Ideas/The Loom Problem.md",
+    "Ideas/France Had Moleskin America Had Denim.md",
+    "Research/Moleskin.md",
+    "Sources/References/History of Moleskin - Hast Paris.md",
+    "Sources/References/Fustian The Fabric That Refused to Fade - Cottonese.md",
+    "Sources/References/Behind Bleu de Travail - Heddels.md",
+    "Sources/References/Digging into Moleskin - Heddels.md",
+    "Ideas/The Reproduction Game - When Accuracy Becomes Obsession.md",
     "Ideas/Why Wool Might Be Your Best Summer Fabric.md",
     "Sources/Publications/EYESCREAM.md",
-    "Posts/The Invisible Layer - How What You Wear Under Your Jacket Changes Everything.md",
     "Posts/Corduroy - The Fabric With a Thousand Lives.md",
     "Posts/The N-1 Deck Jacket - Built for the Coldest Watch.md",
-    "Ideas/Rayon and Tencel - Wood Pulp That Drapes Like Silk.md",
-    "Ideas/Moleskin - The Fabric That Feels Like It Shouldn't Exist.md",
-    "Ideas/The Samue - Japanese Work Clothes for Monks and Makers.md",
-    "Ideas/Negative Space in Garment Design - The Japanese Concept of Ma.md",
-    "Research/Innerwear - What to Wear Under Jackets.md",
-    "Crafta Editorial Framework.md",
-    "Sources/Publications/Put This On.md",
-    "Sources/Publications/Rampboy.md",
-    "Sources/Publications/Denimhunters.md",
-    "Sources/Publications/Directors.md",
-    "Sources/References/Layering with T-Shirts - Put This On.md",
-    "Posts/Canvas - The Fabric That Built the West.md",
-    "Posts/The Perfecto - How a Motorcycle Jacket Became a Cultural Symbol.md",
-    "Posts/The Noragi - Japanese Farm Coat Meets Modern Layering.md",
-    "Posts/Shell Cordovan - The Leather That Takes Six Months to Make.md",
-    "Posts/Sashiko - The Japanese Art of Functional Stitching.md",
-    "Posts/The Guernsey Sweater - Knitted by Fishermen, Built for the Sea.md",
-    "Posts/The Safari Jacket - Designed for the Bush, Adopted by the City.md",
-    "Posts/Natural Indigo vs. Synthetic - A Difference You Can See.md",
     "_templates",
     "Sources/References",
     "Sources/Publications",

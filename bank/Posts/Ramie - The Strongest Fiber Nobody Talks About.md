@@ -8,6 +8,15 @@ created: 2026-04-10T08:45:56
 published: 2026-04-10T08:45:56
 research: 
 sources: []
+triage:
+  observation: 8
+  transformation: 7
+  stance: 7
+  narrative: 8
+  voice: 8
+  sources: 0
+  total: 38
+  date: 2026-04-11
 excerpt: "Ramie has been used in textiles for at least five thousand years, outlasts cotton and linen in tensile strength, and improves with every wash — yet it remains virtually absent from modern fashion."
 related_posts: []
 references: []

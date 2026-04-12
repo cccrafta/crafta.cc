@@ -1,16 +1,25 @@
 ---
-title: 
+title:
 status: draft
-category: 
+category:
 tags: []
-wp_id: 
-created: 
-published: 
-research: 
+wp_id:
+created:
+published:
+research:
 sources: []
 related_posts: []
 references: []
-excerpt: 
+triage:
+  observation:
+  transformation:
+  stance:
+  narrative:
+  voice:
+  sources:
+  total:
+  date:
+excerpt:
 ---
 
 ## Content

@@ -8,6 +8,15 @@ created: 2025-08-08T00:00:00
 published: 2025-08-08T00:00:00
 research: 
 sources: []
+triage:
+  observation: 6
+  transformation: 6
+  stance: 6
+  narrative: 7
+  voice: 8
+  sources: 0
+  total: 33
+  date: 2026-04-11
 excerpt: "A fabric that moves between workwear and refinement depending entirely on how you cut it."
 related_posts: []
 references: []

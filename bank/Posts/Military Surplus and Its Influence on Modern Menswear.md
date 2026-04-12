@@ -8,6 +8,15 @@ created: 2026-02-16T00:00:00
 published: 2026-02-16T00:00:00
 research: 
 sources: []
+triage:
+  observation: 5
+  transformation: 8
+  stance: 7
+  narrative: 7
+  voice: 7
+  sources: 0
+  total: 34
+  date: 2026-04-11
 excerpt: "How government-issued clothing became the foundation of modern casual dress."
 related_posts: []
 references: []

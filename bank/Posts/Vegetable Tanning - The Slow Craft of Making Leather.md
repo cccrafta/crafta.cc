@@ -8,6 +8,15 @@ created: 2026-02-09T00:00:00
 published: 2026-02-09T00:00:00
 research: 
 sources: []
+triage:
+  observation: 6
+  transformation: 5
+  stance: 7
+  narrative: 7
+  voice: 7
+  sources: 0
+  total: 32
+  date: 2026-04-11
 excerpt: "Why the slowest method of tanning leather produces results that no modern process can replicate."
 related_posts: []
 references: []

@@ -8,6 +8,15 @@ created: 2026-03-02T00:00:00
 published: 2026-03-02T00:00:00
 research: 
 sources: []
+triage:
+  observation: 8
+  transformation: 6
+  stance: 6
+  narrative: 8
+  voice: 6
+  sources: 0
+  total: 34
+  date: 2026-04-11
 excerpt: "How a 160-year-old construction method makes the case for buying fewer, better shoes."
 related_posts: []
 references: []

@@ -20,15 +20,15 @@ export default function JournalLayout({
       <footer
         className="flex items-center justify-between px-6"
         style={{
-          padding: "var(--space-xl) var(--space-xl)",
+          padding: "var(--space-md)",
           color: "var(--color-fg-secondary)",
         }}
       >
-        <div className="flex type-label" style={{ gap: "var(--space-lg)" }}>
+        <div className="flex type-label" style={{ gap: "var(--space-md)" }}>
           <span>CRAFTA &copy; 2026</span>
           <a href="/privacy" className="transition-opacity hover:opacity-60">Privacy Policy</a>
         </div>
-        <div className="flex type-label" style={{ gap: "var(--space-lg)" }}>
+        <div className="flex type-label" style={{ gap: "var(--space-md)" }}>
           <a href="https://instagram.com/crafta.cc" className="transition-opacity hover:opacity-60">Instagram</a>
         </div>
       </footer>

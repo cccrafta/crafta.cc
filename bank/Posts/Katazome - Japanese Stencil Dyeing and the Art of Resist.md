@@ -8,6 +8,15 @@ created: 2025-10-12T00:00:00
 published: 2025-10-12T00:00:00
 research: 
 sources: []
+triage:
+  observation: 8
+  transformation: 4
+  stance: 5
+  narrative: 7
+  voice: 7
+  sources: 0
+  total: 31
+  date: 2026-04-11
 excerpt: "A centuries-old Japanese dyeing technique where imperfection is the mark of authenticity."
 related_posts: []
 references: []

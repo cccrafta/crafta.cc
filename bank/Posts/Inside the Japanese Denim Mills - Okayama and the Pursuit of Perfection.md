@@ -8,6 +8,15 @@ created: 2026-01-26T00:00:00
 published: 2026-01-26T00:00:00
 research: 
 sources: []
+triage:
+  observation: 8
+  transformation: 7
+  stance: 7
+  narrative: 7
+  voice: 7
+  sources: 0
+  total: 36
+  date: 2026-04-11
 excerpt: "How Okayama prefecture became the global capital of artisanal denim production."
 related_posts: []
 references: []

@@ -8,6 +8,15 @@ created: 2025-08-03T00:00:00
 published: 2025-08-03T00:00:00
 research: 
 sources: []
+triage:
+  observation: 8
+  transformation: 5
+  stance: 5
+  narrative: 8
+  voice: 7
+  sources: 0
+  total: 33
+  date: 2026-04-11
 excerpt: "A Channel Islands fishing sweater engineered for survival at sea."
 related_posts: []
 references: []

@@ -8,6 +8,15 @@ created: 2026-03-16T00:00:00
 published: 2026-03-16T00:00:00
 research: 
 sources: []
+triage:
+  observation: 5
+  transformation: 5
+  stance: 7
+  narrative: 7
+  voice: 6
+  sources: 0
+  total: 30
+  date: 2026-04-11
 excerpt: "Nearly a century of attempts to improve on the five-pocket jean have only proven how right the original design was."
 related_posts: []
 references: []

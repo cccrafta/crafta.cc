@@ -8,6 +8,15 @@ created: 2026-01-12T00:00:00
 published: 2026-01-12T00:00:00
 research: 
 sources: []
+triage:
+  observation: 6
+  transformation: 5
+  stance: 6
+  narrative: 7
+  voice: 6
+  sources: 0
+  total: 30
+  date: 2026-04-11
 excerpt: "Understanding the weaving process behind selvedge denim and why shuttle looms still matter in an age of mass production."
 related_posts: []
 references: []

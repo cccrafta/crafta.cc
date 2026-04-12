@@ -8,6 +8,15 @@ created: 2026-04-10
 published: 2026-04-10
 research: "[[Research/Innerwear - What to Wear Under Jackets]]"
 sources: ["[[Sources/References/History of the Henley - Heddels]]", "[[Sources/References/Waffle Knit Henleys - Heddels]]", "[[Sources/References/Layering with T-Shirts - Put This On]]", "[[Sources/References/Henley Round-Up - Put This On]]"]
+triage:
+  observation: 9
+  transformation: 7
+  stance: 8
+  narrative: 9
+  voice: 9
+  sources: 8
+  total: 50
+  date: 2026-04-11
 excerpt: "The garment nobody sees is the one that determines whether everything else works — and choosing it well means understanding what comfort, style, and durability actually demand from the layer closest to your skin."
 related_posts: ["loopwheeled-knitting-the-slowest-way-to-make-a-t-shirt", "the-chore-coat-from-french-workwear-to-wardrobe-essential", "the-cpo-shirt-when-a-shirt-becomes-a-jacket"]
 references:

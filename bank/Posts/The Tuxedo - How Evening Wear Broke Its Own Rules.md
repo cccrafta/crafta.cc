@@ -8,6 +8,15 @@ created: 2025-10-07T00:00:00
 published: 2025-10-07T00:00:00
 research: 
 sources: []
+triage:
+  observation: 6
+  transformation: 5
+  stance: 5
+  narrative: 6
+  voice: 6
+  sources: 0
+  total: 28
+  date: 2026-04-11
 excerpt: "Evening wear as a history of controlled rebellion against its own conventions."
 related_posts: []
 references: []

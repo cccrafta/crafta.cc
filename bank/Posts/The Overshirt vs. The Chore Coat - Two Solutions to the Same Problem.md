@@ -2,13 +2,28 @@
 title: "The Overshirt vs. The Chore Coat: Two Solutions to the Same Problem"
 status: published
 category: Garments
-tags: [cotton, french, heritage, military, outerwear, workwear]
+tags:
+  - cotton
+  - french
+  - heritage
+  - military
+  - outerwear
+  - workwear
 wp_id: 40
 created: 2026-04-09T19:52:09
 published: 2026-04-09T19:52:09
-research: 
+research:
 sources: []
-excerpt: "Both garments answer the same question — what to wear when a jacket is too much — but they approach the problem from opposite directions."
+triage:
+  observation: 7
+  transformation: 7
+  stance: 6
+  narrative: 7
+  voice: 7
+  sources: 0
+  total: 34
+  date: 2026-04-11
+excerpt: Both garments answer the same question — what to wear when a jacket is too much — but they approach the problem from opposite directions.
 related_posts: []
 references: []
 ---

@@ -8,6 +8,15 @@ created: 2025-10-17T00:00:00
 published: 2025-10-17T00:00:00
 research: 
 sources: []
+triage:
+  observation: 6
+  transformation: 6
+  stance: 6
+  narrative: 7
+  voice: 8
+  sources: 0
+  total: 33
+  date: 2026-04-11
 excerpt: "A jacket so purely functional that its refusal to be fashionable became its most fashionable quality."
 related_posts: []
 references: []

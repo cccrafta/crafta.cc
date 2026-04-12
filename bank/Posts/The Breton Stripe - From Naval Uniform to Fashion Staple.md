@@ -8,6 +8,15 @@ created: 2025-09-22T00:00:00
 published: 2025-09-22T00:00:00
 research: 
 sources: []
+triage:
+  observation: 6
+  transformation: 5
+  stance: 4
+  narrative: 6
+  voice: 6
+  sources: 0
+  total: 27
+  date: 2026-04-11
 excerpt: "The precise specifications behind the most enduring pattern in casual dress."
 related_posts: []
 references: []

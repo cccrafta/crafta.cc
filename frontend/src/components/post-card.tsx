@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { PostCard as PostCardType } from "@/lib/types/wordpress";
+import CategoryCircle from "@/components/category-circle";
 
 export default function PostCard({ post }: { post: PostCardType }) {
   const formattedDate = new Date(post.date).toLocaleDateString("en-GB", {
@@ -9,86 +10,74 @@ export default function PostCard({ post }: { post: PostCardType }) {
     year: "numeric",
   });
 
+  const category = post.categories[0] ?? "Journal";
+
   return (
-    <article className="flex flex-col" style={{ gap: "var(--space-sm)" }}>
-      {/* Category + Date */}
-      <div
-        className="flex items-baseline justify-between"
-        style={{ color: "var(--color-fg-secondary)" }}
-      >
-        {post.categories.length > 0 && (
-          <div className="type-label">
-            {post.categories.map((cat, i) => (
-              <span key={cat}>
-                {i > 0 && <span style={{ margin: "0 var(--space-xs)" }}>/</span>}
-                {cat}
-              </span>
-            ))}
-          </div>
-        )}
-        <time dateTime={post.date} className="type-label shrink-0">
-          {formattedDate}
-        </time>
+    <article className="flex" style={{ gap: "var(--space-md)" }}>
+      {/* Category circle — left */}
+      <div className="pt-1">
+        <CategoryCircle text={category + '·'} size={48} fontSize={8}>
+          <span
+            style={{
+              fontFamily: "var(--font-nav)",
+              fontSize: 14,
+              fontWeight: 600,
+              color: "var(--color-fg)",
+            }}
+          >
+            {category[0]}
+          </span>
+        </CategoryCircle>
       </div>
 
-      {/* Image */}
-      <Link href={`/journal/${post.slug}`}>
-        <div
-          className="relative w-full overflow-hidden"
-          style={{
-            aspectRatio: "4 / 5",
-            backgroundColor: "var(--color-bg-secondary)",
-          }}
-        >
-          {post.featuredImageUrl ? (
-            <Image
-              src={post.featuredImageUrl}
-              alt={post.featuredImageAlt || post.title}
-              fill
-              className="object-cover transition-opacity hover:opacity-80"
-              sizes="500px"
-            />
-          ) : (
-            <div
-              className="absolute inset-0 flex items-center justify-center"
-              style={{ color: "var(--color-border)" }}
-            >
-              <svg
-                width="48"
-                height="48"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="1"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              >
-                <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
-                <circle cx="8.5" cy="8.5" r="1.5" />
-                <polyline points="21 15 16 10 5 21" />
-              </svg>
-            </div>
-          )}
-        </div>
-      </Link>
-
-      <div style={{ padding: "0 var(--space-md)" }}>
+      {/* Content — right */}
+      <div className="flex-1 flex flex-col" style={{ gap: "var(--space-sm)" }}>
         {/* Title */}
         <Link href={`/journal/${post.slug}`}>
           <h2 className="type-title">{post.title}</h2>
         </Link>
 
-        {/* Description */}
-        <p className="type-body-sm line-clamp-3" style={{ marginTop: "var(--space-sm)" }}>{post.excerpt}</p>
+        {/* Excerpt */}
+        <p className="type-body-sm line-clamp-3">{post.excerpt}</p>
 
-        {/* Read more */}
-        <Link
-          href={`/journal/${post.slug}`}
-          className="type-label self-start transition-opacity hover:opacity-60"
-          style={{ display: "inline-block", marginTop: "var(--space-sm)" }}
+        {/* Image — only if present */}
+        {post.featuredImageUrl && (
+          <Link href={`/journal/${post.slug}`}>
+            <div
+              className="relative w-full overflow-hidden"
+              style={{
+                aspectRatio: "16 / 9",
+                backgroundColor: "var(--color-bg-secondary)",
+                borderRadius: "var(--radius-md)",
+                marginTop: "var(--space-xs)",
+              }}
+            >
+              <Image
+                src={post.featuredImageUrl}
+                alt={post.featuredImageAlt || post.title}
+                fill
+                className="object-cover"
+                sizes="500px"
+              />
+            </div>
+          </Link>
+        )}
+
+        {/* Footer — date + read more */}
+        <div
+          className="flex items-center justify-between"
+          style={{ marginTop: "var(--space-xs)" }}
         >
-          Read more &rarr;
-        </Link>
+          <time dateTime={post.date} className="type-meta">
+            {formattedDate}
+          </time>
+          <Link
+            href={`/journal/${post.slug}`}
+            className="type-label transition-opacity hover:opacity-60"
+          >
+            Read more &rarr;
+          </Link>
+        </div>
       </div>
     </article>
   );

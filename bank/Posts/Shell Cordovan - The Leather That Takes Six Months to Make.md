@@ -8,6 +8,15 @@ created: 2025-07-24T00:00:00
 published: 2025-07-24T00:00:00
 research: 
 sources: []
+triage:
+  observation: 8
+  transformation: 4
+  stance: 5
+  narrative: 8
+  voice: 8
+  sources: 0
+  total: 33
+  date: 2026-04-11
 excerpt: "The rarest commercial leather comes from an unlikely source and requires half a year of patient craftsmanship."
 related_posts: []
 references: []

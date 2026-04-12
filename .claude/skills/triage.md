@@ -1,0 +1,166 @@
+---
+name: triage
+description: Triage the post library into priority tiers for revision. Use when the user wants to assess which posts need attention, plan a revision sweep, or decide where to focus editorial effort. Triggers on /triage or requests like "which posts need work", "prioritize my revisions", "what should I fix first".
+user_invocable: true
+---
+
+# Triage — Crafta Journal Library Assessment
+
+You assess the entire post library and categorize posts into priority tiers based on the current editorial standards. This is not a per-post audit — it's a strategic overview of where editorial effort will have the most impact.
+
+## Workflow
+
+### Step 1: Fetch all posts
+
+**From WordPress** (the source of truth for published content):
+```bash
+curl -s "http://localhost:8080/index.php?rest_route=/wp/v2/posts/&per_page=100&_embed=true" 2>/dev/null
+```
+
+**From vault** — check `bank/Posts/` for:
+- Which posts have `sources: []` (no source tracking)
+- Which posts have `related_posts: []` (no relations)
+- Which posts have `references: []` (no references)
+- Which posts have `research:` empty (no research note backing them)
+
+### Step 2: Score each post
+
+Evaluate every post against these criteria. Each dimension scores 0-10 for granularity.
+
+**Observation (0-10):**
+- Does it contain specific facts? (dates, measurements, places, names)
+- Does it include sensory observation? (textures, behaviors, what you'd notice holding it)
+- Is the detail balanced — facts and observations serving each other?
+- 0 = vague, generic, no specifics
+- 5 = has facts but no observation, or observation without facts
+- 10 = rich in both, balanced, you feel like you understand the subject
+
+**Transformation (0-10):**
+- Does it place the subject in context? (then vs now, who values it, why)
+- Does it reference cultural icons or movements when relevant?
+- Does it show multiple perspectives?
+- 0 = no context, exists in a vacuum
+- 5 = some context but surface-level
+- 10 = the subject is fully situated in time, culture, and relevance
+
+**Stance (0-10):**
+- Does it arrive at a recognition — not just describe but understand?
+- Is the closing an insight rather than a summary?
+- Does the stance emerge from the observation?
+- 0 = no point of view, just information
+- 5 = has an opinion but it feels imposed, not earned
+- 10 = the stance feels inevitable — the evidence led here
+
+**Narrative (0-10):**
+- Does each paragraph earn the next?
+- Does the title's promise get answered?
+- Could you summarize the article's argument in one sentence?
+- 0 = disconnected paragraphs, no throughline
+- 5 = has structure but paragraphs could be reordered without loss
+- 10 = tight, logical, every paragraph depends on the one before it
+
+**Voice (0-10):**
+- Is it truthful and measured, not robotic or passionate?
+- Does the sentence rhythm vary?
+- Is it free of filler, superlatives, first person?
+- 0 = robotic or generic, every sentence same pattern
+- 5 = competent but could be anyone's writing
+- 10 = distinctly Crafta — calm authority, specific, honest
+
+**Sources (0-10):**
+- Are factual claims traceable to sources in `bank/Sources/References/`?
+- Are references populated in the vault note and WordPress meta?
+- Are related posts set?
+- 0 = no source tracking, no references, no related posts
+- 5 = some sources but gaps, partial metadata
+- 10 = every claim sourced, references populated, related posts curated
+
+**Total score: 0-60**
+
+### Step 3: Derive priority from score
+
+The score determines the action needed:
+
+| Score | Priority | Action |
+|---|---|---|
+| 0-20 | **Critical** — full revision | Rewrite using the editorial framework. Full research, draft in vault, user review. |
+| 21-35 | **Improve** — content + metadata | Strengthen narrative and voice, add sources and references, set related posts. |
+| 36-50 | **Polish** — metadata + minor edits | Add references, related posts. Fix any obvious prose issues. |
+| 51-60 | **Complete** — no action needed | Meets the current standard. |
+
+These ranges are guidelines, not rigid rules. A post scoring 30 overall but 2/10 on Sources is more urgent on the source dimension than a post scoring 25 evenly.
+
+### Step 4: Present the triage
+
+**Library Summary**
+- Total posts: X
+- Average score: X/60
+- Score distribution: Critical (0-20): X | Improve (21-35): X | Polish (36-50): X | Complete (51-60): X
+
+**Scoreboard** (sorted lowest to highest)
+| Post | Total | Obs | Trans | Stance | Narr | Voice | Sources | Priority |
+|---|---|---|---|---|---|---|---|---|
+| Title | 18/60 | 4 | 3 | 2 | 3 | 4 | 2 | Critical |
+| Title | 32/60 | 6 | 5 | 4 | 5 | 6 | 6 | Improve |
+| Title | 48/60 | 8 | 8 | 7 | 8 | 9 | 8 | Polish |
+
+**Dimension Averages** — where is the library weakest overall?
+- Observation: X/10
+- Transformation: X/10
+- Stance: X/10
+- Narrative: X/10
+- Voice: X/10
+- Sources: X/10
+
+This shows systemic weaknesses. If Sources averages 1.5/10 across the library, that's the most impactful dimension to fix first.
+
+### Step 5: Recommend action plan
+
+Based on the triage, suggest:
+1. Which Tier A posts to tackle first (highest-impact topics)
+2. Whether to batch-process Tier B and C metadata (can be done by agents)
+3. Estimated effort for each tier
+
+### Step 6: Execute (after user approval)
+
+**Score 51-60 (Complete):** No action. These meet the standard.
+
+**Score 36-50 (Polish):**
+- Bulk-add related posts via tag overlap
+- Quick research per post to find 2-3 reference URLs
+- Create source notes in vault, update WordPress meta
+- Minor prose fixes only if something obvious
+
+**Score 21-35 (Improve):**
+- Research the topic properly (feeds + web search)
+- Strengthen narrative and voice — may involve rewriting 1-2 paragraphs
+- Add full source tracking + references + related posts
+- Can be done in batches with user spot-checking
+
+**Score 0-20 (Critical):**
+- Full rewrite using the writing pipeline: research → draft in vault → user review → audit → publish update
+- One post at a time, with user approval
+- These are the highest-value investments — good topics that need the framework applied
+
+## When to Run
+
+- After establishing new editorial standards (like now)
+- Monthly, to catch posts that have fallen behind as standards evolve
+- After a batch of new posts, to ensure consistency across the library
+
+## Integration with Other Skills
+
+- Uses `/audit-posts` scoring criteria but at a library level
+- Feeds into `/editorial-calendar` — Tier A revisions count as content work
+- Tier A rewrites follow the `/generate-posts` writing pipeline
+- Source research uses the same tools as `/discover` and `/mood-board`
+
+## Usage Examples
+
+```
+/triage
+Which posts need work?
+Prioritize my revisions
+Show me the weakest posts
+Run a library assessment
+```

@@ -17,10 +17,10 @@
   --color-border-light: #e8e0d8;
 
   /* Typography */
-  --font-body: "Univers", "Courier", ui-monospace, monospace;
+  --font-body:  var(--font-inter), "Univers", "Courier", ui-monospace, monospace;
   --font-heading:
-    "Garabosse", "Letter Gothic Std", "Courier", ui-monospace, monospace;
-  --font-title: "Univers", "Helvetica", ui-sans-serif, sans-serif;
+     var(--font-inter), "Garabosse", "Letter Gothic Std", "Courier", ui-monospace, monospace;
+  --font-title:  var(--font-inter), "Univers", "Helvetica", ui-sans-serif, sans-serif;
   --font-nav: "Letter Gothic Std", "Courier", ui-monospace, monospace;
 
   --text-xs: 0.75rem;
@@ -252,6 +252,15 @@ a:hover {
 
 .bg-surface {
   background-color: var(--color-bg-secondary);
+}
+
+/* ============================================
+   Animations
+   ============================================ */
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 /* ============================================

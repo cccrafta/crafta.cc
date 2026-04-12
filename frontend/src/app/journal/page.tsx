@@ -41,7 +41,7 @@ export default async function JournalPage() {
       </div>
 
       {/* Feed */}
-      <div className="w-full" style={{ maxWidth: "500px" }}>
+      <div className="w-full" style={{ maxWidth: "550px" }}>
         <div className="flex flex-col" style={{ gap: "var(--space-3xl)" }}>
           {posts.map((post) => (
             <PostCard key={post.id} post={post} />

@@ -6,6 +6,12 @@ created: 2026-04-10
 
 # The Crafta Editorial Framework
 
+Crafta articles are **learning notes** — the result of studying a subject with the attention of a craftsman who needs to understand it well enough to make something from it. They are not selling. They are not performing expertise. They are the honest record of looking closely at a topic and writing down what was found.
+
+The craftsman's eye is not a voice or a style — it is the **method of inquiry**. A craftsman looks at a material, a garment, a technique the way it actually is, because they need to work with it. That closeness to the truth is what produces understanding, and understanding is what produces the epiphanies — the ideas for what can be designed, what can be made, what can be improved.
+
+These articles serve a dual purpose: they are both the **result of learning** and a **stimulus for further learning**. They become the project's reference library — the foundation for design decisions, material choices, and creative direction.
+
 Every piece of Crafta writing moves through three lenses. They don't need to be explicit sections — they can be woven together — but all three must be present in the thinking behind every post.
 
 ## 1. Observation (Truth)
@@ -44,6 +50,7 @@ Look at the same subject through the lens of time, market, and people.
 - **Value** — is it undervalued, overvalued, or misunderstood
 - **Potential** — what could it become, where is it heading
 - **Multiple perspectives** — how do designers, craftspeople, consumers, and subcultures each see it differently
+- **Cultural icons** — when relevant, reference the people who made a garment or material iconic. Not as name-drops, but as evidence of cultural movement. Chambray means something different after you know folk musicians adopted it in the 1960s. The Perfecto is incomplete without the subcultures that gave it meaning. Include icons only when they genuinely illuminate how a subject moved through culture — if the post is about waffle knit construction, no celebrity is needed.
 
 The goal: understand where the thing sits in the world right now.
 
@@ -89,6 +96,39 @@ When writing about any topic:
 
 The stance emerges from the observation. It is not imposed onto it. And the narrative is the thread that connects observation to stance — without it, the reader has details but no understanding.
 
+## Adapting to the Subject
+
+Not every lens gets equal weight in every post. The topic determines the balance.
+
+**Materials posts** (chambray, shell cordovan, linen):
+- Observation dominates — fiber structure, weave, weight, behavior, how it feels
+- Detail is the subject itself — go deep
+- Transformation is shorter — where is this material used, by whom, what's changed
+- Cultural icons only if the material is strongly associated with someone
+
+**Garments posts** (the perfecto, the chore coat, the henley):
+- The material is ONE dimension, not the whole story — mention it, don't dwell
+- Construction, silhouette, and cultural context get equal weight
+- Transformation is crucial — who adopted it, what did it come to mean
+- Cultural icons earn their place here — garments are defined by who wears them
+
+**Technique posts** (sashiko, hand-welting, katazome):
+- Process is the narrative — walk through the steps, the decisions, the skill
+- Observation is tactile — the hand movements, the tools, the sound of the work
+- Less about people, more about the practice itself
+
+**Culture posts** (military surplus influence, the reproduction game):
+- Transformation dominates — this is about meaning, movement, context
+- Observation supports with specific examples and moments
+- More room for opinion and stance — culture posts are interpretive by nature
+
+**History posts** (the Breton stripe, the tuxedo):
+- Chronology provides the narrative structure
+- Facts anchor the timeline, observations bring key moments alive
+- Stance is about what the history reveals — not just what happened, but what it means
+
+The writer makes the creative decision about balance based on what the subject demands. There is no formula.
+
 ## Quality Essentials — Non-Negotiable
 
 These must be present in every piece of Crafta writing. They are not optional.
@@ -105,11 +145,14 @@ These must be present in every piece of Crafta writing. They are not optional.
 - Stance without both is posturing
 
 ### Voice
-- The craftsman's eye — someone who respects the subject enough to look closely
-- Authoritative but curious, never arrogant
+- **Truthful, not performative** — these are learning notes, not essays trying to impress. Write as someone studying a subject closely because they need to understand it, not someone showing off what they know.
+- **Objective, measured, plain** — state things as they are, without hedging or qualifying. Not "this is arguably important" but "this matters, and here's why." Confidence comes from understanding, not assertion.
+- **Not passionate, not robotic** — calm authority. Someone who knows the subject well enough that they don't need to be excited about it. The material is interesting; the writing doesn't need to insist that it is.
+- **Vary the rhythm** — a short sentence after three long ones. A two-sentence paragraph when that's all the point needs. Monotonous sentence structure is what creates the robotic quality.
 - Specific over general, always
-- No superlatives, no first person, no marketing language
-- Let the evidence speak — show why something has integrity, don't tell the reader it does
+- No superlatives, no first person, no marketing language, no selling
+- No filler phrases ("it's worth noting that," "interestingly," "it goes without saying")
+- Let the evidence produce the insight — present what you found, and trust that the truth of it is enough
 
 ### Structure
 - Original prose only — no bullet points or lists within the post

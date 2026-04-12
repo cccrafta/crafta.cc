@@ -8,6 +8,15 @@ created: 2025-09-17T00:00:00
 published: 2025-09-17T00:00:00
 research: 
 sources: []
+triage:
+  observation: 6
+  transformation: 7
+  stance: 8
+  narrative: 8
+  voice: 8
+  sources: 0
+  total: 37
+  date: 2026-04-11
 excerpt: "Japanese textiles repaired so many times they became something entirely new."
 related_posts: []
 references: []

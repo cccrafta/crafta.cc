@@ -8,6 +8,15 @@ created: 2025-10-02T00:00:00
 published: 2025-10-02T00:00:00
 research: 
 sources: []
+triage:
+  observation: 6
+  transformation: 4
+  stance: 5
+  narrative: 6
+  voice: 7
+  sources: 0
+  total: 28
+  date: 2026-04-11
 excerpt: "A plain-weave fabric whose strength lies in simplicity and whose appeal only grows with time."
 related_posts: []
 references: []

@@ -8,6 +8,15 @@ created: 2025-08-28T00:00:00
 published: 2025-08-28T00:00:00
 research: 
 sources: []
+triage:
+  observation: 7
+  transformation: 6
+  stance: 5
+  narrative: 8
+  voice: 8
+  sources: 0
+  total: 34
+  date: 2026-04-11
 excerpt: "A fiber that has been cultivated for ten thousand years still outperforms modern alternatives in heat."
 related_posts: []
 references: []

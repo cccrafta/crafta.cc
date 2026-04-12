@@ -8,6 +8,15 @@ created: 2025-09-07T00:00:00
 published: 2025-09-07T00:00:00
 research: 
 sources: []
+triage:
+  observation: 8
+  transformation: 3
+  stance: 5
+  narrative: 8
+  voice: 7
+  sources: 0
+  total: 31
+  date: 2026-04-11
 excerpt: "Inside the forty-hour process of building a shoe that's designed to be rebuilt indefinitely."
 related_posts: []
 references: []

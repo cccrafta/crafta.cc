@@ -8,6 +8,15 @@ created: 2025-09-27T00:00:00
 published: 2025-09-27T00:00:00
 research: 
 sources: []
+triage:
+  observation: 7
+  transformation: 6
+  stance: 5
+  narrative: 7
+  voice: 7
+  sources: 0
+  total: 32
+  date: 2026-04-11
 excerpt: "How a Belgian fabric, a British military need, and wooden toggles created a winter coat that still works."
 related_posts: []
 references: []

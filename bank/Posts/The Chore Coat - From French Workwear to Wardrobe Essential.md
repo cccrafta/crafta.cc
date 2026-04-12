@@ -8,6 +8,15 @@ created: 2026-02-02T00:00:00
 published: 2026-02-02T00:00:00
 research: 
 sources: []
+triage:
+  observation: 7
+  transformation: 7
+  stance: 6
+  narrative: 7
+  voice: 7
+  sources: 0
+  total: 34
+  date: 2026-04-11
 excerpt: "Tracing the chore coat from the workshops of 19th-century France to its place in contemporary wardrobes."
 related_posts: []
 references: []

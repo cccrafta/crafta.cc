@@ -8,6 +8,15 @@ created: 2025-09-02T00:00:00
 published: 2025-09-02T00:00:00
 research: 
 sources: []
+triage:
+  observation: 5
+  transformation: 4
+  stance: 4
+  narrative: 7
+  voice: 7
+  sources: 0
+  total: 27
+  date: 2026-04-11
 excerpt: "The U.S. Navy's heavy overshirt fills a gap in the wardrobe that nothing else quite covers."
 related_posts: []
 references: []

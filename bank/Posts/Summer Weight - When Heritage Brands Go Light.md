@@ -8,6 +8,15 @@ created: 2026-04-10T08:45:55
 published: 2026-04-10T08:45:55
 research: 
 sources: []
+triage:
+  observation: 8
+  transformation: 6
+  stance: 7
+  narrative: 8
+  voice: 8
+  sources: 0
+  total: 37
+  date: 2026-04-11
 excerpt: "Heritage brands are reimagining their signature fabrics at summer-friendly weights — same weave, same character, lighter hand — raising questions about what truly defines a traditional garment."
 related_posts: []
 references: []

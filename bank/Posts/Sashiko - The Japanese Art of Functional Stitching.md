@@ -8,6 +8,15 @@ created: 2025-07-29T00:00:00
 published: 2025-07-29T00:00:00
 research: 
 sources: []
+triage:
+  observation: 7
+  transformation: 6
+  stance: 6
+  narrative: 8
+  voice: 7
+  sources: 0
+  total: 34
+  date: 2026-04-11
 excerpt: "How a rural Japanese reinforcement technique became a global movement in visible repair."
 related_posts: []
 references: []

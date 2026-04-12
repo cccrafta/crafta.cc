@@ -8,6 +8,15 @@ created: 2026-03-09T00:00:00
 published: 2026-03-09T00:00:00
 research: 
 sources: []
+triage:
+  observation: 8
+  transformation: 5
+  stance: 6
+  narrative: 7
+  voice: 6
+  sources: 0
+  total: 32
+  date: 2026-04-11
 excerpt: "Why a handful of Japanese workshops still use machines from the 1920s to knit cotton fabric."
 related_posts: []
 references: []

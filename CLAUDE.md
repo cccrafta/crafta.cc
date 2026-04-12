@@ -149,6 +149,15 @@ Step 2: Present findings — prioritize source integrity issues
 Step 3: Offer fixes after approval
 ```
 
+### Library revision / "which posts need work?"
+
+```
+Step 1: Run /triage — score all posts, assign to Tier A/B/C
+Step 2: Tier C → bulk metadata update (related posts via tag overlap, empty references)
+Step 3: Tier B → quick research per post, add references + minor polish
+Step 4: Tier A → full rewrite using writing pipeline (one at a time, with user review)
+```
+
 ### Key principles
 
 **Research before writing. Always.** The research step with proper source tracking is what makes Crafta's content authoritative rather than generic.
@@ -189,3 +198,4 @@ The curated feed list with RSS URLs, domains, and sitemap URLs:
 @.claude/skills/mood-board.md
 @.claude/skills/manage-feeds.md
 @.claude/skills/idea-bank.md
+@.claude/skills/triage.md

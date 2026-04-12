@@ -8,6 +8,15 @@ created: 2026-04-10T08:45:51
 published: 2026-04-10T08:45:51
 research: 
 sources: []
+triage:
+  observation: 8
+  transformation: 7
+  stance: 7
+  narrative: 8
+  voice: 8
+  sources: 0
+  total: 38
+  date: 2026-04-11
 excerpt: "Open-weave tropical wool wicks moisture and lets air pass through in ways cotton cannot — a fact British tailors dressing colonial officers for equatorial postings understood decades ago."
 related_posts: []
 references: []

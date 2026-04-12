@@ -8,6 +8,15 @@ created: 2025-08-13T00:00:00
 published: 2025-08-13T00:00:00
 research: 
 sources: []
+triage:
+  observation: 7
+  transformation: 5
+  stance: 4
+  narrative: 7
+  voice: 7
+  sources: 0
+  total: 30
+  date: 2026-04-11
 excerpt: "How a jacket designed for African expeditions defined a look that outlasted the empire that created it."
 related_posts: []
 references: []

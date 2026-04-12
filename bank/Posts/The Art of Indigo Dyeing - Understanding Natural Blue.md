@@ -8,6 +8,15 @@ created: 2026-02-23T00:00:00
 published: 2026-02-23T00:00:00
 research: 
 sources: []
+triage:
+  observation: 9
+  transformation: 7
+  stance: 6
+  narrative: 8
+  voice: 7
+  sources: 0
+  total: 37
+  date: 2026-04-11
 excerpt: "From fermented leaf vats to rope dyeing — understanding why indigo behaves like no other colorant."
 related_posts: []
 references: []
