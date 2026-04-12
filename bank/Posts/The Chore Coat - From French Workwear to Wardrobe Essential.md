@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "Tracing the chore coat from the workshops of 19th-century France to its place in contemporary wardrobes."
 related_posts: ["inside-the-japanese-denim-mills-okayama-and-the-pursuit-of-perfection", "the-noragi-japanese-farm-coat-meets-modern-layering", "corduroy-the-fabric-with-a-thousand-lives"]
-references: []
+references:
+  - title: "Behind Bleu de Travail — Heddels"
+    url: "https://www.heddels.com/2019/10/behind-bleu-de-travail-denims-european-cousin/"
+  - title: "Bleu de Travail — Permanent Style"
+    url: "https://www.permanentstyle.com/2024/06/bleu-de-travail-workwear.html"
 ---
 
 ## Content

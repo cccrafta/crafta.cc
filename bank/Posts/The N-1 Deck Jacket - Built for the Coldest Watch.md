@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "A U.S. Navy cold-weather jacket that has outlasted every synthetic alternative designed to replace it."
 related_posts: ["waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem", "the-invisible-layer-how-what-you-wear-under-your-jacket-changes-everything"]
-references: []
+references:
+  - title: "Behind the N-1 Deck Coat — Heddels"
+    url: "https://www.heddels.com/2017/11/behind-the-n-1-deck-coat-the-peacoats-rugged-successor/"
+  - title: "N-1 Deck Jacket — The Real McCoy's"
+    url: "https://therealmccoys.com/products/n-1-deck-jacket-plain"
 ---
 
 ## Content

@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "Same molecule, different process, visibly different results — the chemistry behind two shades of blue."
 related_posts: ["the-chore-coat-from-french-workwear-to-wardrobe-essential", "the-art-of-indigo-dyeing-understanding-natural-blue", "inside-the-japanese-denim-mills-okayama-and-the-pursuit-of-perfection"]
-references: []
+references:
+  - title: "Understanding Natural Indigo — Heddels"
+    url: "https://www.heddels.com/2011/11/understanding-hand-dyed-natural-indigo-raw-denim/"
+  - title: "Indigo Explained — Denimhunters"
+    url: "https://denimhunters.com/denim-wiki/denim-explained/indigo/"
 ---
 
 ## Content

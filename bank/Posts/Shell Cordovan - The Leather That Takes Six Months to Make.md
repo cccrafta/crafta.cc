@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "The rarest commercial leather comes from an unlikely source and requires half a year of patient craftsmanship."
 related_posts: ["vegetable-tanning-the-slow-craft-of-making-leather", "hand-welting-the-art-behind-bespoke-shoemaking", "goodyear-welt-construction-why-your-boots-should-be-resoleable"]
-references: []
+references:
+  - title: "What is Shell Cordovan — Heddels"
+    url: "https://www.heddels.com/2017/09/shell-cordovan-king-leathers/"
+  - title: "Shell Cordovan Explained — Gentleman's Gazette"
+    url: "https://www.gentlemansgazette.com/cordovan-leather-from-horween/"
 ---
 
 ## Content

@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "A fabric that moves between workwear and refinement depending entirely on how you cut it."
 related_posts: ["the-chore-coat-from-french-workwear-to-wardrobe-essential", "the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem", "the-noragi-japanese-farm-coat-meets-modern-layering"]
-references: []
+references:
+  - title: "Corduroy: Read Between the Lines — Heddels"
+    url: "https://www.heddels.com/2017/10/corduroy-read-lines-waled-fabric/"
+  - title: "History of Corduroy — The Rake"
+    url: "https://therake.com/us/stories/the-history-of-corduroy"
 ---
 
 ## Content

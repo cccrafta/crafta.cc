@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "How a rural Japanese reinforcement technique became a global movement in visible repair."
 related_posts: ["the-noragi-japanese-farm-coat-meets-modern-layering", "the-chore-coat-from-french-workwear-to-wardrobe-essential", "summer-weight-when-heritage-brands-go-light"]
-references: []
+references:
+  - title: "History of Sashiko — Heddels"
+    url: "https://www.heddels.com/2018/03/repair-decoration-and-martial-arts-the-history-of-sashiko/"
+  - title: "Sashiko Repair — Toast"
+    url: "https://us.toa.st/blogs/magazine/sashiko-repair"
 ---
 
 ## Content

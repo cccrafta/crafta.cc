@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "Evening wear as a history of controlled rebellion against its own conventions."
 related_posts: ["waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-safari-jacket-designed-for-the-bush-adopted-by-the-city", "the-perfecto-how-a-motorcycle-jacket-became-a-cultural-symbol"]
-references: []
+references:
+  - title: "Tuxedo History — Gentleman's Gazette"
+    url: "https://www.gentlemansgazette.com/tuxedo-black-tie-guide/black-tie-tuxedo-history/"
+  - title: "The Dinner Suit — Henry Poole"
+    url: "https://henrypoole.com/heritage-savile-row/the-dinner-suit/"
 ---
 
 ## Content

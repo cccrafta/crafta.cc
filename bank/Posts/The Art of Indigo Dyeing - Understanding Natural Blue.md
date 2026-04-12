@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "From fermented leaf vats to rope dyeing — understanding why indigo behaves like no other colorant."
 related_posts: ["inside-the-japanese-denim-mills-okayama-and-the-pursuit-of-perfection", "the-chore-coat-from-french-workwear-to-wardrobe-essential", "the-noragi-japanese-farm-coat-meets-modern-layering"]
-references: []
+references:
+  - title: "History of Ai Zome — Heddels"
+    url: "https://www.heddels.com/2019/08/history-ai-zome/"
+  - title: "Aizome — Visvim"
+    url: "https://www.visvim.tv/dissertation/processing/aizome.html"
 ---
 
 ## Content

@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "From linseed-oiled sailcloth to paraffin-waxed jackets — the evolution of a fabric built to endure."
 related_posts: ["the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem", "the-n-1-deck-jacket-built-for-the-coldest-watch", "the-duffle-coat-from-royal-navy-surplus-to-campus-classic"]
-references: []
+references:
+  - title: "History of Waxed Cotton — Heddels"
+    url: "https://www.heddels.com/2016/01/waxed-cotton-mariners-steve-mcqueen-and-your-modern-day-farmer/"
+  - title: "The History of Wax — Barbour"
+    url: "https://www.barbour.com/us/cms/page/view/page_id/94"
 ---
 
 ## Content

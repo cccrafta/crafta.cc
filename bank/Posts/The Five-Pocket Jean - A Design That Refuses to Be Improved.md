@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "Nearly a century of attempts to improve on the five-pocket jean have only proven how right the original design was."
 related_posts: ["the-chore-coat-from-french-workwear-to-wardrobe-essential", "the-art-of-indigo-dyeing-understanding-natural-blue", "the-anatomy-of-selvedge-denim-what-makes-it-worth-the-investment"]
-references: []
+references:
+  - title: "Story Behind the Fifth Pocket — Levi Strauss"
+    url: "https://www.levistrauss.com/2021/05/03/the-story-behind-the-official-fifth-pocket/"
+  - title: "Pockets Full of History — Levi Strauss"
+    url: "https://www.levistrauss.com/2017/01/12/pockets-full-history/"
 ---
 
 ## Content

@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "Heritage brands are reimagining their signature fabrics at summer-friendly weights — same weave, same character, lighter hand — raising questions about what truly defines a traditional garment."
 related_posts: ["the-chore-coat-from-french-workwear-to-wardrobe-essential", "sashiko-the-japanese-art-of-functional-stitching", "inside-the-japanese-denim-mills-okayama-and-the-pursuit-of-perfection"]
-references: []
+references:
+  - title: "Summer Weight Selvedge — Heddels"
+    url: "https://www.heddels.com/2018/05/summer-weight-selvedge-denim-11oz-less-five-plus-one/"
+  - title: "Iron Heart Jeans Guide — Denimhunters"
+    url: "https://denimhunters.com/iron-heart-jeans-guide/"
 ---
 
 ## Content

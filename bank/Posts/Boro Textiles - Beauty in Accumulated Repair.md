@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "Japanese textiles repaired so many times they became something entirely new."
 related_posts: ["the-noragi-japanese-farm-coat-meets-modern-layering", "the-chore-coat-from-french-workwear-to-wardrobe-essential", "inside-the-japanese-denim-mills-okayama-and-the-pursuit-of-perfection"]
-references: []
+references:
+  - title: "All About Boro — Heddels"
+    url: "https://www.heddels.com/2015/08/all-about-boro-story-japanese-patchwork/"
+  - title: "What is Boro — Japan Objects"
+    url: "https://japanobjects.com/features/boro"
 ---
 
 ## Content

@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "The precise specifications behind the most enduring pattern in casual dress."
 related_posts: ["the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem", "the-n-1-deck-jacket-built-for-the-coldest-watch", "waxed-cotton-a-brief-history-of-the-weatherproof-fabric"]
-references: []
+references:
+  - title: "Breton Stripes — Heddels"
+    url: "https://www.heddels.com/2018/06/breton-stripes-frances-horizontal-contribution-workwear/"
+  - title: "History of the Breton Stripe — France Today"
+    url: "https://francetoday.com/culture/lifestyle/a-history-of-the-breton-stripe/"
 ---
 
 ## Content

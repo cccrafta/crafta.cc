@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "Why the slowest method of tanning leather produces results that no modern process can replicate."
 related_posts: ["why-wool-might-be-your-best-summer-fabric", "waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-invisible-layer-how-what-you-wear-under-your-jacket-changes-everything"]
-references: []
+references:
+  - title: "Vegetable Tanned Leather — Heddels"
+    url: "https://www.heddels.com/2016/12/vegetable-tanned-leather-how-its-made-benefits-and-importance/"
+  - title: "Vegetable Tanning — Britannica"
+    url: "https://www.britannica.com/technology/vegetable-tanning"
 ---
 
 ## Content

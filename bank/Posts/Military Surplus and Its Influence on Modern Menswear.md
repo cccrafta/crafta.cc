@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "How government-issued clothing became the foundation of modern casual dress."
 related_posts: ["the-duffle-coat-from-royal-navy-surplus-to-campus-classic", "waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem"]
-references: []
+references:
+  - title: "Military Surplus on Collegiate Style — Standard & Strange"
+    url: "https://standardandstrange.com/blogs/standard-strange-stories/the-influence-of-military-surplus-clothing-on-the-casual-american-collegiate-style-1945-1972"
+  - title: "Military Clothing — Permanent Style"
+    url: "https://www.permanentstyle.com/2023/11/stolen-valour-issues-with-wearing-military-clothing.html"
 ---
 
 ## Content

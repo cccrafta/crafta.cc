@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "The U.S. Navy's heavy overshirt fills a gap in the wardrobe that nothing else quite covers."
 related_posts: ["the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem", "waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-noragi-japanese-farm-coat-meets-modern-layering"]
-references: []
+references:
+  - title: "Under the CPO — Heddels"
+    url: "https://www.heddels.com/2019/10/under-the-cpo-the-quintessential-shirt-jacket/"
+  - title: "History of the CPO Shirt — Peggs & Son"
+    url: "https://www.peggsandson.com/blogs/features/the-history-of-the-cpo-shirt"
 ---
 
 ## Content

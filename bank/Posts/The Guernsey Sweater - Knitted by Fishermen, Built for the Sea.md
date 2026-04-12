@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "A Channel Islands fishing sweater engineered for survival at sea."
 related_posts: ["why-wool-might-be-your-best-summer-fabric", "the-duffle-coat-from-royal-navy-surplus-to-campus-classic", "waxed-cotton-a-brief-history-of-the-weatherproof-fabric"]
-references: []
+references:
+  - title: "History of the Guernsey — Visit Guernsey"
+    url: "https://www.visitguernsey.com/articles/2023/the-history-of-the-guernsey/"
+  - title: "Story of the Guernsey — Le Tricoteur"
+    url: "https://letricoteur.co/en-us/pages/story-of-the-guernsey"
 ---
 
 ## Content

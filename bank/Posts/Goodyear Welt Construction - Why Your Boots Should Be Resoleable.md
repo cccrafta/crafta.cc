@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "How a 160-year-old construction method makes the case for buying fewer, better shoes."
 related_posts: ["inside-the-japanese-denim-mills-okayama-and-the-pursuit-of-perfection", "hand-welting-the-art-behind-bespoke-shoemaking", "the-noragi-japanese-farm-coat-meets-modern-layering"]
-references: []
+references:
+  - title: "Shoe Constructions — Heddels"
+    url: "https://www.heddels.com/2018/05/all-the-shoe-constructions-around-the-world/"
+  - title: "Three Tiers of Welted Boots — Heddels"
+    url: "https://www.heddels.com/2017/05/the-three-tiers-of-welted-boots-and-shoes-entry-mid-and-end-level-2/"
 ---
 
 ## Content

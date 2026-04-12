@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "Inside the forty-hour process of building a shoe that's designed to be rebuilt indefinitely."
 related_posts: ["goodyear-welt-construction-why-your-boots-should-be-resoleable", "shell-cordovan-the-leather-that-takes-six-months-to-make", "inside-the-japanese-denim-mills-okayama-and-the-pursuit-of-perfection"]
-references: []
+references:
+  - title: "Shoe Constructions — Heddels"
+    url: "https://www.heddels.com/2018/05/all-the-shoe-constructions-around-the-world/"
+  - title: "Art of Hand-Welting — Bondeno Shoes"
+    url: "https://www.bondenoshoes.com/blogs/bespoke-shoe-blog/the-art-of-hand-welting-and-hand-stitching-in-bespoke-shoemaking"
 ---
 
 ## Content

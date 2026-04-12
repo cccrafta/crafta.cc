@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "Why a handful of Japanese workshops still use machines from the 1920s to knit cotton fabric."
 related_posts: ["the-invisible-layer-how-what-you-wear-under-your-jacket-changes-everything", "the-noragi-japanese-farm-coat-meets-modern-layering", "the-n-1-deck-jacket-built-for-the-coldest-watch"]
-references: []
+references:
+  - title: "How To Recognize Loopwheeled Products — Heddels"
+    url: "https://www.heddels.com/2018/03/how-to-recognize-loopwheeled-products/"
+  - title: "Loopwheel Fabric at Aigat — Permanent Style"
+    url: "https://www.permanentstyle.com/2023/07/how-loopwheel-sweatshirt-fabric-is-made-at-aigat-wakayama.html"
 ---
 
 ## Content

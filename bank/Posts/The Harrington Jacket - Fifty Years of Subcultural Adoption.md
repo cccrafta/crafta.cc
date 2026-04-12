@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "How a golf jacket became the default outerwear for every British subculture from mods to punks."
 related_posts: ["waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-safari-jacket-designed-for-the-bush-adopted-by-the-city", "the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem"]
-references: []
+references:
+  - title: "The Harrington Jacket — Heddels"
+    url: "https://www.heddels.com/2019/03/harrington-jacket-hit-across-pond/"
+  - title: "Style 101: The Harrington — The Rake"
+    url: "https://therake.com/stories/style/style-101-the-harrington-jacket/"
 ---
 
 ## Content

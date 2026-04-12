@@ -25,7 +25,11 @@ triage:
   date: 2026-04-11
 excerpt: Both garments answer the same question — what to wear when a jacket is too much — but they approach the problem from opposite directions.
 related_posts: ["waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-cpo-shirt-when-a-shirt-becomes-a-jacket", "the-chore-coat-from-french-workwear-to-wardrobe-essential"]
-references: []
+references:
+  - title: "Behind Bleu de Travail — Heddels"
+    url: "https://www.heddels.com/2019/10/behind-bleu-de-travail-denims-european-cousin/"
+  - title: "Bleu de Travail — Permanent Style"
+    url: "https://www.permanentstyle.com/2024/06/bleu-de-travail-workwear.html"
 ---
 
 ## Content

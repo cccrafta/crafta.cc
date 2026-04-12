@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "How a Belgian fabric, a British military need, and wooden toggles created a winter coat that still works."
 related_posts: ["waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "why-wool-might-be-your-best-summer-fabric", "the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem"]
-references: []
+references:
+  - title: "History of the Duffle Coat — Heddels"
+    url: "https://www.heddels.com/2019/01/history-duffle-coat/"
+  - title: "History of the Duffle Coat — Gloverall"
+    url: "https://www.gloverall.com/blogs/journal/history-of-the-duffle-coat"
 ---
 
 ## Content

@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "A Japanese agricultural garment finds new purpose as a modern layering piece."
 related_posts: ["the-chore-coat-from-french-workwear-to-wardrobe-essential", "boro-textiles-beauty-in-accumulated-repair", "sashiko-the-japanese-art-of-functional-stitching"]
-references: []
+references:
+  - title: "Kiriko's Modern Noragi — Heddels"
+    url: "https://www.heddels.com/2019/03/kirikos-modern-noragi-returns/"
+  - title: "History of the Noragi — Canoe Club"
+    url: "https://shopcanoeclub.com/blogs/editorial/history-of-the-noragi-jacket"
 ---
 
 ## Content

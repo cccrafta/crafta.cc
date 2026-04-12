@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "Understanding the weaving process behind selvedge denim and why shuttle looms still matter in an age of mass production."
 related_posts: ["inside-the-japanese-denim-mills-okayama-and-the-pursuit-of-perfection", "the-chore-coat-from-french-workwear-to-wardrobe-essential", "the-duffle-coat-from-royal-navy-surplus-to-campus-classic"]
-references: []
+references:
+  - title: "The Rundown on Selvedge Denim — Heddels"
+    url: "https://www.heddels.com/2011/03/the-rundown-on-selvedge-denim-what-is-it-all-about/"
+  - title: "Shuttle vs. Projectile Looms — Heddels"
+    url: "https://www.heddels.com/2014/10/shuttle-vs-projectile-looms-whats-the-difference/"
 ---
 
 ## Content

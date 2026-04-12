@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "A plain-weave fabric whose strength lies in simplicity and whose appeal only grows with time."
 related_posts: ["waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-safari-jacket-designed-for-the-bush-adopted-by-the-city", "the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem"]
-references: []
+references:
+  - title: "Textile Tales: Duck Canvas — Heddels"
+    url: "https://www.heddels.com/2015/03/textile-tales-duck-canvas/"
+  - title: "Canvas — Britannica"
+    url: "https://www.britannica.com/topic/canvas"
 ---
 
 ## Content

@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "A fiber that has been cultivated for ten thousand years still outperforms modern alternatives in heat."
 related_posts: ["waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-science-of-seersucker-why-wrinkles-keep-you-cool", "the-safari-jacket-designed-for-the-bush-adopted-by-the-city"]
-references: []
+references:
+  - title: "All About Linen — Heddels"
+    url: "https://www.heddels.com/2017/01/all-about-linen-the-forgotten-fiber/"
+  - title: "Flax-Linen in History — Alliance Flax Linen"
+    url: "https://allianceflaxlinenhemp.eu/en/all-about-european-linen/flax-linen-in-history"
 ---
 
 ## Content

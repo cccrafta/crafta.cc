@@ -19,7 +19,11 @@ triage:
   date: 2026-04-11
 excerpt: "How Okayama prefecture became the global capital of artisanal denim production."
 related_posts: ["the-chore-coat-from-french-workwear-to-wardrobe-essential", "the-art-of-indigo-dyeing-understanding-natural-blue", "the-noragi-japanese-farm-coat-meets-modern-layering"]
-references: []
+references:
+  - title: "Why Okayama Became Denim Capital — Heddels"
+    url: "https://www.heddels.com/2016/02/why-okayama-japanese-region-became-denim-capital/"
+  - title: "13 Selvedge Denim Mills — Heddels"
+    url: "https://www.heddels.com/2017/10/the-11-selvedge-denim-mills-to-know/"
 ---
 
 ## Content
