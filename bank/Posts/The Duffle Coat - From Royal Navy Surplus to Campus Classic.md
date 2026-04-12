@@ -18,7 +18,7 @@ triage:
   total: 32
   date: 2026-04-11
 excerpt: "How a Belgian fabric, a British military need, and wooden toggles created a winter coat that still works."
-related_posts: []
+related_posts: ["waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "why-wool-might-be-your-best-summer-fabric", "the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem"]
 references: []
 ---
 

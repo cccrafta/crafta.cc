@@ -18,7 +18,7 @@ triage:
   total: 27
   date: 2026-04-11
 excerpt: "The precise specifications behind the most enduring pattern in casual dress."
-related_posts: []
+related_posts: ["the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem", "the-n-1-deck-jacket-built-for-the-coldest-watch", "waxed-cotton-a-brief-history-of-the-weatherproof-fabric"]
 references: []
 ---
 

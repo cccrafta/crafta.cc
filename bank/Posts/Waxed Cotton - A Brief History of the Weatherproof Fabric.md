@@ -18,7 +18,7 @@ triage:
   total: 31
   date: 2026-04-11
 excerpt: "From linseed-oiled sailcloth to paraffin-waxed jackets — the evolution of a fabric built to endure."
-related_posts: []
+related_posts: ["the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem", "the-n-1-deck-jacket-built-for-the-coldest-watch", "the-duffle-coat-from-royal-navy-surplus-to-campus-classic"]
 references: []
 ---
 

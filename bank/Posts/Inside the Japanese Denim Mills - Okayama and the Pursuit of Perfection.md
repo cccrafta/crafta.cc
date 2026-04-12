@@ -18,7 +18,7 @@ triage:
   total: 36
   date: 2026-04-11
 excerpt: "How Okayama prefecture became the global capital of artisanal denim production."
-related_posts: []
+related_posts: ["the-chore-coat-from-french-workwear-to-wardrobe-essential", "the-art-of-indigo-dyeing-understanding-natural-blue", "the-noragi-japanese-farm-coat-meets-modern-layering"]
 references: []
 ---
 

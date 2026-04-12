@@ -18,7 +18,7 @@ triage:
   total: 34
   date: 2026-04-11
 excerpt: "How a 160-year-old construction method makes the case for buying fewer, better shoes."
-related_posts: []
+related_posts: ["inside-the-japanese-denim-mills-okayama-and-the-pursuit-of-perfection", "hand-welting-the-art-behind-bespoke-shoemaking", "the-noragi-japanese-farm-coat-meets-modern-layering"]
 references: []
 ---
 

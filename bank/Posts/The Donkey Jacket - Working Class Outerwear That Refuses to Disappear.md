@@ -18,7 +18,7 @@ triage:
   total: 33
   date: 2026-04-11
 excerpt: "A jacket so purely functional that its refusal to be fashionable became its most fashionable quality."
-related_posts: []
+related_posts: ["the-duffle-coat-from-royal-navy-surplus-to-campus-classic", "why-wool-might-be-your-best-summer-fabric", "waxed-cotton-a-brief-history-of-the-weatherproof-fabric"]
 references: []
 ---
 

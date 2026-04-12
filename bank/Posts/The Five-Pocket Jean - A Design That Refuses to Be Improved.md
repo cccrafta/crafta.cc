@@ -18,7 +18,7 @@ triage:
   total: 30
   date: 2026-04-11
 excerpt: "Nearly a century of attempts to improve on the five-pocket jean have only proven how right the original design was."
-related_posts: []
+related_posts: ["the-chore-coat-from-french-workwear-to-wardrobe-essential", "the-art-of-indigo-dyeing-understanding-natural-blue", "the-anatomy-of-selvedge-denim-what-makes-it-worth-the-investment"]
 references: []
 ---
 

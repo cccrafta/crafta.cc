@@ -18,7 +18,7 @@ triage:
   total: 37
   date: 2026-04-11
 excerpt: "From fermented leaf vats to rope dyeing — understanding why indigo behaves like no other colorant."
-related_posts: []
+related_posts: ["inside-the-japanese-denim-mills-okayama-and-the-pursuit-of-perfection", "the-chore-coat-from-french-workwear-to-wardrobe-essential", "the-noragi-japanese-farm-coat-meets-modern-layering"]
 references: []
 ---
 

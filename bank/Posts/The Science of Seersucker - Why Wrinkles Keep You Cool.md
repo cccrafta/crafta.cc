@@ -18,7 +18,7 @@ triage:
   total: 38
   date: 2026-04-11
 excerpt: "The puckered texture of seersucker is not decorative — it is engineered. Slack warp threads create permanent ridges that hold fabric away from skin, turning wrinkles into a passive cooling system."
-related_posts: []
+related_posts: ["waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-invisible-layer-how-what-you-wear-under-your-jacket-changes-everything", "ramie-the-strongest-fiber-nobody-talks-about"]
 references: []
 ---
 

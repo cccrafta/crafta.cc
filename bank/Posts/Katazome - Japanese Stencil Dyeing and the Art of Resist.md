@@ -18,7 +18,7 @@ triage:
   total: 31
   date: 2026-04-11
 excerpt: "A centuries-old Japanese dyeing technique where imperfection is the mark of authenticity."
-related_posts: []
+related_posts: ["inside-the-japanese-denim-mills-okayama-and-the-pursuit-of-perfection", "the-noragi-japanese-farm-coat-meets-modern-layering", "the-chore-coat-from-french-workwear-to-wardrobe-essential"]
 references: []
 ---
 

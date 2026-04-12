@@ -18,7 +18,7 @@ triage:
   total: 30
   date: 2026-04-11
 excerpt: "How a jacket designed for African expeditions defined a look that outlasted the empire that created it."
-related_posts: []
+related_posts: ["waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem", "the-noragi-japanese-farm-coat-meets-modern-layering"]
 references: []
 ---
 

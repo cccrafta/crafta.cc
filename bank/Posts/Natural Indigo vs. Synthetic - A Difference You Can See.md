@@ -18,7 +18,7 @@ triage:
   total: 34
   date: 2026-04-11
 excerpt: "Same molecule, different process, visibly different results — the chemistry behind two shades of blue."
-related_posts: []
+related_posts: ["the-chore-coat-from-french-workwear-to-wardrobe-essential", "the-art-of-indigo-dyeing-understanding-natural-blue", "inside-the-japanese-denim-mills-okayama-and-the-pursuit-of-perfection"]
 references: []
 ---
 

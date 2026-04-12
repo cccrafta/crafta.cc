@@ -18,7 +18,7 @@ triage:
   total: 28
   date: 2026-04-11
 excerpt: "Evening wear as a history of controlled rebellion against its own conventions."
-related_posts: []
+related_posts: ["waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-safari-jacket-designed-for-the-bush-adopted-by-the-city", "the-perfecto-how-a-motorcycle-jacket-became-a-cultural-symbol"]
 references: []
 ---
 

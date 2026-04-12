@@ -18,7 +18,7 @@ triage:
   total: 33
   date: 2026-04-11
 excerpt: "A Channel Islands fishing sweater engineered for survival at sea."
-related_posts: []
+related_posts: ["why-wool-might-be-your-best-summer-fabric", "the-duffle-coat-from-royal-navy-surplus-to-campus-classic", "waxed-cotton-a-brief-history-of-the-weatherproof-fabric"]
 references: []
 ---
 

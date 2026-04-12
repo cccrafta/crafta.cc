@@ -18,7 +18,7 @@ triage:
   total: 32
   date: 2026-04-11
 excerpt: "How a jacket designed for motorcyclists in 1928 became the uniform of every subculture that followed."
-related_posts: []
+related_posts: ["the-donkey-jacket-working-class-outerwear-that-refuses-to-disappear", "waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "vegetable-tanning-the-slow-craft-of-making-leather"]
 references: []
 ---
 

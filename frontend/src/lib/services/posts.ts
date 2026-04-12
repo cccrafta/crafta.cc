@@ -33,6 +33,8 @@ function mapPostToCard(post: WPPost): PostCard {
     authorName: post._embedded?.author?.[0]?.name ?? "Unknown",
     categories:
       post._embedded?.["wp:term"]?.[0]?.map((t) => t.name) ?? [],
+    tags:
+      post._embedded?.["wp:term"]?.[1]?.map((t) => t.name) ?? [],
   };
 }
 

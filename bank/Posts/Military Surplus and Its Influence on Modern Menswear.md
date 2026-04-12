@@ -18,7 +18,7 @@ triage:
   total: 34
   date: 2026-04-11
 excerpt: "How government-issued clothing became the foundation of modern casual dress."
-related_posts: []
+related_posts: ["the-duffle-coat-from-royal-navy-surplus-to-campus-classic", "waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem"]
 references: []
 ---
 

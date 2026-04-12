@@ -116,6 +116,7 @@ export type PostCard = {
   featuredImageAlt: string;
   authorName: string;
   categories: string[];
+  tags: string[];
 };
 
 export type Reference = {

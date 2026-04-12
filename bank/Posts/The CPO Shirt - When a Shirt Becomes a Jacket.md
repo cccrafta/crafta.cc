@@ -18,7 +18,7 @@ triage:
   total: 27
   date: 2026-04-11
 excerpt: "The U.S. Navy's heavy overshirt fills a gap in the wardrobe that nothing else quite covers."
-related_posts: []
+related_posts: ["the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem", "waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-noragi-japanese-farm-coat-meets-modern-layering"]
 references: []
 ---
 

@@ -18,7 +18,7 @@ triage:
   total: 33
   date: 2026-04-11
 excerpt: "A fabric that moves between workwear and refinement depending entirely on how you cut it."
-related_posts: []
+related_posts: ["the-chore-coat-from-french-workwear-to-wardrobe-essential", "the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem", "the-noragi-japanese-farm-coat-meets-modern-layering"]
 references: []
 ---
 

@@ -18,7 +18,7 @@ triage:
   total: 34
   date: 2026-04-11
 excerpt: "Tracing the chore coat from the workshops of 19th-century France to its place in contemporary wardrobes."
-related_posts: []
+related_posts: ["inside-the-japanese-denim-mills-okayama-and-the-pursuit-of-perfection", "the-noragi-japanese-farm-coat-meets-modern-layering", "corduroy-the-fabric-with-a-thousand-lives"]
 references: []
 ---
 

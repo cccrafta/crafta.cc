@@ -18,7 +18,7 @@ triage:
   total: 30
   date: 2026-04-11
 excerpt: "A U.S. Navy cold-weather jacket that has outlasted every synthetic alternative designed to replace it."
-related_posts: []
+related_posts: ["waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem", "the-invisible-layer-how-what-you-wear-under-your-jacket-changes-everything"]
 references: []
 ---
 

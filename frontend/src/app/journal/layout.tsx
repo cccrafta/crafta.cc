@@ -1,5 +1,6 @@
 import Header from "@/components/header";
 import JournalHeaderNav from "@/components/journal-header-nav";
+import ViewToggle, { ViewProvider } from "@/components/view-toggle";
 
 export default function JournalLayout({
   children,
@@ -7,13 +8,13 @@ export default function JournalLayout({
   children: React.ReactNode;
 }) {
   return (
-    <>
-      <Header>
+    <ViewProvider>
+      <Header actions={<ViewToggle />}>
         <JournalHeaderNav />
       </Header>
       <main
         className="mx-auto w-full px-6 py-8"
-        style={{ maxWidth: "var(--content-max-width)", marginTop: "var(--header-height)" }}
+        style={{  marginTop: "var(--header-height)" }}
       >
         {children}
       </main>
@@ -32,6 +33,6 @@ export default function JournalLayout({
           <a href="https://instagram.com/crafta.cc" className="transition-opacity hover:opacity-60">Instagram</a>
         </div>
       </footer>
-    </>
+    </ViewProvider>
   );
 }

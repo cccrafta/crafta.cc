@@ -18,7 +18,7 @@ triage:
   total: 37
   date: 2026-04-11
 excerpt: "Japanese textiles repaired so many times they became something entirely new."
-related_posts: []
+related_posts: ["the-noragi-japanese-farm-coat-meets-modern-layering", "the-chore-coat-from-french-workwear-to-wardrobe-essential", "inside-the-japanese-denim-mills-okayama-and-the-pursuit-of-perfection"]
 references: []
 ---
 

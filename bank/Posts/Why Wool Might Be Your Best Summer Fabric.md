@@ -18,7 +18,7 @@ triage:
   total: 38
   date: 2026-04-11
 excerpt: "Open-weave tropical wool wicks moisture and lets air pass through in ways cotton cannot — a fact British tailors dressing colonial officers for equatorial postings understood decades ago."
-related_posts: []
+related_posts: ["waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-guernsey-sweater-knitted-by-fishermen-built-for-the-sea", "the-duffle-coat-from-royal-navy-surplus-to-campus-classic"]
 references: []
 ---
 

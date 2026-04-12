@@ -18,7 +18,7 @@ triage:
   total: 33
   date: 2026-04-11
 excerpt: "The rarest commercial leather comes from an unlikely source and requires half a year of patient craftsmanship."
-related_posts: []
+related_posts: ["vegetable-tanning-the-slow-craft-of-making-leather", "hand-welting-the-art-behind-bespoke-shoemaking", "goodyear-welt-construction-why-your-boots-should-be-resoleable"]
 references: []
 ---
 

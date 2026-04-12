@@ -1,7 +1,13 @@
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Header({ children }: { children?: React.ReactNode }) {
+export default function Header({
+  children,
+  actions,
+}: {
+  children?: React.ReactNode;
+  actions?: React.ReactNode;
+}) {
   return (
     <header
       className="fixed top-0 left-0 w-full z-50"
@@ -19,7 +25,7 @@ export default function Header({ children }: { children?: React.ReactNode }) {
           />
         </Link>
 
-        {/* Center — absolutely centered */}
+        {/* Center — scoped content (search bar, nav, etc.) */}
         {children && (
           <div
             className="absolute left-1/2 -translate-x-1/2"
@@ -29,12 +35,15 @@ export default function Header({ children }: { children?: React.ReactNode }) {
           </div>
         )}
 
-        {/* Global menu — right (placeholder) */}
-        <button
-          className="type-nav shrink-0 relative z-10 transition-opacity hover:opacity-60"
-        >
-          Menu
-        </button>
+        {/* Right — actions + menu */}
+        <div className="shrink-0 relative z-10 flex items-center" style={{ gap: "var(--space-md)" }}>
+          {actions}
+          <button
+            className="type-nav transition-opacity hover:opacity-60"
+          >
+            Menu
+          </button>
+        </div>
       </div>
     </header>
   );

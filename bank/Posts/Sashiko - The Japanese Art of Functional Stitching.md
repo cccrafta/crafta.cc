@@ -18,7 +18,7 @@ triage:
   total: 34
   date: 2026-04-11
 excerpt: "How a rural Japanese reinforcement technique became a global movement in visible repair."
-related_posts: []
+related_posts: ["the-noragi-japanese-farm-coat-meets-modern-layering", "the-chore-coat-from-french-workwear-to-wardrobe-essential", "summer-weight-when-heritage-brands-go-light"]
 references: []
 ---
 

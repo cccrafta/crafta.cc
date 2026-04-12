@@ -18,7 +18,7 @@ triage:
   total: 32
   date: 2026-04-11
 excerpt: "Why a handful of Japanese workshops still use machines from the 1920s to knit cotton fabric."
-related_posts: []
+related_posts: ["the-invisible-layer-how-what-you-wear-under-your-jacket-changes-everything", "the-noragi-japanese-farm-coat-meets-modern-layering", "the-n-1-deck-jacket-built-for-the-coldest-watch"]
 references: []
 ---
 

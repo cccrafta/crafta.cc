@@ -18,7 +18,7 @@ triage:
   total: 32
   date: 2026-04-11
 excerpt: "How a golf jacket became the default outerwear for every British subculture from mods to punks."
-related_posts: []
+related_posts: ["waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-safari-jacket-designed-for-the-bush-adopted-by-the-city", "the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem"]
 references: []
 ---
 

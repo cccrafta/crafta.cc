@@ -18,7 +18,7 @@ triage:
   total: 30
   date: 2026-04-11
 excerpt: "A Japanese agricultural garment finds new purpose as a modern layering piece."
-related_posts: []
+related_posts: ["the-chore-coat-from-french-workwear-to-wardrobe-essential", "boro-textiles-beauty-in-accumulated-repair", "sashiko-the-japanese-art-of-functional-stitching"]
 references: []
 ---
 

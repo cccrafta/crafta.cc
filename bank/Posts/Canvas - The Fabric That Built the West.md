@@ -18,7 +18,7 @@ triage:
   total: 28
   date: 2026-04-11
 excerpt: "A plain-weave fabric whose strength lies in simplicity and whose appeal only grows with time."
-related_posts: []
+related_posts: ["waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-safari-jacket-designed-for-the-bush-adopted-by-the-city", "the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem"]
 references: []
 ---
 

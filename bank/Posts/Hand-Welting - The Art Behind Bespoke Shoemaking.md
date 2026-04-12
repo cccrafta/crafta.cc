@@ -18,7 +18,7 @@ triage:
   total: 31
   date: 2026-04-11
 excerpt: "Inside the forty-hour process of building a shoe that's designed to be rebuilt indefinitely."
-related_posts: []
+related_posts: ["goodyear-welt-construction-why-your-boots-should-be-resoleable", "shell-cordovan-the-leather-that-takes-six-months-to-make", "inside-the-japanese-denim-mills-okayama-and-the-pursuit-of-perfection"]
 references: []
 ---
 

@@ -18,7 +18,7 @@ triage:
   total: 38
   date: 2026-04-11
 excerpt: "Ramie has been used in textiles for at least five thousand years, outlasts cotton and linen in tensile strength, and improves with every wash — yet it remains virtually absent from modern fashion."
-related_posts: []
+related_posts: ["the-invisible-layer-how-what-you-wear-under-your-jacket-changes-everything", "inside-the-japanese-denim-mills-okayama-and-the-pursuit-of-perfection", "waxed-cotton-a-brief-history-of-the-weatherproof-fabric"]
 references: []
 ---
 

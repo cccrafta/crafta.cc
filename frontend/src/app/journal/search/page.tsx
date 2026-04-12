@@ -48,10 +48,11 @@ export default async function SearchPage({
         </p>
       ) : (
         <div
-          className="grid"
           style={{
-            gridTemplateColumns: "repeat(3, 1fr)",
-            gap: "var(--space-lg)",
+            display: "flex",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            gap: "0px",
           }}
         >
           {posts.map((post) => (

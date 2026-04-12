@@ -18,7 +18,7 @@ triage:
   total: 32
   date: 2026-04-11
 excerpt: "Why the slowest method of tanning leather produces results that no modern process can replicate."
-related_posts: []
+related_posts: ["why-wool-might-be-your-best-summer-fabric", "waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-invisible-layer-how-what-you-wear-under-your-jacket-changes-everything"]
 references: []
 ---
 

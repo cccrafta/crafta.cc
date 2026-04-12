@@ -18,7 +18,7 @@ triage:
   total: 33
   date: 2026-04-11
 excerpt: "Same indigo cotton, completely different fabric — chambray's plain weave makes it lighter, softer, and more breathable than its twill-woven cousin denim, and its history as military-issue workwear shirting runs just as deep."
-related_posts: []
+related_posts: ["the-chore-coat-from-french-workwear-to-wardrobe-essential", "inside-the-japanese-denim-mills-okayama-and-the-pursuit-of-perfection", "the-overshirt-vs-the-chore-coat-two-solutions-to-the-same-problem"]
 references: []
 ---
 

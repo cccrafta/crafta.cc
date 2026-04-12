@@ -24,7 +24,7 @@ triage:
   total: 34
   date: 2026-04-11
 excerpt: Both garments answer the same question — what to wear when a jacket is too much — but they approach the problem from opposite directions.
-related_posts: []
+related_posts: ["waxed-cotton-a-brief-history-of-the-weatherproof-fabric", "the-cpo-shirt-when-a-shirt-becomes-a-jacket", "the-chore-coat-from-french-workwear-to-wardrobe-essential"]
 references: []
 ---
 
