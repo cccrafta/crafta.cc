@@ -351,5 +351,37 @@
       "workwear"
     ],
     "status": "pending"
+  },
+  {
+    "id": 22,
+    "date": "2026-04-13",
+    "idea": "The Tuxedo as Workwear: Why Evening Dress Is a Uniform",
+    "pitch": "A short essay arguing that the tuxedo is workwear for formal occasions \u2014 functional clothing designed to perform a specific job, just like a chore coat or a CPO shirt",
+    "sources": [],
+    "category": "Culture",
+    "tags": [
+      "heritage",
+      "craft"
+    ],
+    "status": "pending"
+  },
+  {
+    "id": 23,
+    "date": "2026-04-13",
+    "idea": "The Barbour Waxed Jacket: 160 Parts, 36 Hands, One Fabric",
+    "pitch": "How a South Shields oilcloth importer perfected paraffin wax on cotton canvas and built a jacket designed to be maintained for decades rather than replaced",
+    "sources": [
+      "heddels.com",
+      "thegentlemansjournal.com"
+    ],
+    "category": "Garments",
+    "tags": [
+      "cotton",
+      "british",
+      "heritage",
+      "outerwear",
+      "craft"
+    ],
+    "status": "pending"
   }
 ]

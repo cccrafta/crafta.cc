@@ -32,10 +32,22 @@ Read `.claude/feeds.md` for feed URLs, domains, and sitemap URLs.
 3. Extract topics from URL slugs
 4. Count, compare, analyze
 
+## Footnoting
+
+Every factual claim in research outputs must have a footnote linking to its source. Use markdown footnotes:
+
+```
+The Prince of Wales championed midnight blue over black [^1]
+
+[^1]: [[Sources/References/Source Name]]
+```
+
+If a claim comes from general knowledge and cannot be sourced, mark it as `[unsourced]`. Research without footnotes is assertions — the research note is a reference document that must be traceable.
+
 ## Vault Integration
 
 - **Feed briefings** → save to `bank/Feeds/YYYY-MM-DD <type>.md` using Feed Briefing template
-- **Research outputs** → save to `bank/Research/<topic>.md` using Research template
+- **Research outputs** → save to `bank/Research/<topic>.md` using Research template — with footnotes on all factual claims
 - **Ideas generated** → save to both `bank/Ideas/<topic>.md` AND `.claude/idea-bank.json`
 - **Sources found** → save to `bank/Sources/References/<title>.md` using Source template
 - **Publication notes** → save to `bank/Sources/Publications/<name>.md`

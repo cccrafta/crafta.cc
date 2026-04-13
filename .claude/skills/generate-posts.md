@@ -90,13 +90,23 @@ excerpt: "Present and compelling, 20-30 words. States the subject and reveals th
 <p>Second paragraph...</p>
 
 ## Sources Referenced
-- [[Sources/References/Source Name]] — what was used from this source
+- [[Sources/References/Source Name]] — what specific claim was used from this source [^1]
+- [[Sources/References/Source Name]] — what specific claim was used [^2]
+
+[^1]: [[Sources/References/Source Name]]
+[^2]: [[Sources/References/Source Name]]
 
 ## Notes
 - Any editorial notes about tone, angle, or decisions made
 ```
 
 **Content must be in `<p>` tags** — this is what gets published to WordPress.
+
+**Source chain must be bidirectional:**
+- The post's `## Sources Referenced` section lists every source used, with what specific claim was drawn from it
+- Each source note in `bank/Sources/References/` must have its `used_in` field updated to include this post
+- If a research note exists for the topic, the post's footnotes should trace back through the research note's footnotes to the original source
+- The chain: **Source note ↔ Research note (footnoted) ↔ Post (sources referenced)**
 
 ### Step 4: Notify user
 Tell the user: "Draft saved to `bank/Posts/<Title>.md` — please review in Obsidian. Let me know when you're ready to proceed or if you want changes."

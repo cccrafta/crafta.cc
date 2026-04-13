@@ -24,6 +24,7 @@ See the subject as it actually is. No opinion yet — rigorous, honest documenta
 - **Comfort** — how it feels in use, how it performs against the body or in practice
 - **Craft context** — what makers and artisans know about it that consumers don't
 - **Material criticality** — for garments, explain why the material choice is not interchangeable. What happens if you use the wrong fabric? What breaks? The safari jacket's 7-9oz cotton drill window is a narrow target — miss it and the whole design fails. This specificity is what separates observation from description.
+- **Patina** — how does the subject change with use and time? Patina is evidence of a relationship between the object and its owner. Observe it specifically: where does denim fade? Where does canvas crack? Where does leather darken? Where does wax whiten? Patina is not wear damage — it is the record of use, and it reveals how the object was actually handled, folded, carried, worn. A material that develops patina has a future that is different from its present; a material that resists change looks the same until it fails. Always observe and describe how a material, garment, or object ages — this is one of the most important qualities to document because it separates craft from disposability.
 - **Reference value** — what principles does it embody, what can be learned from studying it
 
 **God is in the details — and details are observed, not stated.**
@@ -157,6 +158,7 @@ These must be present in every piece of Crafta writing. They are not optional.
 - Specific over general, always
 - No superlatives, no first person, no marketing language, no selling
 - No filler phrases ("it's worth noting that," "interestingly," "it goes without saying")
+- **Use punctuation properly.** Quotes need quotation marks. Use semicolons, colons, and commas to vary sentence structure — don't default to em dashes (—) for every pause. Over-reliance on em dashes makes prose monotonous. A semicolon connects related thoughts; a colon introduces what follows; a comma lets the reader breathe. Each serves a different purpose.
 - **No vague assertions that sound smart but say nothing.** If you write "as though certain patterns generate a magnetic field around a certain kind of person" — stop and ask: what does this actually mean? If you cannot explain the mechanism, replace the assertion with the evidence. Every claim must have substance behind it.
 - **Research our own sources first.** Before general web search, check the publications in `.claude/feeds.md`. Our sources are curated for relevance — use them.
 - Let the evidence produce the insight — present what you found, and trust that the truth of it is enough
@@ -167,6 +169,7 @@ These must be present in every piece of Crafta writing. They are not optional.
 - Close with the stance — the recognition that emerged
 - Content in `<p>` tags for WordPress publication
 - 300-500 words standard, 500-700 deep dive
+- **Use numerals for measurements and units** — write "9–10oz" not "nine to ten ounces", "14–16%" not "fourteen to sixteen percent", "200 countries" not "two hundred countries". Numbers with units are faster to scan than written-out words.
 
 ### Source Tracking
 - Every post has a `## Sources Referenced` section in its vault note

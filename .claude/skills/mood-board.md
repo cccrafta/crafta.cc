@@ -40,6 +40,20 @@ curl -s "http://localhost:8080/index.php?rest_route=/wp/v2/posts/&per_page=100&s
 
 **Growing the source library is a goal** — every research session should add at least 1-2 new source notes to the vault.
 
+### Step 2b: Footnote Everything
+
+Every factual claim in the research note must have a footnote linking to its source. Use this format in the research note:
+
+```
+- **1865** — Edward VII orders first dinner jacket from Henry Poole & Co. [^1]
+
+[^1]: [[Sources/References/The Dinner Suit — Henry Poole]]
+```
+
+This is non-negotiable. Research without footnotes is assertions. The research note is a reference document — if someone reads a claim, they must be able to trace it to where it came from. If a claim comes from general knowledge and cannot be sourced, mark it as `[unsourced]` so it can be verified later.
+
+**Growing the source library is a goal** — every research session should add at least 1-2 new source notes to the vault.
+
 ### Step 3: Save Sources
 
 For every article, publication, or reference found during research:
