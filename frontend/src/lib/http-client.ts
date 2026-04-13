@@ -12,10 +12,16 @@ export class HttpError extends Error {
   }
 }
 
+export class ConnectionError extends Error {
+  constructor(message: string) {
+    super(message);
+    this.name = "ConnectionError";
+  }
+}
+
 type QueryParams = Record<string, string | number | boolean | undefined>;
 
 function buildUrl(endpoint: string, params?: QueryParams): string {
-  // Use index.php?rest_route= format for PHP built-in server compatibility
   const url = new URL(`${WP_BASE}/index.php`);
   url.searchParams.set("rest_route", endpoint);
   if (params) {
@@ -33,11 +39,19 @@ export async function get<T>(
   params?: QueryParams
 ): Promise<{ data: T; headers: Headers }> {
   const url = buildUrl(endpoint, params);
-  const res = await fetch(url, {
-    headers: {
-      "Content-Type": "application/json",
-    },
-  });
+
+  let res: Response;
+  try {
+    res = await fetch(url, {
+      headers: {
+        "Content-Type": "application/json",
+      },
+    });
+  } catch (err) {
+    throw new ConnectionError(
+      `Could not connect to WordPress at ${WP_BASE}. Is the backend running?`
+    );
+  }
 
   if (!res.ok) {
     const body = await res.text();

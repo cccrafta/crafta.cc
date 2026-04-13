@@ -1,6 +1,7 @@
 import { searchJournal } from "@/lib/services";
 import { getCategories } from "@/lib/api";
 import PostGridCard from "@/components/post-grid-card";
+import { ConnectionError } from "@/lib/http-client";
 
 export const metadata = {
   title: "Search — crafta.cc",
@@ -13,53 +14,72 @@ export default async function SearchPage({
 }) {
   const { q, cat } = await searchParams;
 
-  const categories = await getCategories();
+  try {
+    const categories = await getCategories();
 
-  const categoryId = cat
-    ? categories.find((c) => c.slug === cat)?.id
-    : undefined;
+    const categoryId = cat
+      ? categories.find((c) => c.slug === cat)?.id
+      : undefined;
 
-  const { posts } = await searchJournal(q, categoryId, 1, 20);
+    const { posts } = await searchJournal(q, categoryId, 1, 20);
 
-  const label = q
-    ? `Results for "${q}"`
-    : cat
-      ? `${categories.find((c) => c.slug === cat)?.name ?? cat}`
-      : "All posts";
+    const label = q
+      ? `Results for "${q}"`
+      : cat
+        ? `${categories.find((c) => c.slug === cat)?.name ?? cat}`
+        : "All posts";
 
-  return (
-    <div>
-      <p
-        className="type-label"
-        style={{
-          color: "var(--color-fg-secondary)",
-          marginBottom: "var(--space-lg)",
-        }}
-      >
-        {label}{" "}
-        <span style={{ color: "var(--color-accent)" }}>
-          [{String(posts.length).padStart(2, "0")}]
-        </span>
-      </p>
-
-      {posts.length === 0 ? (
-        <p className="type-body-sm" style={{ color: "var(--color-fg-secondary)" }}>
-          No posts found.
-        </p>
-      ) : (
-        <div
+    return (
+      <div>
+        <p
+          className="type-label"
           style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            gap: "0px",
+            color: "var(--color-fg-secondary)",
+            marginBottom: "var(--space-lg)",
           }}
         >
-          {posts.map((post) => (
-            <PostGridCard key={post.id} post={post} />
-          ))}
-        </div>
-      )}
-    </div>
-  );
+          {label}{" "}
+          <span style={{ color: "var(--color-accent)" }}>
+            [{String(posts.length).padStart(2, "0")}]
+          </span>
+        </p>
+
+        {posts.length === 0 ? (
+          <p className="type-body-sm" style={{ color: "var(--color-fg-secondary)" }}>
+            No posts found.
+          </p>
+        ) : (
+          <div
+            style={{
+              display: "flex",
+              flexWrap: "wrap",
+              justifyContent: "center",
+              gap: "0px",
+            }}
+          >
+            {posts.map((post) => (
+              <PostGridCard key={post.id} post={post} />
+            ))}
+          </div>
+        )}
+      </div>
+    );
+  } catch (error) {
+    const message =
+      error instanceof ConnectionError
+        ? "Unable to connect to the content server."
+        : "Something went wrong loading search results.";
+
+    return (
+      <div
+        className="py-16 text-center"
+        style={{ color: "var(--color-fg-secondary)" }}
+      >
+        <p className="type-title-sm">{message}</p>
+        <p className="type-body-sm" style={{ marginTop: "var(--space-sm)" }}>
+          Please try again later.
+        </p>
+      </div>
+    );
+  }
 }

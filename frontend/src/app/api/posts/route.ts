@@ -5,6 +5,13 @@ export async function GET(request: NextRequest) {
   const page = Number(request.nextUrl.searchParams.get("page") ?? 1);
   const perPage = Number(request.nextUrl.searchParams.get("per_page") ?? 10);
 
-  const result = await getJournalFeed(page, perPage);
-  return NextResponse.json(result);
+  try {
+    const result = await getJournalFeed(page, perPage);
+    return NextResponse.json(result);
+  } catch {
+    return NextResponse.json(
+      { posts: [], totalPages: 0, currentPage: page },
+      { status: 503 }
+    );
+  }
 }
