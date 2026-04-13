@@ -15,6 +15,8 @@ Curated RSS feeds for fashion/design/craft editorial inspiration for Crafta jour
 |---|---|---|---|---|
 | Rampboy | https://rampboy.com/feed/ | rampboy.com | https://rampboy.com/sitemap.xml | Menswear opinion, indie brands, street style |
 | Put This On | https://putthison.com/feed/ | putthison.com | https://putthison.com/sitemap_index.xml | Classic menswear |
+| The Gentleman's Journal | — | thegentlemansjournal.com | https://www.thegentlemansjournal.com/sitemap.xml | Luxury menswear, watches, lifestyle |
+| Stridewise | https://stridewise.com/feed/ | stridewise.com | https://stridewise.com/post-sitemap.xml | Boots, leather, footwear reviews |
 
 ## Design & Art
 | Source | Feed URL | Domain | Sitemap | Focus |

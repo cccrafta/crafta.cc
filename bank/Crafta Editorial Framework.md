@@ -23,6 +23,7 @@ See the subject as it actually is. No opinion yet — rigorous, honest documenta
 - **Tectonics** — how it's constructed, the structural decisions, joints, seams
 - **Comfort** — how it feels in use, how it performs against the body or in practice
 - **Craft context** — what makers and artisans know about it that consumers don't
+- **Material criticality** — for garments, explain why the material choice is not interchangeable. What happens if you use the wrong fabric? What breaks? The safari jacket's 7-9oz cotton drill window is a narrow target — miss it and the whole design fails. This specificity is what separates observation from description.
 - **Reference value** — what principles does it embody, what can be learned from studying it
 
 **God is in the details — and details are observed, not stated.**
@@ -50,7 +51,9 @@ Look at the same subject through the lens of time, market, and people.
 - **Value** — is it undervalued, overvalued, or misunderstood
 - **Potential** — what could it become, where is it heading
 - **Multiple perspectives** — how do designers, craftspeople, consumers, and subcultures each see it differently
-- **Cultural icons** — when relevant, reference the people who made a garment or material iconic. Not as name-drops, but as evidence of cultural movement. Chambray means something different after you know folk musicians adopted it in the 1960s. The Perfecto is incomplete without the subcultures that gave it meaning. Include icons only when they genuinely illuminate how a subject moved through culture — if the post is about waffle knit construction, no celebrity is needed.
+- **Cultural icons** — when relevant, reference the people who made a garment or material iconic. But every reference must have substance: explain *why* they wore it, not just *that* they wore it. Picasso's 1944 quote ("because I always wear a sailor's shirt") earns its place because it reveals his relationship to the garment. A bare name-drop ("Picasso wore it") does not. If you cannot explain why an icon's connection to the subject matters, leave them out.
+- **Contemporary relevance** — who makes it today and why. Not a product list, but evidence that the design still functions. Include makers who use it for its original purpose (Westley Richards still makes safari jackets for field use) alongside those who reinterpret it (Bryceland's treating the safari jacket as craft). This proves the design is alive, not historical.
+- **Origin story** — for garments especially, who made it first, when, and for whom is not optional. The reader needs to know where the thing came from before they can understand where it went.
 
 The goal: understand where the thing sits in the world right now.
 
@@ -107,10 +110,12 @@ Not every lens gets equal weight in every post. The topic determines the balance
 - Cultural icons only if the material is strongly associated with someone
 
 **Garments posts** (the perfecto, the chore coat, the henley):
-- The material is ONE dimension, not the whole story — mention it, don't dwell
+- The material is not the whole story, but it is critical — explain why the fabric choice is not interchangeable, what breaks with the wrong material
 - Construction, silhouette, and cultural context get equal weight
+- Origin story is required — who made it first, when, for whom
 - Transformation is crucial — who adopted it, what did it come to mean
-- Cultural icons earn their place here — garments are defined by who wears them
+- Contemporary makers show the design is alive — who produces it today and why
+- Cultural icons earn their place here — but only with substance (why they wore it, not just that they did)
 
 **Technique posts** (sashiko, hand-welting, katazome):
 - Process is the narrative — walk through the steps, the decisions, the skill
@@ -152,6 +157,8 @@ These must be present in every piece of Crafta writing. They are not optional.
 - Specific over general, always
 - No superlatives, no first person, no marketing language, no selling
 - No filler phrases ("it's worth noting that," "interestingly," "it goes without saying")
+- **No vague assertions that sound smart but say nothing.** If you write "as though certain patterns generate a magnetic field around a certain kind of person" — stop and ask: what does this actually mean? If you cannot explain the mechanism, replace the assertion with the evidence. Every claim must have substance behind it.
+- **Research our own sources first.** Before general web search, check the publications in `.claude/feeds.md`. Our sources are curated for relevance — use them.
 - Let the evidence produce the insight — present what you found, and trust that the truth of it is enough
 
 ### Structure

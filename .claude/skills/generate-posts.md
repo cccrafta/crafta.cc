@@ -80,7 +80,7 @@ related_posts: ["slug-of-related-post-1", "slug-of-related-post-2"]
 references:
   - title: "Article Title — Publication"
     url: "https://example.com/article"
-excerpt: One compelling sentence.
+excerpt: "Present and compelling, 20-30 words. States the subject and reveals the angle."
 ---
 
 ## Content
@@ -110,15 +110,21 @@ Tell the user: "Draft saved to `bank/Posts/<Title>.md` — please review in Obsi
 Before publishing, verify:
 - [ ] **Length**: 300-500 words (standard), 500-700 (deep dive)
 - [ ] **Opening**: Leads with concrete observation, not a definition
-- [ ] **Closing**: Ends with the stance — the recognition that emerged
+- [ ] **Closing**: Ends with the stance — earned through the preceding paragraphs, not restating the opening
 - [ ] **Narrative**: Each paragraph earns the next, title's promise is answered
 - [ ] **Specificity**: Contains dates, measurements, places, names
 - [ ] **Balance**: Facts and observations serve each other — neither dominates
-- [ ] **Tone**: Craftsman's eye, no superlatives, no first person
+- [ ] **No vague assertions**: Every claim has substance. If you can't explain *why*, don't assert *that*
+- [ ] **Origin story**: For garments — who made it first, when, for whom (not optional)
+- [ ] **Material criticality**: For garments — why is the fabric choice not interchangeable? What breaks with the wrong material?
+- [ ] **Contemporary relevance**: Who makes it today and why — evidence the design is alive
+- [ ] **Cultural icons with substance**: If named, explain *why* they wore it — not just *that* they did
+- [ ] **Tone**: Measured, truthful, no superlatives, no first person
 - [ ] **Sources**: Every factual claim traceable in `## Sources Referenced`
 - [ ] **References**: `references` frontmatter populated with `{title, url}` objects from source notes
 - [ ] **Related posts**: 2-3 related post slugs suggested based on tag/topic overlap
-- [ ] **Excerpt**: Present and compelling
+- [ ] **Research note**: Created in `bank/Research/` and linked in post frontmatter
+- [ ] **Excerpt**: Present and compelling, 20-30 words. States the subject and reveals the angle.
 - [ ] **Tags**: 3-7 relevant tags
 - [ ] **No overlap**: Doesn't duplicate existing posts
 - [ ] **HTML**: All paragraphs wrapped in `<p>` tags
