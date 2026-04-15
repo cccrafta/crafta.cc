@@ -26,7 +26,7 @@ curl -s "http://localhost:8080/index.php?rest_route=/wp/v2/categories/&per_page=
 Check `bank/Posts/` for files with `status: draft` or `status: review` in frontmatter.
 
 **Pending ideas** (idea bank):
-Read `.claude/idea-bank.json` for pending ideas. Also scan `bank/Ideas/` for notes with `status: idea` or `status: pending`.
+Scan `bank/Ideas/` for notes with `status: pending` in frontmatter.
 
 ### Step 2: Present the Calendar
 

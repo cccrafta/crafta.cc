@@ -6,30 +6,9 @@ user_invocable: true
 
 # Idea Bank — Crafta Journal
 
-You manage a dual-storage idea system:
-- **`.claude/idea-bank.json`** — machine-readable, for querying and stats
-- **`bank/Ideas/`** — Obsidian notes with wiki links, for browsing and connecting
+Ideas are stored as Obsidian notes in `bank/Ideas/`. One note per idea, with YAML frontmatter for structured fields and wiki links for connections.
 
-**Both must stay in sync.** When adding or updating ideas, write to both.
-
-## Schema (JSON)
-
-```json
-{
-  "id": 1,
-  "date": "2026-04-10",
-  "idea": "The M43 Overshirt Silhouette",
-  "pitch": "Deep dive on how a WWII field shirt became the default spring layer",
-  "sources": ["heddels.com", "archivalblog.com"],
-  "category": "Garments",
-  "tags": ["outerwear", "military", "heritage"],
-  "status": "pending"
-}
-```
-
-## Obsidian Note (bank/Ideas/)
-
-Each idea also exists as `bank/Ideas/<Idea Title>.md`:
+## Frontmatter Schema
 
 ```markdown
 ---
@@ -51,40 +30,38 @@ How a WWII field shirt became the default spring layer.
 - [[Sources/Publications/Heddels]]
 ```
 
+**Status values:** `pending` (new idea), `in_progress` (being written), `published` (post exists), `rejected` (not pursuing)
+
 ## Commands
 
 ### List (`/idea-bank` or `/idea-bank list`)
-Read JSON, display pending ideas in a table. Show count by status.
+Glob `bank/Ideas/*.md`, read frontmatter from each, display pending ideas in a table. Show count by status.
 
 ### Add (`/idea-bank add "topic"`)
-1. Create the idea object with auto-incrementing id, today's date, status `pending`
-2. Write to `.claude/idea-bank.json`
-3. Create `bank/Ideas/<Topic>.md` using Idea template with wiki links to related content
+1. Create `bank/Ideas/<Topic>.md` using the Idea template
+2. Populate frontmatter: title, category, tags, status `pending`, sources, today's date, pitch
+3. Add wiki links to related content in `## Related`
 4. Report what was added
 
-### Update status (`/idea-bank status <id> <status>`)
-Update in both JSON and the Obsidian note frontmatter.
+### Update status (`/idea-bank status <title> <status>`)
+Find the matching note in `bank/Ideas/`, update the `status` field in frontmatter.
 
 ### Cleanup (`/idea-bank cleanup`)
-Flag ideas older than 90 days with status `pending`. Present for review.
+Glob `bank/Ideas/*.md`, flag ideas older than 90 days with status `pending`. Present for review.
 
 ### Stats (`/idea-bank stats`)
-Count by status and category from JSON.
+Glob `bank/Ideas/*.md`, parse frontmatter, count by status and category.
 
 ### Search (`/idea-bank search <query>`)
-Search JSON fields: idea, pitch, tags, category.
-
-### Sync (`/idea-bank sync`)
-Compare JSON entries with `bank/Ideas/` files. Report any that are out of sync and fix them.
+Glob `bank/Ideas/*.md`, search frontmatter fields: title, pitch, tags, category.
 
 ## Usage Examples
 
 ```
 /idea-bank
 /idea-bank add "French moleskin trousers"
-/idea-bank status 3 in_progress
+/idea-bank status "French moleskin trousers" in_progress
 /idea-bank cleanup
 /idea-bank stats
 /idea-bank search "japanese"
-/idea-bank sync
 ```

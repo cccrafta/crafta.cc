@@ -1,9 +1,7 @@
 "use client";
 
 import { useState, useEffect, useRef, useCallback } from "react";
-import PostCard from "@/components/post-card";
 import PostGridCard from "@/components/post-grid-card";
-import { useViewMode } from "@/components/view-toggle";
 import type { PostCard as PostCardType } from "@/lib/types/wordpress";
 
 export default function JournalFeed({
@@ -13,7 +11,6 @@ export default function JournalFeed({
   posts: PostCardType[];
   totalPages: number;
 }) {
-  const { view } = useViewMode();
   const [posts, setPosts] = useState(initialPosts);
   const [page, setPage] = useState(1);
   const [totalPages] = useState(initialTotalPages);
@@ -52,40 +49,20 @@ export default function JournalFeed({
     return () => observer.disconnect();
   }, [loadMore]);
 
-  if (view === "grid") {
-    return (
-      <div>
-        <div
-          className="w-full"
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            gap: "0px",
-          }}
-        >
-          {posts.map((post) => (
-            <PostGridCard key={post.id} post={post} />
-          ))}
-        </div>
-        <div ref={loaderRef} style={{ height: 1 }} />
-        {loading && (
-          <div className="flex justify-center" style={{ padding: "var(--space-xl)" }}>
-            <span className="type-meta">Loading...</span>
-          </div>
-        )}
-      </div>
-    );
-  }
-
   return (
     <div>
-      <div className="w-full" style={{ maxWidth: "550px" }}>
-        <div className="flex flex-col" style={{ gap: "var(--space-3xl)" }}>
-          {posts.map((post) => (
-            <PostCard key={post.id} post={post} />
-          ))}
-        </div>
+      <div
+        className="w-full"
+        style={{
+          display: "flex",
+          flexWrap: "wrap",
+          justifyContent: "center",
+          gap: "0px",
+        }}
+      >
+        {posts.map((post) => (
+          <PostGridCard key={post.id} post={post} />
+        ))}
       </div>
       <div ref={loaderRef} style={{ height: 1 }} />
       {loading && (

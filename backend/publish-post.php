@@ -3,12 +3,13 @@
  * CLI helper to publish posts to WordPress.
  *
  * Usage: php publish-post.php --title "..." --content "..." --excerpt "..." --category "..." --tags "..." --related-posts "slug1,slug2" --references '[{"title":"...","url":"..."}]'
+ *        php publish-post.php --wp-id 42 --title "..." --content "..."   (updates existing post)
  */
 require_once __DIR__ . '/wp-load.php';
 wp_set_current_user(1);
 
 // Parse CLI arguments
-$opts = getopt('', ['title:', 'content:', 'excerpt:', 'category:', 'tags:', 'date:', 'related-posts:', 'references:']);
+$opts = getopt('', ['title:', 'content:', 'excerpt:', 'category:', 'tags:', 'date:', 'related-posts:', 'references:', 'wp-id:']);
 
 if (empty($opts['title']) || empty($opts['content'])) {
     echo json_encode(['error' => 'Missing required --title or --content']);
@@ -39,7 +40,19 @@ if (!empty($opts['date'])) {
     $post_data['post_date'] = date('Y-m-d H:i:s', strtotime($opts['date']));
 }
 
-$id = wp_insert_post($post_data);
+// Create or update
+if (!empty($opts['wp-id'])) {
+    $wp_id = intval($opts['wp-id']);
+    $existing = get_post($wp_id);
+    if (!$existing || $existing->post_type !== 'post') {
+        echo json_encode(['error' => "Post $wp_id not found"]);
+        exit(1);
+    }
+    $post_data['ID'] = $wp_id;
+    $id = wp_update_post($post_data, true);
+} else {
+    $id = wp_insert_post($post_data);
+}
 
 if (is_wp_error($id)) {
     echo json_encode(['error' => $id->get_error_message()]);
@@ -79,6 +92,7 @@ if (!empty($opts['references'])) {
 }
 
 $output = [
+    'action' => !empty($opts['wp-id']) ? 'updated' : 'created',
     'id' => $id,
     'title' => $opts['title'],
     'slug' => get_post($id)->post_name,

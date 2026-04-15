@@ -9,7 +9,11 @@ used_in: []
 ---
 
 ## Summary
-Reference source for Crafta Journal post.
+Detailed tuxedo history covering the Tuxedo Park connection, Griswold Lorillard, and evolution of black tie.
 
 ## Key Claims
-- See source URL for details
+- URL returned 404 — original page restructured
+- From web search: Griswold Lorillard and friends appeared at Tuxedo Club's first Autumn Ball (October 1886) wearing "a tailless dress coat"
+- Whether it was a mess jacket or dinner jacket is unclear, but cemented the Tuxedo Park association
+- The term "tuxedo" first appeared 1889; "dinner jacket" only dated to 1891
+- *Note: Original URL returned 404/403 as of 2026-04-15. Claims extracted from web search results.*

@@ -17,9 +17,8 @@ Page → Service → API → HTTP Client → WordPress REST API
 ```
 
 - `lib/http-client.ts` — base fetch wrapper, uses `index.php?rest_route=` for PHP built-in server compatibility
-- `lib/api/` — thin 1:1 endpoint wrappers
+- `lib/api/` — thin 1:1 endpoint wrappers (posts, comments, categories)
 - `lib/services/` — business logic, transforms WP data to view types
-- `lib/hooks/` — client-side React hooks (placeholder)
 - `lib/types/wordpress.ts` — all WP + view types
 
 ## Design Tokens
@@ -40,8 +39,32 @@ All styling flows through CSS custom properties in `globals.css`. Key tokens:
 ## Publishing Posts
 
 ```bash
-php backend/publish-post.php --title "..." --content "..." --excerpt "..." --category "..." --tags "tag1, tag2, tag3"
+# Create new post
+php backend/publish-post.php \
+  --title "..." --content "..." --excerpt "..." \
+  --category "..." --tags "tag1, tag2, tag3" \
+  --related-posts "slug-1, slug-2" \
+  --references '[{"title":"Article — Publication","url":"https://..."}]'
+
+# Update existing post
+php backend/publish-post.php --wp-id 42 \
+  --title "..." --content "..." --excerpt "..." \
+  --category "..." --tags "tag1, tag2, tag3" \
+  --related-posts "slug-1, slug-2" \
+  --references '[{"title":"Article — Publication","url":"https://..."}]'
 ```
+
+## Frontend Components
+
+All in `frontend/src/components/`. Only actively used components are kept — unused ones are deleted.
+
+- `header.tsx` — fixed header with children (center) and actions (right) slots
+- `journal-header-nav.tsx` — debounced search input (400ms), centered in header
+- `journal-feed.tsx` — client component, grid view with infinite scroll
+- `post-grid-card.tsx` — grid card with hover-to-reveal, variable width based on excerpt length
+- `category-circle.tsx` — client component, radial text around a circle with configurable orient/facing/spin
+- `post-content.tsx` — single post content renderer
+- `comment-list.tsx` — async server component for post comments
 
 ## Obsidian Vault — `bank/`
 
@@ -51,6 +74,7 @@ The vault is the workspace for all content operations. Everything flows through 
 bank/
 ├── Ideas/          # One note per idea, wiki-linked
 ├── Research/       # Mood boards, deep dives, gap analyses
+│   └── Cache/      # Raw article inventories from research sessions
 ├── Posts/          # All post stages: draft → review → published
 ├── Feeds/          # Feed briefings (daily/weekly/on-demand)
 ├── Sources/
@@ -64,7 +88,7 @@ bank/
 - One file per post in `Posts/` — status tracked in frontmatter, git handles versioning
 - Every factual claim in a post must link to a source note in `Sources/References/`
 - Wiki links connect everything: ideas → research → posts → sources
-- The JSON idea bank (`.claude/idea-bank.json`) stays in sync with `bank/Ideas/` notes
+- Ideas are stored as Obsidian notes in `bank/Ideas/` with YAML frontmatter
 
 ## Content Workflow — How to Handle Content Requests
 
@@ -74,7 +98,7 @@ When the user asks you to write posts, find topics, or do anything content-relat
 
 ```
 Step 1: RESEARCH — What exists, what's saved, and what's trending
-├── Check bank/Ideas/ and .claude/idea-bank.json for pending ideas
+├── Check bank/Ideas/ for pending ideas
 ├── Check bank/Posts/ and WordPress API for existing posts (avoid duplicates)
 ├── Check bank/Research/ for prior research on this topic
 ├── Scan RSS feeds + WebSearch + sitemaps for coverage
@@ -117,7 +141,7 @@ Step 6: AUDIT — Quality check before publishing
 Step 7: PUBLISH — To WordPress after user approval
 ├── php backend/publish-post.php with title, content, excerpt, category, tags
 ├── Update bank/Posts/<Title>.md: status → published, add wp_id
-├── Update .claude/idea-bank.json status if applicable
+├── Update bank/Ideas/ note status if applicable
 └── Report: post ID, title, category, tags
 ```
 
@@ -144,7 +168,7 @@ Step 4: If user wants to write → transition to writing workflow
 ### Quality review / "check my posts"
 
 ```
-Step 1: Run /audit-posts (checks both vault and WordPress)
+Step 1: Run /triage (scores quality + checks vault/metadata integrity)
 Step 2: Present findings — prioritize source integrity issues
 Step 3: Offer fixes after approval
 ```
@@ -168,11 +192,7 @@ Step 4: Tier A → full rewrite using writing pipeline (one at a time, with user
 
 ## Idea Bank
 
-Dual storage:
-- `.claude/idea-bank.json` — machine-readable, for querying and stats
-- `bank/Ideas/` — Obsidian notes with wiki links, for browsing and connecting
-
-Both must stay in sync. Managed via `/idea-bank` skill.
+Ideas are stored as Obsidian notes in `bank/Ideas/`. Each note has YAML frontmatter with title, category, tags, status, sources, created, pitch. Managed via `/idea-bank` skill.
 
 ## RSS Feeds
 
@@ -189,13 +209,17 @@ The curated feed list with RSS URLs, domains, and sitemap URLs:
 - **Technique** — craft methods, construction, repair
 - **Culture** — movements, subcultures, philosophy of dress
 
+## Research Protocol
+
+@.claude/research-protocol.md
+
 ## Skills
 
 @.claude/skills/generate-posts.md
 @.claude/skills/discover.md
 @.claude/skills/editorial-calendar.md
-@.claude/skills/audit-posts.md
 @.claude/skills/mood-board.md
 @.claude/skills/manage-feeds.md
 @.claude/skills/idea-bank.md
+@.claude/skills/source.md
 @.claude/skills/triage.md

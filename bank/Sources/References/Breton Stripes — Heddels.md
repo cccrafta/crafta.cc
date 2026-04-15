@@ -9,7 +9,13 @@ used_in: []
 ---
 
 ## Summary
-Reference source for Crafta Journal post.
+Heddels' comprehensive article on Breton stripes as France's horizontal contribution to workwear — history, manufacturers, and cultural adoption.
 
 ## Key Claims
-- See source URL for details
+- French Navy introduced Breton shirts in 1858 through "The Act of France"
+- Original specs: 21 white stripes (20mm) and 21 blue stripes (10mm) on torso
+- Sleeves: 15 white stripes and 14-15 blue stripes
+- Coco Chanel opened boutique in Deauville 1913, incorporated Breton stripes into her 1917 collection
+- Saint James established as main manufacturer in late 19th century
+- Armor Lux began operations in 1938
+- Orcival founded 1939 (one year after Armor Lux)

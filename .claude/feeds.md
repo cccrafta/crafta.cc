@@ -19,6 +19,19 @@ Curated RSS feeds for fashion/design/craft editorial inspiration for Crafta jour
 | Stridewise | https://stridewise.com/feed/ | stridewise.com | https://stridewise.com/post-sitemap.xml | Boots, leather, footwear reviews |
 | Carryology | — | carryology.com | | Bags, carry goods, waxed canvas, heritage materials |
 
+## Primary Sources — Maker Blogs & Archives (T1)
+| Source | Feed URL | Domain | Sitemap | Focus |
+|---|---|---|---|---|
+| Westley Richards (The Explora) | — | westleyrichards.com | — | Safari clothing, field equipment, heritage gunmaker (est. 1812) |
+| Huntsman Savile Row | — | huntsmansavilerow.com | — | Bespoke tailoring, safari heritage, Mogambo connection |
+| Barbour | — | barbour.com | — | Waxed cotton, field clothing, heritage outerwear (est. 1894) |
+| V&A Fashion Collection | — | vam.ac.uk | — | Museum archive, historical garments, textile collection |
+
+## Specialist — Deep Craft Journalism (T2)
+| Source | Feed URL | Domain | Sitemap | Focus |
+|---|---|---|---|---|
+| Permanent Style | — | permanentstyle.com | — | Bespoke tailoring, fabric deep dives, craft journalism |
+
 ## Design & Art
 | Source | Feed URL | Domain | Sitemap | Focus |
 |---|---|---|---|---|

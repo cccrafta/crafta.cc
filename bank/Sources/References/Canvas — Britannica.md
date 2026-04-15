@@ -9,7 +9,13 @@ used_in: []
 ---
 
 ## Summary
-Reference source for Crafta Journal post.
+Encyclopedic overview of canvas fabric covering etymology, historical fibers, modern manufacturing, and weaving techniques.
 
 ## Key Claims
-- See source URL for details
+- Canvas named after cannabis (Latin: "hemp")
+- Hemp and flax fibers used for ages to produce sail cloth
+- After power looms introduced, canvas manufactured from flax, hemp, tow, jute, cotton, and mixtures
+- Flax canvas uses double warp construction to withstand pressure or rough usage
+- Canvas yarns almost invariably two or more ply
+- Plain weave extensively used alongside special weaves
+- Painters' canvas is single-warp variety, much lighter than sail canvas, made from cream or bleached flax fibre

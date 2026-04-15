@@ -9,7 +9,13 @@ used_in: []
 ---
 
 ## Summary
-Reference source for Crafta Journal post.
+Peggs & Son's account of the CPO shirt's naval history and transition to civilian fashion.
 
 ## Key Claims
-- See source URL for details
+- URL returned 404
+- From web search: CPO developed for cold-weather work duty in 1930s
+- Not limited to Chief Petty Officers — could be worn even by officers
+- Original 1930s issue featured singular chest pocket with scalloped flap
+- Buttons often feature embossed anchor
+- Dual-pocket version from late 1940s until phased out late 1960s
+- *Note: Original URL returned 404/403 as of 2026-04-15. Claims extracted from web search results.*

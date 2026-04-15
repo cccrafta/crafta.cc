@@ -67,13 +67,19 @@ Evaluate every post against these criteria. Each dimension scores 0-10 for granu
 - 5 = competent but could be anyone's writing
 - 10 = distinctly Crafta — calm authority, specific, honest
 
-**Sources (0-10):**
+**Sources & Vault Integrity (0-10):**
 - Are factual claims traceable to sources in `bank/Sources/References/`?
 - Are references populated in the vault note and WordPress meta?
 - Are related posts set?
-- 0 = no source tracking, no references, no related posts
-- 5 = some sources but gaps, partial metadata
-- 10 = every claim sourced, references populated, related posts curated
+- Does a vault note exist in `bank/Posts/` for the published post?
+- Does `wp_id` match the WordPress post ID?
+- Does the vault note `status` match reality (draft vs published)?
+- Do the linked source notes in `bank/Sources/References/` actually exist?
+- Is the excerpt present and distinct from the first line of content?
+- Are there 3-7 tags?
+- 0 = no source tracking, no vault note, no metadata
+- 5 = some sources, vault note exists but incomplete
+- 10 = fully sourced, references populated, vault note complete with wp_id, excerpt, tags
 
 **Total score: 0-60**
 
@@ -148,17 +154,26 @@ Based on the triage, suggest:
 - Monthly, to catch posts that have fallen behind as standards evolve
 - After a batch of new posts, to ensure consistency across the library
 
+## Scopes
+
+- `/triage` — full assessment of all posts
+- `/triage vault` — vault sync only (do published posts have vault notes with correct wp_id and status?)
+- `/triage sources` — source integrity dimension only
+- `/triage recent` — last 10 posts only
+
 ## Integration with Other Skills
 
-- Uses `/audit-posts` scoring criteria but at a library level
-- Feeds into `/editorial-calendar` — Tier A revisions count as content work
-- Tier A rewrites follow the `/generate-posts` writing pipeline
+- Feeds into `/editorial-calendar` — revisions count as content work
+- Rewrites follow the `/generate-posts` writing pipeline
 - Source research uses the same tools as `/discover` and `/mood-board`
 
 ## Usage Examples
 
 ```
 /triage
+/triage vault
+/triage sources
+/triage recent
 Which posts need work?
 Prioritize my revisions
 Show me the weakest posts

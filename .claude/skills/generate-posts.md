@@ -15,12 +15,12 @@ You are a content generator for **Crafta Journal** — an editorial publication 
 
 ### Mode 1: Batch Generate (`/generate-posts 5` or `/generate-posts 3 Japanese denim`)
 
-1. Check `bank/Ideas/` and `.claude/idea-bank.json` for pending ideas related to the request
+1. Check `bank/Ideas/` for pending ideas related to the request
 2. Check existing posts in `bank/Posts/` and WordPress API to avoid duplicates
 3. Fetch 2-3 RSS feeds + run WebSearch `site:` queries (read domains from `.claude/feeds.md`)
 4. Propose a numbered list of topics with title, category, one-line pitch, and source
 5. Wait for user approval
-6. **Save rejected topics** to `bank/Ideas/` and `.claude/idea-bank.json`
+6. **Save rejected topics** to `bank/Ideas/`
 7. For each approved topic: research → draft → audit → save to vault → publish
 8. See "Writing Pipeline" below for each post
 
@@ -50,10 +50,13 @@ You are a content generator for **Crafta Journal** — an editorial publication 
 Every post follows this pipeline. **Do not skip steps.**
 
 ### Step 1: Research
+- Check `bank/Research/Cache/` for existing findings on this topic before fetching
+- Check `bank/Research/` for prior research — if a note exists, **update it** with new findings rather than starting fresh
+- Start with primary sources (maker websites, archives) before specialist publications (see Source Tiers in `.claude/research-protocol.md`)
 - Read `.claude/feeds.md` for feed URLs, domains, and sitemaps
 - Search for existing coverage across publications
-- Check `bank/Research/` for prior research on this topic
-- Save research to `bank/Research/<topic>.md` if not already there
+- Save raw findings to `bank/Research/Cache/`
+- Save research synthesis to `bank/Research/<topic>.md` (update existing or create new)
 - Log every source consulted
 
 ### Step 2: Source Collection
@@ -131,6 +134,7 @@ Before publishing, verify:
 - [ ] **Cultural icons with substance**: If named, explain *why* they wore it — not just *that* they did
 - [ ] **Tone**: Measured, truthful, no superlatives, no first person
 - [ ] **Sources**: Every factual claim traceable in `## Sources Referenced`
+- [ ] **Anchor claims verified**: Origin, attribution, and technical claims backed by 2+ independent sources (at least one T1/T2). Single-source anchor claims flagged or language softened
 - [ ] **References**: `references` frontmatter populated with `{title, url}` objects from source notes
 - [ ] **Related posts**: 2-3 related post slugs suggested based on tag/topic overlap
 - [ ] **Research note**: Created in `bank/Research/` and linked in post frontmatter
@@ -143,7 +147,19 @@ Present audit results to user.
 ### Step 7: Publish
 After user approves:
 ```bash
+# New post
 php /Users/muhamad.ariqyandri/Desktop/crafta-cc/backend/publish-post.php \
+  --title "Post Title" \
+  --content "<p>Content here...</p>" \
+  --excerpt "Excerpt here." \
+  --category "Category" \
+  --tags "tag1, tag2, tag3" \
+  --related-posts "slug-1, slug-2, slug-3" \
+  --references '[{"title":"Article — Publication","url":"https://..."}]'
+
+# Update existing post (read wp_id from vault note frontmatter)
+php /Users/muhamad.ariqyandri/Desktop/crafta-cc/backend/publish-post.php \
+  --wp-id <wp_id> \
   --title "Post Title" \
   --content "<p>Content here...</p>" \
   --excerpt "Excerpt here." \
@@ -154,12 +170,18 @@ php /Users/muhamad.ariqyandri/Desktop/crafta-cc/backend/publish-post.php \
 ```
 Then update `bank/Posts/<Title>.md`:
 - Set `status: published`
-- Set `wp_id: <returned ID>`
+- Set `wp_id: <returned ID>` (for new posts)
 - Set `published: <today's date>`
 
-Update `.claude/idea-bank.json` status to `published` if applicable.
+Update the idea in `bank/Ideas/` to `status: published` if applicable.
 
-Report: post ID, title, category, tags, related posts, vault path.
+After publishing, verify the post saved correctly:
+```bash
+curl -s "http://localhost:8080/index.php?rest_route=/wp/v2/posts/<ID>&_fields=id,title,slug,categories,meta" 2>/dev/null
+```
+Check: post exists, title matches, `references` and `related_posts` meta populated. Report any failures.
+
+Report: post ID, action (created/updated), title, category, tags, related posts, vault path.
 
 ## Editorial Framework
 
@@ -191,9 +213,10 @@ The stance is not imposed — it is discovered through observation. Beauty is re
 
 ### Source Integrity
 - **Every factual claim must be traceable** — linked to a source in `bank/Sources/`
-- If only one source supports a claim, flag it as unverified
-- Cross-reference across multiple publications when possible
+- **Anchor claims need triangulation** — origin, attribution, and technical claims need 2+ independent sources (see `.claude/research-protocol.md`)
+- If only one source supports an anchor claim, flag it as `[single-source]` and soften the language
 - Distinguish between: established fact, widely reported, single-source claim, own analysis
+- Prefer T1/T2 sources for historical and technical claims (see Source Tiers in protocol)
 - Never reproduce content from sources — use them as factual foundation for original writing
 
 ### Content Rules
@@ -211,13 +234,7 @@ The stance is not imposed — it is discovered through observation. Beauty is re
 - **Technique** — craft methods, construction, repair
 - **Culture** — movements, subcultures, philosophy of dress
 
-## Research Tools
-
-Read `.claude/feeds.md` for current feed URLs, domains, and sitemaps. Use all three levels:
-
-1. **RSS feeds** (via WebFetch) — latest articles
-2. **Web search** (via WebSearch `site:<domain>`) — full archive search
-3. **Sitemaps** (via WebFetch) — comprehensive directory
+**Research methodology:** Follow `.claude/research-protocol.md` for the three-tier model, footnoting, and source handling.
 
 ## Usage Examples
 

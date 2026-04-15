@@ -9,7 +9,13 @@ used_in: []
 ---
 
 ## Summary
-Reference source for Crafta Journal post.
+Faherty's history of the CPO jacket from US Navy origins to contemporary fashion.
 
 ## Key Claims
-- See source URL for details
+- URL returned 404 — page moved to fahertybrand.com
+- From web search: US Navy introduced CPO shirt in 1930s as standard uniform for Chief Petty Officers
+- Officially titled "Shirt, Wool, Blue"
+- Cut from warm navy wool flannel with roomy fit for layering over knits and thermals
+- Scores produced for WWII; minimal changes to silhouette
+- Extra chest pocket added in late 1940s; phased out by late 1960s
+- *Note: Original URL returned 404/403 as of 2026-04-15. Claims extracted from web search results.*

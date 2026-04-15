@@ -2,7 +2,7 @@
 title: 
 category: 
 tags: []
-status: idea
+status: pending
 sources: []
 created: 
 pitch: 
