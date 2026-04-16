@@ -159,7 +159,17 @@ These must be present in every piece of Crafta writing. They are not optional.
 - No superlatives, no first person, no marketing language, no selling
 - No filler phrases ("it's worth noting that," "interestingly," "it goes without saying")
 - **Use punctuation properly.** Quotes need quotation marks. Use semicolons, colons, and commas to vary sentence structure — don't default to em dashes (—) for every pause. Over-reliance on em dashes makes prose monotonous. A semicolon connects related thoughts; a colon introduces what follows; a comma lets the reader breathe. Each serves a different purpose.
-- **No vague assertions that sound smart but say nothing.** If you write "as though certain patterns generate a magnetic field around a certain kind of person" — stop and ask: what does this actually mean? If you cannot explain the mechanism, replace the assertion with the evidence. Every claim must have substance behind it.
+- **No vague assertions that sound smart but say nothing.** Stop and ask: what does this actually mean? If you cannot explain the mechanism, replace the assertion with the evidence. Every claim must have substance behind it. When you find yourself writing something abstract, ask what the concrete thing is that produces that abstraction — then write the concrete thing instead.
+
+  | Vague | Direct |
+  |---|---|
+  | "as though certain patterns generate a magnetic field around a certain kind of person" | name who the person is and what draws them specifically |
+  | "a ritual makes the act of getting dressed a decision rather than a habit" | "it imposes a ritual on dressing that cannot be performed without attention" |
+  | "a daily act of intention" | "something that must be done with care" |
+  | "that distinction is where good making begins" | "they chose tweed not because it was beautiful but because nothing else could handle the weight, the cold, and the work; and that is the only reason a material should ever be chosen" |
+  | "it belongs to both worlds and neither" | "a coat with the bearing of a military garment and the presence of a film character: constructed for authority, cut for the camera" |
+
+- **Be direct, especially in the stance.** Do not stack multiple short sentences to create a rhythm that reaches for profundity without earning it. If the stance is a distinction, name the distinction explicitly. One direct sentence beats three atmospheric ones.
 - **Research our own sources first.** Before general web search, check the publications in `.claude/feeds.md`. Our sources are curated for relevance — use them.
 - Let the evidence produce the insight — present what you found, and trust that the truth of it is enough
 

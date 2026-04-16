@@ -120,14 +120,17 @@ Tell the user: "Draft saved to `bank/Posts/<Title>.md` — please review in Obsi
 - Repeat until user approves
 
 ### Step 6: Audit
-Before publishing, verify:
+Before auditing, **re-read `bank/Crafta Editorial Framework.md` Quality Essentials**. The checklist below catches structural issues; the framework catches prose issues. Both passes are required.
+
+Verify:
 - [ ] **Length**: 300-500 words (standard), 500-700 (deep dive)
 - [ ] **Opening**: Leads with concrete observation, not a definition
 - [ ] **Closing**: Ends with the stance — earned through the preceding paragraphs, not restating the opening
 - [ ] **Narrative**: Each paragraph earns the next, title's promise is answered
-- [ ] **Specificity**: Contains dates, measurements, places, names
+- [ ] **Specificity**: Contains dates, measurements, places, names — and measurements use numerals with units (9-10oz, not "nine to ten ounces")
 - [ ] **Balance**: Facts and observations serve each other — neither dominates
-- [ ] **No vague assertions**: Every claim has substance. If you can't explain *why*, don't assert *that*
+- [ ] **No vague assertions**: Every claim has substance. If you can't explain *why*, don't assert *that*. Check for abstract phrases where a concrete mechanism should be — see the Vague → Direct table in `bank/Crafta Editorial Framework.md` for examples
+- [ ] **Punctuation**: Em dashes not overused — use commas, colons, semicolons where appropriate. Count em dashes per paragraph; more than 2 is a flag
 - [ ] **Origin story**: For garments — who made it first, when, for whom (not optional)
 - [ ] **Material criticality**: For garments — why is the fabric choice not interchangeable? What breaks with the wrong material?
 - [ ] **Contemporary relevance**: Who makes it today and why — evidence the design is alive
