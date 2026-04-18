@@ -59,7 +59,7 @@ export default async function JournalPostPage({
   }
 
   return (
-    <div>
+    <div style={{ maxWidth: "var(--content-max-width)", margin: "0 auto" }}>
       <PostContent post={post} />
 
       <section

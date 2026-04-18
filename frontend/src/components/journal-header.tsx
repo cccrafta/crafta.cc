@@ -129,6 +129,15 @@ export default function JournalHeader() {
 
   const handleSearchSubmit = (e: React.FormEvent) => { e.preventDefault(); navigate(); };
 
+  // Debounced auto-search on input change
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      if (lookupOpen) navigate({ q: search });
+    }, 400);
+    return () => clearTimeout(timer);
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [search]);
+
   // Backspace on empty input removes last chip: tags first, then categories
   const handleInputKeyDown = (e: React.KeyboardEvent<HTMLInputElement>) => {
     if (e.key !== "Backspace" || search !== "") return;
@@ -234,7 +243,7 @@ export default function JournalHeader() {
           value={search}
           onChange={e => setSearch(e.target.value)}
           onKeyDown={handleInputKeyDown}
-          placeholder={hasFilters ? "" : "Search..."}
+          placeholder="Search..."
           className="type-search"
           style={{
             flex: 1,

@@ -61,6 +61,8 @@ function mapPostToDetail(post: WPPost): PostDetail {
     authorName: post._embedded?.author?.[0]?.name ?? "Unknown",
     authorAvatar:
       post._embedded?.author?.[0]?.avatar_urls?.["96"] ?? null,
+    categories:
+      post._embedded?.["wp:term"]?.[0]?.map((t) => t.name) ?? [],
     tags:
       post._embedded?.["wp:term"]?.[1]?.map((t) => t.name) ?? [],
     references: post.meta?.references ?? [],

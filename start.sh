@@ -28,6 +28,6 @@ mysql -u root -e "FLUSH PRIVILEGES;"
 echo "Starting WordPress on http://localhost:8080"
 cd "$(dirname "$0")/backend" && php -S localhost:8080 &
 
-# Start Next.js frontend
+# Start Next.js frontend (clear Turbopack cache first to avoid stale CSS/JS)
 echo "Starting Next.js on http://localhost:3000"
-cd "$(dirname "$0")/frontend" && npm run dev
+cd "$(dirname "$0")/frontend" && rm -rf .next/cache && npm run dev

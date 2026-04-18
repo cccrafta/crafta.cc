@@ -136,6 +136,7 @@ export type PostDetail = {
   featuredImageAlt: string;
   authorName: string;
   authorAvatar: string | null;
+  categories: string[];
   tags: string[];
   references: Reference[];
   manualRelatedIds: number[];
