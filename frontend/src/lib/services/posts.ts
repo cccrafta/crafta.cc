@@ -19,12 +19,20 @@ function stripHtmlTags(html: string): string {
   return html.replace(/<[^>]*>/g, "").trim();
 }
 
+function extractParagraphs(html: string): string[] {
+  const matches = html.match(/<p[^>]*>([\s\S]*?)<\/p>/gi) ?? [];
+  return matches
+    .map(p => decodeHtmlEntities(stripHtmlTags(p)))
+    .filter(text => text.length > 0);
+}
+
 function mapPostToCard(post: WPPost): PostCard {
   return {
     id: post.id,
     slug: post.slug,
     title: decodeHtmlEntities(post.title.rendered),
     excerpt: decodeHtmlEntities(stripHtmlTags(post.excerpt.rendered)),
+    contentParagraphs: extractParagraphs(post.content.rendered),
     date: post.date,
     featuredImageUrl:
       post._embedded?.["wp:featuredmedia"]?.[0]?.source_url ?? null,
@@ -80,7 +88,8 @@ export async function getJournalFeed(
 
 export async function searchJournal(
   query?: string,
-  categoryId?: number,
+  categoryIds?: number[],
+  tagIds?: number[],
   page?: number,
   perPage?: number
 ): Promise<{
@@ -90,7 +99,8 @@ export async function searchJournal(
 }> {
   const response = await getPosts({
     search: query || undefined,
-    categories: categoryId || undefined,
+    categories: categoryIds && categoryIds.length > 0 ? categoryIds.join(",") : undefined,
+    tags: tagIds && tagIds.length > 0 ? tagIds.join(",") : undefined,
     page,
     per_page: perPage,
   });

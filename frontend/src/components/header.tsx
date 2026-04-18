@@ -11,11 +11,13 @@ export default function Header({
   return (
     <header
       className="fixed top-0 left-0 w-full z-50"
-      style={{ padding: "var(--space-md)" }}
+      style={{
+        padding: "var(--space-md)",
+        }}
     >
-      <div className="relative flex items-center justify-between">
+      <div className="flex items-center" style={{ gap: "var(--space-xl)" }}>
         {/* Logo — left */}
-        <Link href="/" className="shrink-0 relative z-10">
+        <Link href="/" className="shrink-0">
           <Image
             src="/crafta-journal.svg"
             alt="Crafta Journal"
@@ -25,25 +27,17 @@ export default function Header({
           />
         </Link>
 
-        {/* Center — scoped content (search bar, nav, etc.) */}
-        {children && (
-          <div
-            className="absolute left-1/2 -translate-x-1/2"
-            style={{ width: "50%", maxWidth: "var(--content-max-width)" }}
-          >
-            {children}
+        {/* Center — fills remaining space */}
+        <div className="flex-1 flex items-center" style={{ gap: "var(--space-lg)" }}>
+          {children}
+        </div>
+
+        {/* Right — actions */}
+        {actions && (
+          <div className="shrink-0 flex items-center">
+            {actions}
           </div>
         )}
-
-        {/* Right — actions + menu */}
-        <div className="shrink-0 relative z-10 flex items-center" style={{ gap: "var(--space-md)" }}>
-          {actions}
-          <button
-            className="type-nav transition-opacity hover:opacity-60"
-          >
-            Menu
-          </button>
-        </div>
       </div>
     </header>
   );

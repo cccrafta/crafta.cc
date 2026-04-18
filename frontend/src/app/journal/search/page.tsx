@@ -1,5 +1,5 @@
 import { searchJournal } from "@/lib/services";
-import { getCategories } from "@/lib/api";
+import { getCategories, getTagBySlug } from "@/lib/api";
 import PostGridCard from "@/components/post-grid-card";
 import { ConnectionError } from "@/lib/http-client";
 
@@ -10,53 +10,41 @@ export const metadata = {
 export default async function SearchPage({
   searchParams,
 }: {
-  searchParams: Promise<{ q?: string; cat?: string }>;
+  searchParams: Promise<{ q?: string; cat?: string; tag?: string }>;
 }) {
-  const { q, cat } = await searchParams;
+  const { q, cat, tag } = await searchParams;
 
   try {
-    const categories = await getCategories();
+    const catSlugs = cat ? cat.split(",").filter(Boolean) : [];
+    const tagSlugs = tag ? tag.split(",").filter(Boolean) : [];
 
-    const categoryId = cat
-      ? categories.find((c) => c.slug === cat)?.id
+    const [categories, tagDataArray] = await Promise.all([
+      getCategories(),
+      tagSlugs.length > 0
+        ? Promise.all(tagSlugs.map((s) => getTagBySlug(s)))
+        : Promise.resolve([]),
+    ]);
+
+    const categoryIds = catSlugs.length > 0
+      ? categories
+          .filter((c) => catSlugs.includes(c.slug))
+          .map((c) => c.id)
       : undefined;
 
-    const { posts } = await searchJournal(q, categoryId, 1, 20);
+    const tagIds = tagDataArray.length > 0
+      ? tagDataArray.filter(Boolean).map((t) => t!.id)
+      : undefined;
 
-    const label = q
-      ? `Results for "${q}"`
-      : cat
-        ? `${categories.find((c) => c.slug === cat)?.name ?? cat}`
-        : "All posts";
+    const { posts } = await searchJournal(q, categoryIds, tagIds, 1, 20);
 
     return (
       <div>
-        <p
-          className="type-label"
-          style={{
-            color: "var(--color-fg-secondary)",
-            marginBottom: "var(--space-lg)",
-          }}
-        >
-          {label}{" "}
-          <span style={{ color: "var(--color-accent)" }}>
-            [{String(posts.length).padStart(2, "0")}]
-          </span>
-        </p>
-
         {posts.length === 0 ? (
           <p className="type-body-sm" style={{ color: "var(--color-fg-secondary)" }}>
             No posts found.
           </p>
         ) : (
-          <div
-            style={{
-              display: "flex",
-              flexWrap: "wrap",
-              justifyContent: "center",
-              gap: "0px",
-            }}
-          >
+          <div className="journal-grid">
             {posts.map((post) => (
               <PostGridCard key={post.id} post={post} />
             ))}

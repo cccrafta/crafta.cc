@@ -51,15 +51,7 @@ export default function JournalFeed({
 
   return (
     <div>
-      <div
-        className="w-full"
-        style={{
-          display: "flex",
-          flexWrap: "wrap",
-          justifyContent: "center",
-          gap: "0px",
-        }}
-      >
+      <div className="journal-grid">
         {posts.map((post) => (
           <PostGridCard key={post.id} post={post} />
         ))}

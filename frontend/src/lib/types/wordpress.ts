@@ -84,7 +84,7 @@ export type WPPostsParams = {
   page?: number;
   per_page?: number;
   search?: string;
-  categories?: number;
+  categories?: number | string;
   tags?: number | string;
   slug?: string;
   _embed?: boolean;
@@ -111,6 +111,7 @@ export type PostCard = {
   slug: string;
   title: string;
   excerpt: string;
+  contentParagraphs: string[];
   date: string;
   featuredImageUrl: string | null;
   featuredImageAlt: string;
