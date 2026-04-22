@@ -168,8 +168,14 @@ These must be present in every piece of Crafta writing. They are not optional.
   | "a daily act of intention" | "something that must be done with care" |
   | "that distinction is where good making begins" | "they chose tweed not because it was beautiful but because nothing else could handle the weight, the cold, and the work; and that is the only reason a material should ever be chosen" |
   | "it belongs to both worlds and neither" | "a coat with the bearing of a military garment and the presence of a film character: constructed for authority, cut for the camera" |
+  | "The warmth-to-weight ratio IS the design" | show it in action: "a wool sweater of the same warmth would crowd the shoulder under a jacket" |
+  | "cashmere is the material whose physics determine the garment" | name the property and consequence: "the fiber is too fine to hold structure, which is why cashmere follows the body" |
+  | "follows from what 14–19 microns can do" | unimaginable to a reader — describe what the fineness DOES instead of citing the number |
 
 - **Be direct, especially in the stance.** Do not stack multiple short sentences to create a rhythm that reaches for profundity without earning it. If the stance is a distinction, name the distinction explicitly. One direct sentence beats three atmospheric ones.
+- **Observe, don't declare.** Do not write grand statements about what something IS ("The warmth-to-weight ratio IS the design"). Instead, show the property in a specific garment or situation where the reader can see it working ("A wool sweater thick enough to insulate under a jacket adds bulk to the shoulder. A cashmere sweater does not."). The truth is interesting on its own — it does not need amplification through philosophical framing.
+- **Measurements: contextualise, don't decorate.** "14–19 microns" means nothing to most readers. Use measurements when they aid a specific claim (comparing two things, establishing a proportion), not as intellectual decoration. If a number is abstract, give it physical context: "finer than a human hair" or "enough for about sixty sweaters." Do not repeat the same measurement as a refrain across the article.
+- **Let the story do the work.** "Cucinelli bought 20kg of cashmere he couldn't pay for, made sixty sweaters, and drove to Germany because Germans paid on time" — this is more interesting than any statement about cashmere's value. Facts, garments, and specific moments earn interest. Grand declarations about what a material means do not.
 - **Research our own sources first.** Before general web search, check the publications in `.claude/feeds.md`. Our sources are curated for relevance — use them.
 - Let the evidence produce the insight — present what you found, and trust that the truth of it is enough
 
@@ -178,7 +184,7 @@ These must be present in every piece of Crafta writing. They are not optional.
 - Open with a concrete observation, not a definition
 - Close with the stance — the recognition that emerged
 - Content in `<p>` tags for WordPress publication
-- 300-500 words standard, 500-700 deep dive
+- 500-700 words standard, 700-1200 deep dive
 - **Use numerals for measurements and units** — write "9–10oz" not "nine to ten ounces", "14–16%" not "fourteen to sixteen percent", "200 countries" not "two hundred countries". Numbers with units are faster to scan than written-out words.
 
 ### Source Tracking

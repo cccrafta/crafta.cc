@@ -209,17 +209,21 @@ The curated feed list with RSS URLs, domains, and sitemap URLs:
 - **Technique** — craft methods, construction, repair
 - **Culture** — movements, subcultures, philosophy of dress
 
+## Editorial Framework
+
+@bank/Crafta Editorial Framework.md
+
 ## Research Protocol
 
 @.claude/research-protocol.md
 
 ## Skills
 
-@.claude/skills/generate-posts.md
-@.claude/skills/discover.md
-@.claude/skills/editorial-calendar.md
-@.claude/skills/mood-board.md
-@.claude/skills/manage-feeds.md
-@.claude/skills/idea-bank.md
-@.claude/skills/source.md
-@.claude/skills/triage.md
+@.claude/skills/generate-posts/SKILL.md
+@.claude/skills/discover/SKILL.md
+@.claude/skills/editorial-calendar/SKILL.md
+@.claude/skills/mood-board/SKILL.md
+@.claude/skills/manage-feeds/SKILL.md
+@.claude/skills/idea-bank/SKILL.md
+@.claude/skills/source/SKILL.md
+@.claude/skills/triage/SKILL.md

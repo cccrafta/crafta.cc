@@ -123,7 +123,7 @@ Tell the user: "Draft saved to `bank/Posts/<Title>.md` — please review in Obsi
 Before auditing, **re-read `bank/Crafta Editorial Framework.md` Quality Essentials**. The checklist below catches structural issues; the framework catches prose issues. Both passes are required.
 
 Verify:
-- [ ] **Length**: 300-500 words (standard), 500-700 (deep dive)
+- [ ] **Length**: 500-700 words (standard), 700-1200 (deep dive)
 - [ ] **Opening**: Leads with concrete observation, not a definition
 - [ ] **Closing**: Ends with the stance — earned through the preceding paragraphs, not restating the opening
 - [ ] **Narrative**: Each paragraph earns the next, title's promise is answered
