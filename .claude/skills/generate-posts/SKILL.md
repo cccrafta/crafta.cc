@@ -111,15 +111,22 @@ excerpt: "Present and compelling, 20-30 words. States the subject and reveals th
 - If a research note exists for the topic, the post's footnotes should trace back through the research note's footnotes to the original source
 - The chain: **Source note ↔ Research note (footnoted) ↔ Post (sources referenced)**
 
-### Step 4: Notify user
+### Step 4: Humanize
+Run the `/humanize` skill on the post's `## Content` section before saving the final draft:
+- Apply all patterns from the humanize skill: remove AI vocabulary, fix em dash overuse, cut filler phrases, eliminate significance inflation, vary sentence rhythm
+- Do the full two-pass process: draft rewrite → AI-tells audit → final rewrite
+- Update `bank/Posts/<Title>.md` with the humanized content
+- The user should never see pre-humanized prose
+
+### Step 5: Notify user
 Tell the user: "Draft saved to `bank/Posts/<Title>.md` — please review in Obsidian. Let me know when you're ready to proceed or if you want changes."
 
-### Step 5: Refine (after user feedback)
+### Step 6: Refine (after user feedback)
 - If user edited the file in Obsidian, read the updated version
 - If user gives verbal feedback, apply changes and save
 - Repeat until user approves
 
-### Step 6: Audit
+### Step 7: Audit
 Before auditing, **re-read `bank/Crafta Editorial Framework.md` Quality Essentials**. The checklist below catches structural issues; the framework catches prose issues. Both passes are required.
 
 Verify:
@@ -147,7 +154,7 @@ Verify:
 - [ ] **HTML**: All paragraphs wrapped in `<p>` tags
 Present audit results to user.
 
-### Step 7: Publish
+### Step 8: Publish
 After user approves:
 ```bash
 # New post

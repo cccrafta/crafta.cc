@@ -62,7 +62,7 @@ export default async function JournalPostPage({
     <div style={{ maxWidth: "var(--content-max-width)", margin: "0 auto" }}>
       <PostContent post={post} />
 
-      <section
+      {/* <section
         className="mt-12 pt-8"
         style={{ borderTop: "1px solid var(--color-border)" }}
       >
@@ -96,7 +96,7 @@ export default async function JournalPostPage({
         >
           <CommentList postId={post.id} />
         </Suspense>
-      </section>
+      </section> */}
     </div>
   );
 }

@@ -121,24 +121,28 @@ Step 3: APPROVE — Present to user
 Step 4: DRAFT — Write and save to vault
 ├── Write the post following editorial standards
 ├── Save to bank/Posts/<Title>.md with status: draft
-├── Include ## Sources Referenced linking to bank/Sources/References/
+└── Include ## Sources Referenced linking to bank/Sources/References/
+
+Step 5: HUMANIZE — Remove AI writing patterns before user sees the draft
+├── Run /humanize on the post content (two-pass: rewrite → AI-tells audit → final)
+├── Update bank/Posts/<Title>.md with humanized prose
 ├── Tell user: "Draft saved — review in Obsidian"
 └── Wait for user feedback
 
-Step 5: REFINE — Iterate with user
+Step 6: REFINE — Iterate with user
 ├── Read any edits user made in Obsidian
 ├── Apply verbal feedback if given
 ├── Update bank/Posts/<Title>.md
 └── Repeat until user approves
 
-Step 6: AUDIT — Quality check before publishing
+Step 7: AUDIT — Quality check before publishing
 ├── Verify: length, opening, closing, specificity, tone
 ├── Verify: every claim has a source, no single-source claims unmarked
 ├── Verify: excerpt, tags (3-7), category, no duplicates
 ├── Present audit results to user
 └── Fix any issues before proceeding
 
-Step 7: PUBLISH — To WordPress after user approval
+Step 8: PUBLISH — To WordPress after user approval
 ├── php backend/publish-post.php with title, content, excerpt, category, tags
 ├── Update bank/Posts/<Title>.md: status → published, add wp_id
 ├── Update bank/Ideas/ note status if applicable
