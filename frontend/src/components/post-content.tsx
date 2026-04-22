@@ -18,6 +18,12 @@ export default function PostContent({ post }: { post: PostDetail }) {
         className="flex flex-col items-center"
         style={{ gap: "var(--space-md)", marginBottom: "var(--space-xl)" }}
       >
+        <div className="flex justify-between w-full">
+          <span className="type-body">{category}</span>
+          <time dateTime={post.date} className="type-body">
+            {formattedDate}
+          </time>
+        </div>
         <CategoryCircle text={category + "·"} size={72} fontSize={10}>
           <span
             style={{
@@ -34,10 +40,6 @@ export default function PostContent({ post }: { post: PostDetail }) {
         <h1 className="type-title-lg" style={{ textAlign: "center" }}>
           {post.title}
         </h1>
-
-        <time dateTime={post.date} className="type-meta">
-          {formattedDate}
-        </time>
       </div>
 
       {post.featuredImageUrl && (
@@ -63,15 +65,48 @@ export default function PostContent({ post }: { post: PostDetail }) {
         className="prose type-body max-w-none"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
-
       {post.tags.length > 0 && (
-        <div
-          className="flex flex-wrap"
-          style={{ gap: "var(--space-sm)", marginTop: "var(--space-xl)" }}
-        >
-          {post.tags.map((tag) => (
-            <span key={tag} className="tag-chip">{tag}</span>
-          ))}
+        <>
+          <p className="type-body" style={{ marginBottom: "var(--space-sm)" }}>
+            Keywords
+          </p>
+          <div className="flex flex-wrap" style={{ gap: "var(--space-sm)" }}>
+            {post.tags.map((tag) => (
+              <span key={tag} className="tag-chip">
+                {tag}
+              </span>
+            ))}
+          </div>
+        </>
+      )}
+
+      {post.references.length > 0 && (
+        <div style={{ marginTop: "var(--space-xl)" }}>
+          <p className="type-body" style={{ marginBottom: "var(--space-sm)" }}>
+            References
+          </p>
+          <ol style={{ paddingLeft: "1.25em", margin: 0 }}>
+            {post.references.map((ref, i) => (
+              <li
+                key={i}
+                className="type-meta"
+                style={{ marginBottom: "var(--space-xs)" }}
+              >
+                <a
+                  href={ref.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    color: "var(--color-accent)",
+                    textDecoration: "underline",
+                    fontStyle: "italic",
+                  }}
+                >
+                  {ref.title}
+                </a>
+              </li>
+            ))}
+          </ol>
         </div>
       )}
     </article>
