@@ -6,7 +6,7 @@ description: |
   comprehensive "Signs of AI writing" guide. Detects and fixes patterns including:
   inflated symbolism, promotional language, superficial -ing analyses, vague
   attributions, em dash overuse, rule of three, AI vocabulary words, passive
-  voice, negative parallelisms, and filler phrases.
+  voice, negative parallelisms, choppy sentence sequences, and filler phrases.
 user_invocable: true
 ---
 
@@ -63,7 +63,7 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 **Have opinions.** Don't just report facts - react to them. "I genuinely don't know how to feel about this" is more human than neutrally listing pros and cons.
 
-**Vary your rhythm.** Short punchy sentences. Then longer ones that take their time getting where they're going. Mix it up.
+**Vary your rhythm.** Short punchy sentences. Then longer ones that take their time getting where they're going. Mix it up. (For fixing choppy AI sequences, see Pattern #30.)
 
 **Acknowledge complexity.** Real humans have mixed feelings. "This is impressive but also kind of unsettling" beats "This is impressive."
 
@@ -247,6 +247,78 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 **After:**
 > You do not need a configuration file. The system preserves the results automatically.
+
+
+### 30. Choppy Sentence Sequences
+
+**Problem:** LLMs produce sequences of short declarative sentences with no variation in rhythm. When 3+ consecutive sentences are under 10 words each and share the same subject or logical flow, they should usually be combined.
+
+**Detection criteria:**
+- 3+ short sentences in sequence (<10 words each)
+- Same subject or closely related ideas
+- No intentional rhetorical punch (deliberate short sentences are fine)
+
+**Combining strategies:**
+- **Conjunctions** (and, but, so, or) for coordination
+- **Subordination** (because, although, when, if) for dependency
+- **Parallel structure** for lists of actions
+
+**Before (sequential actions):**
+> The system loads the config. It checks for updates. It reloads the cache. It logs the result.
+
+**After (compound sentence with parallel structure):**
+> The system loads the config, checks for updates, reloads the cache, and logs the result.
+
+**Before (related statements):**
+> The fabric is durable. It resists water. It breathes well.
+
+**After (compound sentence with conjunctions):**
+> The fabric is durable, resists water, and breathes well.
+
+**Before (cause-effect):**
+> The jacket was expensive. I saved for months. I finally bought it.
+
+**After (complex sentence with subordination):**
+> The jacket was expensive, so I saved for months before finally buying it.
+
+**Before (comparison/contrast):**
+> Ventile is waterproof. It's not cheap. Grenfell Cloth costs more.
+
+**After (complex sentence showing relationship):**
+> Ventile is waterproof but not cheap, though Grenfell Cloth costs even more.
+
+**Note:** Deliberate, occasional short sentences add punch and emphasis. The problem is **unvarying sequences** with no rhythmic variation. Don't combine sentences that are intentionally short for impact.
+
+**See also:** Pattern #11 (Elegant Variation) - both issues can create choppy prose when AI cycles through synonyms while producing short sentences.
+
+
+### 31. Paragraph Buttoning
+
+**Problem:** LLMs end paragraphs with a short, neat summary sentence that wraps up the point like a mic-drop. When most or all paragraphs end this way, the writing feels assembled rather than written. Real editorial prose lets some paragraphs just end — the information is complete, so the paragraph stops.
+
+**Detection criteria:**
+- Short closing sentence (<10 words) that summarizes or editorializes the paragraph
+- Multiple paragraphs in sequence ending with this pattern (3+ is a strong signal)
+- The closing sentence restates what the paragraph already demonstrated
+
+**Before:**
+> The yoke sheds rain sideways instead of letting it soak through at the seams. The raglan sleeves keep the surface unbroken from side to side. Underneath, a vent lets body heat escape. The Miller brothers solved rain protection with pattern cutting alone.
+
+**After:**
+> The yoke sheds rain sideways instead of letting it soak through at the seams. The raglan sleeves keep the surface unbroken from side to side. Underneath, a vent lets body heat escape.
+
+**Before (two related sentences that should be one):**
+> The lining has not changed since 1938: same pattern, same colors. It is how you identify the original.
+
+**After (folded into one):**
+> The lining has not changed since 1938: same pattern, same colors, and still the way you identify the original.
+
+**Fix strategies:**
+- **Cut it** — if the paragraph already makes the point, the button is redundant
+- **Fold it in** — combine with the preceding sentence using a conjunction or clause
+- **Vary** — keep buttons on 2-3 paragraphs max per article, not every one
+
+**Note:** A closing sentence that adds NEW information or delivers the article's stance is fine. The problem is paragraphs that end with a restatement of what was just shown. Not every paragraph needs a bow on top.
 
 
 ## STYLE PATTERNS

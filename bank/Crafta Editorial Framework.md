@@ -74,6 +74,8 @@ The Stance is not always positive. Sometimes honest observation reveals that som
 
 **Beauty = when the evidence reveals that something has integrity.**
 
+**Writing the stance:** The stance must be specific to the subject, earned through the evidence, and not trying to be profound. Name the specific makers, context, or mechanism — not "design" or "garments" in general. If the closing could apply to any well-designed object, it is too abstract. Avoid: dramatic restatements of obvious facts, grand historical claims, "timeless" language, general design philosophy, cliché essay wrap-ups. The stance should be something that could only be said about the subject at hand. Example: "Coat-makers built it to handle rain on a golf course, and that practical specificity, rather than any design ambition, is what gave the jacket a life well beyond the course" — names WHO, WHAT, and the recognition, all specific to one jacket.
+
 ## 4. Narrative (Coherence)
 
 Observation, Transformation, and Stance are lenses — they tell you *how* to see. Narrative tells you *why* the reader should follow along. Without it, even the most detailed writing is a catalog of unconnected insights.
@@ -184,7 +186,7 @@ These must be present in every piece of Crafta writing. They are not optional.
 - Open with a concrete observation, not a definition
 - Close with the stance — the recognition that emerged
 - Content in `<p>` tags for WordPress publication
-- 500-700 words standard, 700-1200 deep dive
+- 500-700 words standard, 1000-2000 deep dive
 - **Use numerals for measurements and units** — write "9–10oz" not "nine to ten ounces", "14–16%" not "fourteen to sixteen percent", "200 countries" not "two hundred countries". Numbers with units are faster to scan than written-out words.
 
 ### Source Tracking

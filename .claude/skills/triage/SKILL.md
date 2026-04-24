@@ -1,12 +1,14 @@
 ---
 name: triage
-description: Triage the post library into priority tiers for revision. Use when the user wants to assess which posts need attention, plan a revision sweep, or decide where to focus editorial effort. Triggers on /triage or requests like "which posts need work", "prioritize my revisions", "what should I fix first".
+description: Triage the post library into priority tiers for revision. Assesses posts across 7 dimensions (observation, transformation, stance, narrative, voice, humanization, sources) and scores 0-70. Identifies which posts need humanization, content revision, or metadata fixes. Triggers on /triage or requests like "which posts need work", "prioritize my revisions", "what should I fix first".
 user_invocable: true
 ---
 
 # Triage — Crafta Journal Library Assessment
 
 You assess the entire post library and categorize posts into priority tiers based on the current editorial standards. This is not a per-post audit — it's a strategic overview of where editorial effort will have the most impact.
+
+Posts are scored across 7 dimensions (0-70 total): Observation, Transformation, Stance, Narrative, Voice, Humanization, and Sources & Vault Integrity.
 
 ## Workflow
 
@@ -61,11 +63,23 @@ Evaluate every post against these criteria. Each dimension scores 0-10 for granu
 
 **Voice (0-10):**
 - Is it truthful and measured, not robotic or passionate?
-- Does the sentence rhythm vary?
-- Is it free of filler, superlatives, first person?
-- 0 = robotic or generic, every sentence same pattern
-- 5 = competent but could be anyone's writing
+- Does it avoid unnecessary first person?
+- Does it match Crafta editorial style — calm authority, observe don't declare?
+- Does it reference Heddels/Monocle-style directness and rhythm?
+- 0 = generic, could be from any publication
+- 5 = competent but lacks Crafta editorial voice
 - 10 = distinctly Crafta — calm authority, specific, honest
+
+**Humanization (0-10):**
+- Is it free of AI writing patterns? (checks against all 30 patterns from `/humanize` skill)
+- Key patterns to scan for: choppy sentence sequences, filler phrases, em dash overuse, rule of three, negative parallelisms, AI vocabulary (delve, showcase, landscape), passive voice, elegant variation, inflated significance language
+- Does the sentence rhythm vary naturally?
+- Are there deliberate short sentences for punch vs. unvarying choppy sequences?
+- 0 = heavy AI patterns throughout (choppy sequences, filler, AI vocab, negative parallelisms)
+- 3 = multiple AI tells present (em dash overuse, rule of three, passive voice)
+- 5 = some AI patterns slip through
+- 7 = natural prose with 1-2 minor patterns
+- 10 = clean, natural, human writing — no AI patterns detected
 
 **Sources & Vault Integrity (0-10):**
 - Are factual claims traceable to sources in `bank/Sources/References/`?
@@ -81,7 +95,7 @@ Evaluate every post against these criteria. Each dimension scores 0-10 for granu
 - 5 = some sources, vault note exists but incomplete
 - 10 = fully sourced, references populated, vault note complete with wp_id, excerpt, tags
 
-**Total score: 0-60**
+**Total score: 0-70**
 
 ### Step 3: Derive priority from score
 
@@ -89,10 +103,10 @@ The score determines the action needed:
 
 | Score | Priority | Action |
 |---|---|---|
-| 0-20 | **Critical** — full revision | Rewrite using the editorial framework. Full research, draft in vault, user review. |
-| 21-35 | **Improve** — content + metadata | Strengthen narrative and voice, add sources and references, set related posts. |
-| 36-50 | **Polish** — metadata + minor edits | Add references, related posts. Fix any obvious prose issues. |
-| 51-60 | **Complete** — no action needed | Meets the current standard. |
+| 0-25 | **Critical** — full revision | Rewrite using the editorial framework. Full research, draft in vault, user review, humanize. |
+| 26-42 | **Improve** — content + metadata + humanize | Strengthen narrative and voice, run `/humanize`, add sources and references, set related posts. |
+| 43-59 | **Polish** — metadata + humanize if needed | Add references, related posts. Run `/humanize` if Humanization < 7. Fix any obvious prose issues. |
+| 60-70 | **Complete** — no action needed | Meets the current standard. |
 
 These ranges are guidelines, not rigid rules. A post scoring 30 overall but 2/10 on Sources is more urgent on the source dimension than a post scoring 25 evenly.
 
@@ -100,15 +114,15 @@ These ranges are guidelines, not rigid rules. A post scoring 30 overall but 2/10
 
 **Library Summary**
 - Total posts: X
-- Average score: X/60
-- Score distribution: Critical (0-20): X | Improve (21-35): X | Polish (36-50): X | Complete (51-60): X
+- Average score: X/70
+- Score distribution: Critical (0-25): X | Improve (26-42): X | Polish (43-59): X | Complete (60-70): X
 
 **Scoreboard** (sorted lowest to highest)
-| Post | Total | Obs | Trans | Stance | Narr | Voice | Sources | Priority |
-|---|---|---|---|---|---|---|---|---|
-| Title | 18/60 | 4 | 3 | 2 | 3 | 4 | 2 | Critical |
-| Title | 32/60 | 6 | 5 | 4 | 5 | 6 | 6 | Improve |
-| Title | 48/60 | 8 | 8 | 7 | 8 | 9 | 8 | Polish |
+| Post | Total | Obs | Trans | Stance | Narr | Voice | Human | Sources | Priority |
+|---|---|---|---|---|---|---|---|---|---|
+| Title | 20/70 | 4 | 3 | 2 | 3 | 4 | 2 | 2 | Critical |
+| Title | 38/70 | 6 | 5 | 4 | 5 | 6 | 6 | 6 | Improve |
+| Title | 56/70 | 8 | 8 | 7 | 8 | 9 | 8 | 8 | Polish |
 
 **Dimension Averages** — where is the library weakest overall?
 - Observation: X/10
@@ -116,6 +130,7 @@ These ranges are guidelines, not rigid rules. A post scoring 30 overall but 2/10
 - Stance: X/10
 - Narrative: X/10
 - Voice: X/10
+- Humanization: X/10
 - Sources: X/10
 
 This shows systemic weaknesses. If Sources averages 1.5/10 across the library, that's the most impactful dimension to fix first.
@@ -131,20 +146,22 @@ Based on the triage, suggest:
 
 **Score 51-60 (Complete):** No action. These meet the standard.
 
-**Score 36-50 (Polish):**
+**Score 43-59 (Polish):**
 - Bulk-add related posts via tag overlap
 - Quick research per post to find 2-3 reference URLs
 - Create source notes in vault, update WordPress meta
+- Run `/humanize` if Humanization score < 7
 - Minor prose fixes only if something obvious
 
-**Score 21-35 (Improve):**
+**Score 26-42 (Improve):**
 - Research the topic properly (feeds + web search)
 - Strengthen narrative and voice — may involve rewriting 1-2 paragraphs
+- Run `/humanize` to remove AI patterns
 - Add full source tracking + references + related posts
 - Can be done in batches with user spot-checking
 
-**Score 0-20 (Critical):**
-- Full rewrite using the writing pipeline: research → draft in vault → user review → audit → publish update
+**Score 0-25 (Critical):**
+- Full rewrite using the writing pipeline: research → draft in vault → `/humanize` → user review → audit → publish update
 - One post at a time, with user approval
 - These are the highest-value investments — good topics that need the framework applied
 
