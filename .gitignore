@@ -22,6 +22,9 @@ backend/wp-content/cache/
 backend/wp-content/upgrade/
 backend/wp-content/languages/
 
+# obsidian
+bank/.obsidian/
+
 # misc
 .DS_Store
 *.log
