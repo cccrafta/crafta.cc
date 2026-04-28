@@ -27,6 +27,10 @@ const nextConfig: NextConfig = {
       },
       {
         protocol: "https",
+        hostname: "crafta-wp-523001806622.europe-west4.run.app",
+      },
+      {
+        protocol: "https",
         hostname: "secure.gravatar.com",
       },
     ],

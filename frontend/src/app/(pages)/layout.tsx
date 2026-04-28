@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import JournalHeader from "@/components/journal-header";
 
 export default function PagesLayout({
@@ -7,7 +8,7 @@ export default function PagesLayout({
 }) {
   return (
     <div style={{ minHeight: "100vh", display: "flex", flexDirection: "column" }}>
-      <JournalHeader />
+      <Suspense fallback={null}><JournalHeader /></Suspense>
       <main
         style={{
           flex: 1,
