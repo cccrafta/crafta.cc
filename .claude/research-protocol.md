@@ -66,6 +66,27 @@ https://archive.org/advancedsearch.php?q=QUERY&fl[]=identifier,title,date,descri
 
 **When to use:** For historical origin stories — when you need the maker's own language, not a journalist's interpretation. A 1915 Carhartt catalogue describing their overall construction is T1. A 1943 military supply spec for a field jacket is T1.
 
+**Reading Archive.org documents — never use the PDF:**
+Most Archive.org items have a pre-extracted OCR text layer. Use this instead of the PDF — it's 50-200x smaller and fully grep-able.
+
+First, find the correct filename:
+```bash
+curl -s "https://archive.org/download/{identifier}/" | grep "_djvu.txt"
+```
+
+Then download and search:
+```bash
+curl -sL "https://archive.org/download/{identifier}/{filename}_djvu.txt" -o /tmp/doc.txt
+grep -i -n -A3 -B1 "keyword" /tmp/doc.txt | head -50
+sed -n '{start},{end}p' /tmp/doc.txt  # read a specific line range
+```
+
+**For PDFs that have no text layer** (scanned image PDFs from other sources):
+```bash
+curl -sL "URL" -o /tmp/document.pdf
+```
+Then use the `Read` tool on `/tmp/document.pdf` with `pages: "1-5"` — Claude reads it visually. Maximum 20 pages per request. For long documents, identify the relevant section first by checking the table of contents on pages 1-3.
+
 ### How to use Google Patents
 
 Patents are the most technically specific documentation of any invention. They contain exact specifications, materials, processes, and dates.
