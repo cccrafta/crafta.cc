@@ -31,6 +31,7 @@ Curated RSS feeds for fashion/design/craft editorial inspiration for Crafta jour
 | Source | Feed URL | Domain | Sitemap | Focus |
 |---|---|---|---|---|
 | Permanent Style | — | permanentstyle.com | — | Bespoke tailoring, fabric deep dives, craft journalism |
+| Bryceland's Journal | https://www.brycelandsco.com/blogs/journal.atom | brycelandsco.com | — | Craft-first menswear, garment construction, artisan makers (Tokyo/HK) |
 
 ## Design & Art
 | Source | Feed URL | Domain | Sitemap | Focus |
