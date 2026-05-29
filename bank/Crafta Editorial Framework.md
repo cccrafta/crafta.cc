@@ -157,6 +157,7 @@ These must be present in every piece of Crafta writing. They are not optional.
 - **Objective, measured, plain** — state things as they are, without hedging or qualifying. Not "this is arguably important" but "this matters, and here's why." Confidence comes from understanding, not assertion.
 - **Not passionate, not robotic** — calm authority. Someone who knows the subject well enough that they don't need to be excited about it. The material is interesting; the writing doesn't need to insist that it is.
 - **Vary the rhythm** — a short sentence after three long ones. A two-sentence paragraph when that's all the point needs. Monotonous sentence structure is what creates the robotic quality.
+- **No orphan short sentences** — do not open paragraphs or drop standalone sentences under ~8 words as dramatic scene-setters or topic labels. "The rivet came first." "No bib." "The next failure was the crotch." These announce instead of saying. Fold them into the adjacent sentence with a conjunction or subordinate clause, or expand them into a real claim.
 - Specific over general, always
 - No superlatives, no first person, no marketing language, no selling
 - No filler phrases ("it's worth noting that," "interestingly," "it goes without saying")

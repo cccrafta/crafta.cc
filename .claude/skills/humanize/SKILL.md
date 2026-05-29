@@ -289,7 +289,45 @@ Avoiding AI patterns is only half the job. Sterile, voiceless writing is just as
 
 **Note:** Deliberate, occasional short sentences add punch and emphasis. The problem is **unvarying sequences** with no rhythmic variation. Don't combine sentences that are intentionally short for impact.
 
-**See also:** Pattern #11 (Elegant Variation) - both issues can create choppy prose when AI cycles through synonyms while producing short sentences.
+**See also:** Pattern #11 (Elegant Variation) - both issues can create choppy prose when AI cycles through synonyms while producing short sentences. See also Pattern #32 (Orphan Short Sentences).
+
+
+### 32. Orphan Short Sentences
+
+**Problem:** AI writing frequently drops very short standalone sentences (under ~8 words) as dramatic scene-setters, topic announcers, or artificial pauses. Unlike Pattern 30 (sequences of short sentences), these are single isolated lines that feel punchy in the moment but read as assembled rather than written. They announce instead of saying, and they make the prose feel clickbaity.
+
+**Telltale examples:**
+- "The rivet came first."
+- "No bib."
+- "Nobody designed the bib overall."
+- "The next failure was the crotch."
+- "The crossback was engineering."
+- "The bib would wait."
+
+**Detection criteria:**
+- A single sentence under ~8 words standing alone
+- It announces or labels the topic of the paragraph/sentence that follows
+- Removing it would not lose any information — it would just start with the next sentence
+- It feels like a chapter title or a tweet rather than prose
+
+**Fix strategies:**
+- **Absorb into the next sentence** with a conjunction or subordinate clause: "The rivet came first. Before it, pocket seams..." → "The rivet was the first solution: before it, pocket seams..."
+- **Expand into a full claim**: "The next failure was the crotch." → "In 1890, the next stress point to be engineered was the crotch seam."
+- **Turn it into a dependent clause**: "No bib." → fold into the surrounding sentence as a subordinate detail
+
+**Before:**
+> The rivet came first. Before it, pocket seams were the weakest point...
+
+**After:**
+> Before the rivet, pocket seams were the weakest point...
+
+**Before:**
+> The next failure was the crotch. In 1890, two Baltimore makers...
+
+**After:**
+> In 1890, the crotch seam was the next failure point to be solved.
+
+**Note:** This is distinct from deliberate short sentences used for emphasis at the END of a paragraph (see Pattern 31 — Paragraph Buttoning). Pattern 32 is about orphan sentences at the START or MIDDLE of a paragraph that announce rather than develop. A truly deliberate short sentence earns its isolation by delivering new information or a genuine surprise — not just labeling what's about to be said.
 
 
 ### 31. Paragraph Buttoning
