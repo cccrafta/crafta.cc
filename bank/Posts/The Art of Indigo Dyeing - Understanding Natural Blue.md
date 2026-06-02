@@ -2,6 +2,7 @@
 title: "The Art of Indigo Dyeing: Understanding Natural Blue"
 status: published
 category: Design
+search_context: "design fashion craft manufacturing"
 tags: [denim, dyeing, heritage, indigo, japanese]
 wp_id: 14
 created: 2026-02-23T00:00:00

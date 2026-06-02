@@ -2,6 +2,7 @@
 title: "The Science of Seersucker: Why Wrinkles Keep You Cool"
 status: published
 category: Materials
+search_context: "materials textile fabric craft"
 tags: [cotton, craft, heritage]
 wp_id: 41
 created: 2026-04-10T08:45:21

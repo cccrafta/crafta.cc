@@ -2,6 +2,7 @@
 title: "Cashmere: What One Goat Produces in a Year"
 status: draft
 category: Materials
+search_context: "materials textile fabric craft"
 tags: [cashmere, wool, heritage, craft, knitwear, scotland, japanese]
 wp_id:
 created: 2026-04-16

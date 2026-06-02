@@ -2,6 +2,7 @@
 title: "Katazome: Japanese Stencil Dyeing and the Art of Resist"
 status: published
 category: Technique
+search_context: "technique craft textile fashion"
 tags: [craft, dyeing, indigo, japanese]
 wp_id: 36
 created: 2025-10-12T00:00:00

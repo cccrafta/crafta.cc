@@ -1,6 +1,7 @@
 import Image from "next/image";
 import type { PostDetail } from "@/lib/types/wordpress";
 import CategoryCircle from "@/components/category-circle";
+import PostBody from "@/components/post-body";
 
 export default function PostContent({ post }: { post: PostDetail }) {
   const formattedDate = new Date(post.date).toLocaleDateString("en-GB", {
@@ -61,10 +62,7 @@ export default function PostContent({ post }: { post: PostDetail }) {
         </div>
       )}
 
-      <div
-        className="prose type-body max-w-none"
-        dangerouslySetInnerHTML={{ __html: post.content }}
-      />
+      <PostBody html={post.content} />
       {post.tags.length > 0 && (
         <>
           <p className="type-body" style={{ marginBottom: "var(--space-sm)" }}>

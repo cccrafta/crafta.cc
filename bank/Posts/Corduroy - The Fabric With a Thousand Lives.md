@@ -2,6 +2,7 @@
 title: "Corduroy: The Fabric With a Thousand Lives"
 status: published
 category: Materials
+search_context: "materials textile fabric craft"
 tags: [british, denim, dyeing, french, outerwear, workwear]
 wp_id: 23
 created: 2025-08-08T00:00:00

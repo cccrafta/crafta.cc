@@ -2,6 +2,7 @@
 title: "Boro Textiles: Beauty in Accumulated Repair"
 status: published
 category: Culture
+search_context: "culture fashion menswear clothing"
 tags: [cotton, dyeing, indigo, japanese, repair]
 wp_id: 31
 created: 2025-09-17T00:00:00

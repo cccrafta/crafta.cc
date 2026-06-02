@@ -2,6 +2,7 @@
 title: "The Five-Pocket Jean: A Design That Refuses to Be Improved"
 status: published
 category: Garments
+search_context: "garments fashion menswear heritage"
 tags: [denim]
 wp_id: 17
 created: 2026-03-16T00:00:00

@@ -2,6 +2,7 @@
 title: "Loopwheeled Knitting: The Slowest Way to Make a T-Shirt"
 status: published
 category: Design
+search_context: "design fashion craft manufacturing"
 tags: [cotton, japanese, knitting]
 wp_id: 16
 created: 2026-03-09T00:00:00

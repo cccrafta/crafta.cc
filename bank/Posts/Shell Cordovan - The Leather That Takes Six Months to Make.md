@@ -2,6 +2,7 @@
 title: "Shell Cordovan: The Leather That Takes Six Months to Make"
 status: published
 category: Materials
+search_context: "materials leather fabric craft"
 tags: [footwear, japanese, leather]
 wp_id: 20
 created: 2025-07-24T00:00:00

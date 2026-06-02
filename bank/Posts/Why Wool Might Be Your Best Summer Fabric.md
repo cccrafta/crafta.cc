@@ -2,6 +2,7 @@
 title: "Why Wool Might Be Your Best Summer Fabric"
 status: published
 category: Materials
+search_context: "materials textile fabric craft"
 tags: [british, craft, heritage, wool]
 wp_id: 42
 created: 2026-04-10T08:45:51

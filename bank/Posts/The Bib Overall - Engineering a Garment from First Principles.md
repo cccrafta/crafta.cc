@@ -2,6 +2,7 @@
 title: "The Bib Overall: Engineering a Garment from First Principles"
 status: published
 category: Garments
+search_context: "garments fashion workwear heritage"
 tags: [american, workwear, denim, construction, overalls, carhartt, lee]
 wp_id: 100
 created: 2026-04-25

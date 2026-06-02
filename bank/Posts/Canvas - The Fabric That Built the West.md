@@ -2,6 +2,7 @@
 title: "Canvas: The Simplest Weave, the Widest Reach"
 status: published
 category: Materials
+search_context: "materials textile fabric craft"
 tags: [cotton, heritage, craft, workwear, outerwear]
 wp_id: 57
 created: 2025-08-28T00:00:00

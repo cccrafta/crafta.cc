@@ -2,6 +2,7 @@
 title: "Ramie: The Strongest Fiber Nobody Talks About"
 status: published
 category: Materials
+search_context: "materials textile fabric craft"
 tags: [cotton, craft, heritage, japanese]
 wp_id: 45
 created: 2026-04-10T08:45:56

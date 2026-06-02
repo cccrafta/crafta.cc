@@ -2,6 +2,7 @@
 title: Working Craft — When Denim Becomes Luxury
 status: published
 category: Culture
+search_context: "culture fashion menswear clothing"
 tags: [denim, luxury, heritage, workwear, cashmere, mills, craft]
 wp_id: 94
 created: 2026-04-22

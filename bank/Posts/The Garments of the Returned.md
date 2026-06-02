@@ -2,6 +2,7 @@
 title: "The Garments of the Returned: Peaky Blinders and the Cloth of 1919"
 status: published
 category: Culture
+search_context: "culture fashion menswear clothing"
 tags: [tweed, tailoring, british, heritage, workwear, post-war, 1920s]
 wp_id: 90
 created: 2026-04-15

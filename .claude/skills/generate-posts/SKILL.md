@@ -80,6 +80,7 @@ published:
 research: "[[Research/Topic Name]]"
 sources: ["[[Sources/References/Source 1]]", "[[Sources/References/Source 2]]"]
 related_posts: ["slug-of-related-post-1", "slug-of-related-post-2"]
+search_context: "materials textile fashion"
 references:
   - title: "Article Title — Publication"
     url: "https://example.com/article"
@@ -140,6 +141,7 @@ Verify:
 - [ ] **Punctuation**: Em dashes not overused — use commas, colons, semicolons where appropriate. Count em dashes per paragraph; more than 2 is a flag
 - [ ] **Origin story**: For garments — who made it first, when, for whom (not optional)
 - [ ] **Material criticality**: For garments — why is the fabric choice not interchangeable? What breaks with the wrong material?
+- [ ] **Patina**: For materials and garments posts — how does the subject age with use? This must appear somewhere in the piece (its own paragraph if the aging behaviour is significant, woven into construction/materiality if briefer). A materials or garments post without patina observation is incomplete.
 - [ ] **Contemporary relevance**: Who makes it today and why — evidence the design is alive
 - [ ] **Cultural icons with substance**: If named, explain *why* they wore it — not just *that* they did
 - [ ] **Tone**: Measured, truthful, no superlatives, no first person
@@ -152,7 +154,29 @@ Verify:
 - [ ] **Tags**: 3-7 relevant tags
 - [ ] **No overlap**: Doesn't duplicate existing posts
 - [ ] **HTML**: All paragraphs wrapped in `<p>` tags
+- [ ] **Search context**: `search_context` frontmatter set (see below)
 Present audit results to user.
+
+**Search context (`search_context`):**
+This field powers the Visual Lookup feature — readers select text in the post and see image/web results. The context is appended to every lookup query to steer results toward fashion/craft instead of unrelated domains.
+
+Rules:
+- Start with the category (e.g., "Garments", "Materials", "Technique")
+- Add 2-3 loose domain keywords that work for ANY term a reader might select in the article
+- Must answer "what world is this article in?" — NOT "what is this article about"
+- Keep it broad: these keywords must work for names, places, materials, and techniques mentioned anywhere in the post
+- 3-6 words total
+
+Examples:
+- Harrington jacket post (Garments): `"garments fashion menswear heritage"`
+- Selvedge denim post (Materials): `"materials denim textile fashion"`
+- Sashiko technique post (Technique): `"technique craft Japanese textile"`
+- Workwear history post (History): `"history fashion workwear heritage"`
+- Brand profile post (Design): `"design fashion brand menswear"`
+
+Bad examples (too specific — would skew every search):
+- `"harrington jacket baracuta Manchester"` — searches for "Fraser tartan" would return only Baracuta results
+- `"selvedge shuttle loom Okayama"` — searches for a person's name would return only denim results
 
 ### Step 8: Publish
 After user approves:
@@ -165,7 +189,8 @@ php /Users/muhamad.ariqyandri/Desktop/crafta-cc/backend/publish-post.php \
   --category "Category" \
   --tags "tag1, tag2, tag3" \
   --related-posts "slug-1, slug-2, slug-3" \
-  --references '[{"title":"Article — Publication","url":"https://..."}]'
+  --references '[{"title":"Article — Publication","url":"https://..."}]' \
+  --search-context "category keyword1 keyword2"
 
 # Update existing post (read wp_id from vault note frontmatter)
 php /Users/muhamad.ariqyandri/Desktop/crafta-cc/backend/publish-post.php \
@@ -176,7 +201,8 @@ php /Users/muhamad.ariqyandri/Desktop/crafta-cc/backend/publish-post.php \
   --category "Category" \
   --tags "tag1, tag2, tag3" \
   --related-posts "slug-1, slug-2, slug-3" \
-  --references '[{"title":"Article — Publication","url":"https://..."}]'
+  --references '[{"title":"Article — Publication","url":"https://..."}]' \
+  --search-context "category keyword1 keyword2"
 ```
 Then update `bank/Posts/<Title>.md`:
 - Set `status: published`

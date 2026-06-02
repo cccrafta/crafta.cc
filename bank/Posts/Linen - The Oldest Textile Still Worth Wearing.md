@@ -2,6 +2,7 @@
 title: "Linen: The Oldest Textile Still Worth Wearing"
 status: published
 category: Materials
+search_context: "materials textile fabric craft"
 tags: [cotton]
 wp_id: 27
 created: 2025-08-28T00:00:00

@@ -2,6 +2,7 @@
 title: "The Duffle Coat: From Royal Navy Surplus to Campus Classic"
 status: published
 category: Garments
+search_context: "garments fashion military outerwear menswear heritage"
 tags: [british, heritage, military, outerwear, vintage, wool]
 wp_id: 33
 created: 2025-09-27T00:00:00

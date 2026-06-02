@@ -2,6 +2,7 @@
 title: "Inside the Japanese Denim Mills: Okayama and the Pursuit of Perfection"
 status: published
 category: Design
+search_context: "design fashion craft manufacturing"
 tags: [cotton, craft, denim, dyeing, handmade, heritage, indigo, japanese, selvedge, vintage]
 wp_id: 10
 created: 2026-01-26T00:00:00

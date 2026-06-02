@@ -2,6 +2,7 @@
 title: "Moleskin: Nine Steps Between Cotton and Suede"
 status: published
 category: Materials
+search_context: "materials textile fabric craft"
 tags: [cotton, french, workwear, heritage, craft]
 wp_id: 50
 created: 2026-04-10

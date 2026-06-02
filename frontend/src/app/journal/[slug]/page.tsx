@@ -2,6 +2,7 @@ import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { getJournalPost } from "@/lib/services";
 import PostContent from "@/components/post-content";
+// import PostSearchLayout from "@/components/post-search-layout";
 import CommentList from "@/components/comment-list";
 import { ConnectionError } from "@/lib/http-client";
 
@@ -58,45 +59,11 @@ export default async function JournalPostPage({
     notFound();
   }
 
-  return (
-    <div style={{ maxWidth: "var(--content-max-width)", margin: "0 auto" }}>
-      <PostContent post={post} />
+  // const searchContext = post.searchContext || post.categories[0] || "fashion";
 
-      {/* <section
-        className="mt-12 pt-8"
-        style={{ borderTop: "1px solid var(--color-border)" }}
-      >
-        <h2
-          className="type-section mb-6"
-          style={{ color: "var(--color-fg-secondary)" }}
-        >
-          Comments
-        </h2>
-        <Suspense
-          fallback={
-            <div className="space-y-4">
-              {Array.from({ length: 2 }).map((_, i) => (
-                <div
-                  key={i}
-                  className="space-y-2 border-l-2 pl-4"
-                  style={{ borderColor: "var(--color-border)" }}
-                >
-                  <div
-                    className="h-4 w-32 animate-pulse rounded"
-                    style={{ backgroundColor: "var(--color-bg-secondary)" }}
-                  />
-                  <div
-                    className="h-3 w-full animate-pulse rounded"
-                    style={{ backgroundColor: "var(--color-bg-secondary)" }}
-                  />
-                </div>
-              ))}
-            </div>
-          }
-        >
-          <CommentList postId={post.id} />
-        </Suspense>
-      </section> */}
+  return (
+    <div className="post-layout">
+      <PostContent post={post} />
     </div>
   );
 }

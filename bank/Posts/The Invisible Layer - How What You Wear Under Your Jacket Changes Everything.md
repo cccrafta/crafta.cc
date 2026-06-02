@@ -2,6 +2,7 @@
 title: "The Invisible Layer: How What You Wear Under Your Jacket Changes Everything"
 status: published
 category: Culture
+search_context: "culture fashion outerwear menswear clothing"
 tags: [cotton, heritage, craft, workwear, knitting, japanese]
 wp_id: 49
 created: 2026-04-10

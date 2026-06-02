@@ -2,6 +2,7 @@
 title: "The Safari Jacket: Designed for the Bush, Adopted by the City"
 status: published
 category: Garments
+search_context: "garments fashion outerwear menswear heritage"
 tags: [cotton, outerwear, heritage, military, british]
 wp_id: 55
 created: 2025-08-13T00:00:00

@@ -66,6 +66,7 @@ function mapPostToDetail(post: WPPost): PostDetail {
     tags:
       post._embedded?.["wp:term"]?.[1]?.map((t) => t.name) ?? [],
     references: post.meta?.references ?? [],
+    searchContext: post.meta?.search_context ?? "",
     manualRelatedIds: post.meta?.related_posts ?? [],
     tagIds: post.tags ?? [],
   };

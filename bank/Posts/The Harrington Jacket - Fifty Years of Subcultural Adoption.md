@@ -2,6 +2,7 @@
 title: "The Harrington Jacket: Fifty Years of Subcultural Adoption"
 status: published
 category: Garments
+search_context: "garments fashion outerwear menswear heritage"
 tags: [british, cotton, outerwear]
 wp_id: 30
 created: 2025-09-12T00:00:00

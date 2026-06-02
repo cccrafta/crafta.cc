@@ -2,6 +2,7 @@
 title: "Military Surplus and Its Influence on Modern Menswear"
 status: published
 category: History
+search_context: "history fashion military menswear heritage"
 tags: [military, outerwear, vintage]
 wp_id: 13
 created: 2026-02-16T00:00:00

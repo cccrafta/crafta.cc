@@ -2,6 +2,7 @@
 title: "Natural Indigo vs. Synthetic: A Difference You Can See"
 status: published
 category: Technique
+search_context: "technique craft textile fashion"
 tags: [denim, dyeing, indigo]
 wp_id: 25
 created: 2025-08-18T00:00:00

@@ -2,6 +2,7 @@
 title: "The Anatomy of Selvedge Denim: What Makes It Worth the Investment"
 status: published
 category: Garments
+search_context: "garments fashion menswear heritage"
 tags: [denim, heritage, selvedge, vintage]
 wp_id: 8
 created: 2026-01-12T00:00:00

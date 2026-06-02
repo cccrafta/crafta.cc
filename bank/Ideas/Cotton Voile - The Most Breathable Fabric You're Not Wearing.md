@@ -2,7 +2,7 @@
 title: "Cotton Voile: The Most Breathable Fabric You're Not Wearing"
 category: Materials
 tags: [cotton, heritage]
-status: pending
+status: published
 sources: [putthison.com]
 created: 2026-04-10
 pitch: "Featherweight, sheer, and built for brutal heat — the forgotten summer shirting"

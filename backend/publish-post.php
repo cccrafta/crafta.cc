@@ -9,7 +9,7 @@ require_once __DIR__ . '/wp-load.php';
 wp_set_current_user(1);
 
 // Parse CLI arguments
-$opts = getopt('', ['title:', 'content:', 'excerpt:', 'category:', 'tags:', 'date:', 'related-posts:', 'references:', 'wp-id:']);
+$opts = getopt('', ['title:', 'content:', 'excerpt:', 'category:', 'tags:', 'date:', 'related-posts:', 'references:', 'search-context:', 'wp-id:']);
 
 if (empty($opts['title']) || empty($opts['content'])) {
     echo json_encode(['error' => 'Missing required --title or --content']);
@@ -81,6 +81,11 @@ if (!empty($opts['related-posts'])) {
     if (!empty($related_ids)) {
         update_post_meta($id, 'related_posts', $related_ids);
     }
+}
+
+// Set search context if provided
+if (!empty($opts['search-context'])) {
+    update_post_meta($id, 'search_context', sanitize_text_field($opts['search-context']));
 }
 
 // Set references if provided (JSON string)

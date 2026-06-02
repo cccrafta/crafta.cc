@@ -72,6 +72,7 @@ export type WPPost = {
   meta?: {
     related_posts?: number[];
     references?: { title: string; url: string }[];
+    search_context?: string;
   };
   _embedded?: {
     author?: WPUser[];
@@ -139,6 +140,7 @@ export type PostDetail = {
   categories: string[];
   tags: string[];
   references: Reference[];
+  searchContext: string;
   manualRelatedIds: number[];
   tagIds: number[];
 };

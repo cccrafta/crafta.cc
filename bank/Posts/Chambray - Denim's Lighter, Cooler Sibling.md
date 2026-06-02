@@ -2,6 +2,7 @@
 title: "Chambray: Denim's Lighter, Cooler Sibling"
 status: published
 category: Materials
+search_context: "materials denim textile fabric craft"
 tags: [cotton, denim, heritage, indigo, workwear]
 wp_id: 44
 created: 2026-04-10T08:45:56

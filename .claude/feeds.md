@@ -26,6 +26,7 @@ Curated RSS feeds for fashion/design/craft editorial inspiration for Crafta jour
 | Huntsman Savile Row | — | huntsmansavilerow.com | — | Bespoke tailoring, safari heritage, Mogambo connection |
 | Barbour | — | barbour.com | — | Waxed cotton, field clothing, heritage outerwear (est. 1894) |
 | V&A Fashion Collection | — | vam.ac.uk | — | Museum archive, historical garments, textile collection |
+| The Vintage Showroom | https://thevintageshowroom.com/feed/ | thevintageshowroom.com | https://thevintageshowroom.com/wp-sitemap.xml | London vintage archive, garment history, curated exhibitions |
 
 ## Specialist — Deep Craft Journalism (T2)
 | Source | Feed URL | Domain | Sitemap | Focus |
@@ -45,6 +46,8 @@ Curated RSS feeds for fashion/design/craft editorial inspiration for Crafta jour
 | Directors (FUJITO旗艦店) | https://directors1.blogspot.com/feeds/posts/default?alt=rss | directors1.blogspot.com | | Japanese fashion, FUJITO brand (JP) |
 | EYESCREAM | https://www.eyescream.jp/feed/ | eyescream.jp | | Japanese subculture, fashion, music (JP) |
 | Popeye Magazine | https://popeyemagazine.jp/feed/ | popeyemagazine.jp | | City boy lifestyle, small brands, culture (JP) |
+| Shohei Collection | https://shohei-collection.com/blogs/shohei-world.atom | shohei-collection.com | — | Tokyo sustainable fashion, Japanese textiles, craft exhibitions (JP) |
+| Nepenthes LA | https://nepenthesla.com/feed/ | nepenthesla.com | https://nepenthesla.com/sitemap.xml | Engineered Garments, Needles, South2 West8, product drops, people profiles (JP/US) |
 
 ## Research Depth Levels
 

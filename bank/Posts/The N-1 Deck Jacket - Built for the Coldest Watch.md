@@ -2,6 +2,7 @@
 title: "The N-1 Deck Jacket: Built for the Coldest Watch"
 status: published
 category: Garments
+search_context: "garments fashion military outerwear menswear heritage"
 tags: [cotton, craft, knitting, military, outerwear]
 wp_id: 26
 created: 2025-08-23T00:00:00

@@ -2,6 +2,7 @@
 title: "Vegetable Tanning: The Slow Craft of Making Leather"
 status: published
 category: Design
+search_context: "design fashion craft manufacturing"
 tags: [british, craft, japanese, leather]
 wp_id: 12
 created: 2026-02-09T00:00:00

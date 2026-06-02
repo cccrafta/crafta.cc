@@ -2,6 +2,7 @@
 title: "Goodyear Welt Construction: Why Your Boots Should Be Resoleable"
 status: published
 category: Garments
+search_context: "garments fashion menswear heritage"
 tags: [dyeing, footwear, handmade, heritage, leather, repair]
 wp_id: 15
 created: 2026-03-02T00:00:00

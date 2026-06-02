@@ -2,6 +2,7 @@
 title: "The Tuxedo: 160 Years of Formality Negotiating With Comfort"
 status: published
 category: History
+search_context: "history fashion formalwear menswear heritage"
 tags: [heritage, craft, wool, british]
 wp_id: 56
 created: 2025-10-07T00:00:00

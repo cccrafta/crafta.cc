@@ -2,6 +2,7 @@
 title: "Summer Weight: When Heritage Brands Go Light"
 status: published
 category: Culture
+search_context: "culture fashion menswear clothing"
 tags: [cotton, denim, heritage, japanese, outerwear]
 wp_id: 43
 created: 2026-04-10T08:45:55

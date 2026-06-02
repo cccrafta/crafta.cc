@@ -2,6 +2,7 @@
 title: "The Breton Stripe: How a Naval Uniform Became Everyone's Shirt"
 status: published
 category: History
+search_context: "history fashion menswear nautical heritage"
 tags: [cotton, french, knitting, military, heritage, vintage]
 wp_id: 54
 created: 2025-09-22T00:00:00

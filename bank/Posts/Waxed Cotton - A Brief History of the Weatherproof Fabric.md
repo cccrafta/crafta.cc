@@ -2,6 +2,7 @@
 title: "Waxed Cotton: A Brief History of the Weatherproof Fabric"
 status: published
 category: History
+search_context: "history fashion menswear heritage"
 tags: [british, cotton, craft, heritage, military, outerwear]
 wp_id: 9
 created: 2026-01-19T00:00:00

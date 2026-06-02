@@ -2,6 +2,7 @@
 title: "The Harrington Jacket: Umbrella Yoke, Fraser Tartan, and a Design That Outlasted Golf"
 status: published
 category: Garments
+search_context: "garments fashion outerwear menswear heritage"
 tags: [british, cotton, outerwear, baracuta, manchester, tartan, blouson]
 wp_id: 99
 created: 2026-04-23

@@ -2,6 +2,7 @@
 title: "The Chore Coat: From French Workwear to Wardrobe Essential"
 status: published
 category: Garments
+search_context: "garments fashion workwear heritage"
 tags: [cotton, denim, dyeing, french, indigo, japanese, outerwear, selvedge, vintage, workwear]
 wp_id: 11
 created: 2026-02-02T00:00:00

@@ -21,6 +21,14 @@ add_action('init', function () {
         },
     ]);
 
+    register_post_meta('post', 'search_context', [
+        'show_in_rest'      => true,
+        'single'            => true,
+        'type'              => 'string',
+        'default'           => '',
+        'sanitize_callback' => 'sanitize_text_field',
+    ]);
+
     register_post_meta('post', 'references', [
         'show_in_rest' => [
             'schema' => [

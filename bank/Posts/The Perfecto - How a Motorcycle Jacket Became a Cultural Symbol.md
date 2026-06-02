@@ -2,6 +2,7 @@
 title: "The Perfecto: How a Motorcycle Jacket Became a Cultural Symbol"
 status: published
 category: Garments
+search_context: "garments fashion outerwear menswear heritage"
 tags: [leather, outerwear]
 wp_id: 18
 created: 2025-07-14T00:00:00

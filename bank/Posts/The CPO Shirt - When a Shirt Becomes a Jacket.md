@@ -2,6 +2,7 @@
 title: "The CPO Shirt: The Gap Between Shirt and Jacket"
 status: published
 category: Garments
+search_context: "garments fashion military outerwear menswear heritage"
 tags: [cotton, military, outerwear, wool, workwear]
 wp_id: 28
 created: 2025-09-02T00:00:00

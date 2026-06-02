@@ -2,6 +2,7 @@
 title: "The Donkey Jacket: Working Class Outerwear That Refuses to Disappear"
 status: published
 category: Garments
+search_context: "garments fashion workwear heritage"
 tags: [british, leather, outerwear, wool]
 wp_id: 37
 created: 2025-10-17T00:00:00

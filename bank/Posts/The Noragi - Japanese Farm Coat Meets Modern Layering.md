@@ -2,6 +2,7 @@
 title: "The Noragi: Japanese Farm Coat Meets Modern Layering"
 status: published
 category: Garments
+search_context: "garments fashion outerwear menswear Japanese heritage"
 tags: [cotton, dyeing, indigo, japanese, outerwear, repair, workwear]
 wp_id: 19
 created: 2025-07-19T00:00:00

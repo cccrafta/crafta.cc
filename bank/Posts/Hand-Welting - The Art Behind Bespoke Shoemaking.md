@@ -2,6 +2,7 @@
 title: "Hand-Welting: The Art Behind Bespoke Shoemaking"
 status: published
 category: Technique
+search_context: "technique footwear craft textile fashion"
 tags: [cotton, footwear, handmade, leather]
 wp_id: 29
 created: 2025-09-07T00:00:00

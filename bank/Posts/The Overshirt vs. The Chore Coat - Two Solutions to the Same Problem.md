@@ -2,6 +2,7 @@
 title: "The Overshirt vs. The Chore Coat: Two Solutions to the Same Problem"
 status: published
 category: Garments
+search_context: "garments fashion workwear heritage"
 tags:
   - cotton
   - french

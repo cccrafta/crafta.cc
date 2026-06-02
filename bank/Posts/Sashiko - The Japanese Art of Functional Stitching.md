@@ -2,6 +2,7 @@
 title: "Sashiko: The Japanese Art of Functional Stitching"
 status: published
 category: Technique
+search_context: "technique craft textile fashion"
 tags: [cotton, craft, denim, japanese, outerwear, repair]
 wp_id: 21
 created: 2025-07-29T00:00:00

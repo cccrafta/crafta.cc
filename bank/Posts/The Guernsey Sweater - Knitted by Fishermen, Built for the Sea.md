@@ -2,6 +2,7 @@
 title: "The Guernsey Sweater: Knitted by Fishermen, Built for the Sea"
 status: published
 category: Garments
+search_context: "garments fashion menswear nautical heritage"
 tags: [british, heritage, knitting, wool]
 wp_id: 22
 created: 2025-08-03T00:00:00
