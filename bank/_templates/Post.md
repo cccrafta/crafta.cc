@@ -10,12 +10,15 @@ research:
 sources: []
 related_posts: []
 references: []
+search_context:
+idea:
 triage:
   observation:
   transformation:
   stance:
   narrative:
   voice:
+  humanization:
   sources:
   total:
   date:
