@@ -2,7 +2,7 @@ import { Suspense } from "react";
 import { notFound } from "next/navigation";
 import { getJournalPost } from "@/lib/services";
 import PostContent from "@/components/post-content";
-// import PostSearchLayout from "@/components/post-search-layout";
+import PostSearchLayout from "@/components/post-search-layout";
 import CommentList from "@/components/comment-list";
 import { ConnectionError } from "@/lib/http-client";
 
@@ -59,11 +59,11 @@ export default async function JournalPostPage({
     notFound();
   }
 
-  // const searchContext = post.searchContext || post.categories[0] || "fashion";
+  const searchContext = post.searchContext || post.categories[0] || "fashion";
 
   return (
-    <div className="post-layout">
+    <PostSearchLayout context={searchContext}>
       <PostContent post={post} />
-    </div>
+    </PostSearchLayout>
   );
 }

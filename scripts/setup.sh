@@ -1,12 +1,14 @@
 #!/bin/bash
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$ROOT"
 set -e
 
 echo "Setting up crafta.cc..."
 
 # Load .env
-if [ -f "$(dirname "$0")/.env" ]; then
+if [ -f "$ROOT/.env" ]; then
   set -a
-  source "$(dirname "$0")/.env"
+  source "$ROOT/.env"
   set +a
 fi
 
@@ -38,7 +40,7 @@ fi
 
 # Start MySQL and set up database
 echo "Setting up MySQL..."
-brew services start mysql 2>/dev/null || true
+brew services start mysql@9.7 2>/dev/null || true
 until mysql -u root -e "SELECT 1" &>/dev/null; do
   sleep 1
 done
@@ -50,8 +52,8 @@ echo "Database ready."
 
 # Install frontend dependencies
 echo "Installing frontend dependencies..."
-cd "$(dirname "$0")/frontend" && npm install
+cd "$ROOT/frontend" && npm install
 cd ..
 
 echo ""
-echo "Setup complete! Run ./start.sh to start the project."
+echo "Setup complete! Run ./scripts/start.sh to start the project."

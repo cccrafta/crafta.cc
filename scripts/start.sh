@@ -2,7 +2,7 @@
 REMOTE=false
 for arg in "$@"; do [[ "$arg" == "--remote" ]] && REMOTE=true; done
 
-ROOT="$(dirname "$0")"
+ROOT="$(cd "$(dirname "$0")/.." && pwd)"
 
 # Load .env
 if [ -f "$ROOT/.env" ]; then
@@ -18,7 +18,7 @@ else
   echo "Starting crafta.cc (local)..."
 
   # Start MySQL if not already running
-  brew services start mysql 2>/dev/null
+  brew services start mysql@9.7 2>/dev/null
 
   # Wait for MySQL to be ready
   echo "Waiting for MySQL..."
