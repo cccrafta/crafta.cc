@@ -138,13 +138,13 @@ This shows systemic weaknesses. If Sources averages 1.5/10 across the library, t
 ### Step 5: Recommend action plan
 
 Based on the triage, suggest:
-1. Which Tier A posts to tackle first (highest-impact topics)
-2. Whether to batch-process Tier B and C metadata (can be done by agents)
-3. Estimated effort for each tier
+1. Which Critical posts to tackle first (highest-impact topics)
+2. Whether to batch-process Polish and Improve metadata (can be done by agents)
+3. Estimated effort for each priority band
 
 ### Step 6: Execute (after user approval)
 
-**Score 51-60 (Complete):** No action. These meet the standard.
+**Score 60-70 (Complete):** No action. These meet the standard.
 
 **Score 43-59 (Polish):**
 - Bulk-add related posts via tag overlap

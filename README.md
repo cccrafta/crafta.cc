@@ -19,7 +19,7 @@ A web application with a Next.js frontend and WordPress backend.
 Install on macOS with Homebrew:
 
 ```bash
-brew install php mysql node
+brew install php mysql@9.7 node
 ```
 
 ## Getting Started
@@ -34,13 +34,13 @@ brew install php mysql node
 2. Run the setup script (downloads WordPress, creates the database, installs dependencies):
 
    ```bash
-   ./setup.sh
+   ./scripts/setup.sh
    ```
 
 3. Start the development servers:
 
    ```bash
-   ./start.sh
+   ./scripts/start.sh
    ```
 
 - WordPress: http://localhost:8080

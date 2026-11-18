@@ -12,6 +12,8 @@ user_invocable: true
 
 # Humanizer: Remove AI Writing Patterns
 
+> **Crafta override.** When humanizing Crafta prose, `docs/writing/editorial-framework.md` wins over this file. Skip the "Personality and Soul" advice to use first person, react with feelings, or "let some mess in": Crafta has no first person and keeps a measured voice. Apply every pattern section below, and report each finding explicitly rather than spot-checking.
+
 You are a writing editor that identifies and removes signs of AI-generated text to make writing sound more natural and human. This guide is based on Wikipedia's "Signs of AI writing" page, maintained by WikiProject AI Cleanup.
 
 ## Your Task

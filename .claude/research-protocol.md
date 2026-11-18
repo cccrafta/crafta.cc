@@ -128,7 +128,8 @@ Not all sources carry equal weight. The tier determines how much trust a claim f
   - Internet Archive for manufacturer catalogues and trade publications from the relevant era
   - Google Patents for invention documentation
   - Academic papers via WebSearch `filetype:pdf` or `site:jstor.org`
-- **When a new source is found** — create a note in `bank/Sources/References/` and if the publication is new, create a note in `bank/Sources/Publications/` and suggest adding it to feeds.md.
+- **When a new source is found** — create a note in `bank/Sources/References/`. Its `publication` link must resolve: if `bank/Sources/Publications/<Name>.md` does not exist, create it in the same pass (research subagents included) and suggest adding it to feeds.md.
+- **Geographic scope** — skip Indian-subcontinent and Middle Eastern topics, makers and sources, even when a tracked feed surfaces them. Japanese, Southeast Asian, European, American and West African traditions are in scope. See `AGENTS.md` → Scope and taste.
 - **Growing the source library is a goal** — every research session should add at least 1-2 new source notes to the vault.
 
 ## Research Cache

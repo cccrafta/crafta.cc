@@ -66,7 +66,9 @@ For every factual claim you plan to make, identify the source:
 - Each source note uses the Source template with: URL, publication, date accessed, key claims, reliability assessment
 
 ### Step 3: Draft
-Write the post and save to `bank/Posts/<Title>.md` using the Post template:
+**Before writing a word**, read `docs/writing/editorial-framework.md` and `docs/writing/lessons.md` in full, then `bank/Posts/The Patent That Fixed the Sweatshirt.md` as the quality bar. This applies to rewrites and single paragraphs too. Final prose is written by Opus, and shown in chat before it is saved.
+
+Write the post and save to `bank/Posts/<Title>.md` using the Post template. If the post came from an idea, set `idea: "[[Ideas/<Idea>]]"` and set that idea's `status: in_progress`.
 
 ```markdown
 ---
@@ -128,7 +130,7 @@ Tell the user: "Draft saved to `bank/Posts/<Title>.md` — please review in Obsi
 - Repeat until user approves
 
 ### Step 7: Audit
-Before auditing, **re-read `bank/Crafta Editorial Framework.md` Quality Essentials**. The checklist below catches structural issues; the framework catches prose issues. Both passes are required.
+Before auditing, **re-read `docs/writing/editorial-framework.md` Quality Essentials**. The checklist below catches structural issues; the framework catches prose issues. Both passes are required.
 
 Verify:
 - [ ] **Length**: 500-700 words (standard), 1000-2000 (deep dive)
@@ -137,7 +139,7 @@ Verify:
 - [ ] **Narrative**: Each paragraph earns the next, title's promise is answered
 - [ ] **Specificity**: Contains dates, measurements, places, names — and measurements use numerals with units (9-10oz, not "nine to ten ounces")
 - [ ] **Balance**: Facts and observations serve each other — neither dominates
-- [ ] **No vague assertions**: Every claim has substance. If you can't explain *why*, don't assert *that*. Check for abstract phrases where a concrete mechanism should be — see the Vague → Direct table in `bank/Crafta Editorial Framework.md` for examples
+- [ ] **No vague assertions**: Every claim has substance. If you can't explain *why*, don't assert *that*. Check for abstract phrases where a concrete mechanism should be — see the Vague → Direct table in `docs/writing/editorial-framework.md` for examples
 - [ ] **Punctuation**: Em dashes not overused — use commas, colons, semicolons where appropriate. Count em dashes per paragraph; more than 2 is a flag
 - [ ] **Origin story**: For garments — who made it first, when, for whom (not optional)
 - [ ] **Material criticality**: For garments — why is the fabric choice not interchangeable? What breaks with the wrong material?
@@ -221,7 +223,7 @@ Report: post ID, action (created/updated), title, category, tags, related posts,
 
 ## Editorial Framework
 
-**Read `bank/Crafta Editorial Framework.md` before writing.** Every post must move through three lenses:
+**Read `docs/writing/editorial-framework.md` before writing.** Every post must move through three lenses:
 
 1. **Observation (Truth)** — see the subject honestly: history, materiality, tectonics, comfort, craft context, reference value
 2. **Transformation (Relevance)** — place it in context: then vs now, current value, potential, multiple perspectives

@@ -186,6 +186,10 @@ These must be present in every piece of Crafta writing. They are not optional.
 - Original prose only — no bullet points or lists within the post
 - Open with a concrete observation, not a definition
 - Close with the stance — the recognition that emerged
+- **Plan the opener and the ending together.** The opening paragraph sets up a concrete scene or failure; the ending resolves it. Opener, body and ending should read as one piece, so the closing returns to what the first paragraph showed.
+- **End with the bigger picture, in one or two paragraphs.** First a Transformation beat: where the subject stands now (who makes it, how it is made today, where its details have travelled). Then a conclusion that reads the garment as a record of the problems it solved (the ontology of the design) and says what transfers to clothing made today. Ground this in the case's own evidence, for example a detail made for one garment turning up in another. Do not close on a recap of the sequence the body already told.
+- **Reading-across claims are analysis.** Where the conclusion generalises beyond the sourced facts, keep it specific to the case, and list each generalisation under `## Notes` in the vault note so it can be verified or cut. The stance rules above still apply: no "timeless", no cliché wrap-up, no short mic-drop closer.
+- Reference ending: `bank/Posts/The Patent That Fixed the Sweatshirt.md`, last two paragraphs (opens on the Harajuku reissues, closes on what the design transfers to makers now).
 - Content in `<p>` tags for WordPress publication
 - 500-700 words standard, 1000-2000 deep dive
 - **Use numerals for measurements and units** — write "9–10oz" not "nine to ten ounces", "14–16%" not "fourteen to sixteen percent", "200 countries" not "two hundred countries". Numbers with units are faster to scan than written-out words.

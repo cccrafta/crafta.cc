@@ -2,6 +2,8 @@
 
 WordPress backend + Next.js 16 frontend + Obsidian vault. Editorial journal about garments, materials, craft techniques, and fashion culture.
 
+How to work with the owner (modes, gates, scope, delegation): @AGENTS.md
+
 ## Stack
 
 - **Frontend:** Next.js 16, React 19, Tailwind CSS 4, TypeScript — in `frontend/`
@@ -32,8 +34,8 @@ All styling flows through CSS custom properties in `globals.css`. Key tokens:
 ## Running Locally
 
 ```bash
-./setup.sh   # first time: downloads WordPress, creates DB, installs deps
-./start.sh   # starts MySQL, WordPress (:8080), Next.js (:3000)
+./scripts/setup.sh   # first time: downloads WordPress, creates DB, installs deps
+./scripts/start.sh   # starts MySQL, WordPress (:8080), Next.js (:3000)
 ```
 
 ## Publishing Posts
@@ -215,7 +217,8 @@ The curated feed list with RSS URLs, domains, and sitemap URLs:
 
 ## Editorial Framework
 
-@bank/Crafta Editorial Framework.md
+@docs/writing/editorial-framework.md
+@docs/writing/lessons.md
 
 ## Research Protocol
 
